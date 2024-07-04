@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 11:25:22.335558",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_beasiswa",
+  "keterangan",
+  "tahun_mulai",
+  "tahun_akhir"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_beasiswa",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Beasiswa",
+   "options": "Prestasi\nKemiskinan\nPendidikan\nUnggulan\nLainnya"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "tahun_mulai",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tahun Mulai"
+  },
+  {
+   "fieldname": "tahun_akhir",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tahun Akhir"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-28 11:28:36.573397",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "CT Beasiswas",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

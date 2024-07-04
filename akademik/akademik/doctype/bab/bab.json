@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-25 15:27:12.312316",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mata_pelajaran",
+  "file_bab",
+  "column_break_pacd",
+  "judul_bab",
+  "deskripsi_bab",
+  "topik_section",
+  "topik"
+ ],
+ "fields": [
+  {
+   "fieldname": "mata_pelajaran",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mata pelajaran",
+   "options": "Mapel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "file_bab",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "File Bab"
+  },
+  {
+   "fieldname": "column_break_pacd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deskripsi_bab",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Deskripsi Bab",
+   "reqd": 1
+  },
+  {
+   "fieldname": "judul_bab",
+   "fieldtype": "Data",
+   "label": "Judul bab"
+  },
+  {
+   "fieldname": "topik_section",
+   "fieldtype": "Section Break",
+   "label": "Topik"
+  },
+  {
+   "fieldname": "topik",
+   "fieldtype": "Table",
+   "label": "Topik",
+   "options": "CT Topik"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-29 08:36:49.476988",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Bab",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "judul_bab"
+}

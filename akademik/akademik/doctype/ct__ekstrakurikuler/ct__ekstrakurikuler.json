@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-25 07:34:04.854408",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama_eskul",
+  "foto_kegiatan_eskul",
+  "image_thrm"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama_eskul",
+   "fieldtype": "Data",
+   "label": "Nama Eskul"
+  },
+  {
+   "fieldname": "foto_kegiatan_eskul",
+   "fieldtype": "Attach Image",
+   "label": "Foto Kegiatan Eskul"
+  },
+  {
+   "fieldname": "image_thrm",
+   "fieldtype": "Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-25 07:43:02.759467",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "CT  Ekstrakurikuler",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

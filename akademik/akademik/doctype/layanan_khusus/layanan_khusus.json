@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 14:14:31.419101",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_layanan_khusus",
+  "sk_layanan_khusus",
+  "tmt_layanan_khusus",
+  "tst_layanan_khusus",
+  "keterangan"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_layanan_khusus",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis Layanan Khusus"
+  },
+  {
+   "fieldname": "sk_layanan_khusus",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SK Layanan Khusus"
+  },
+  {
+   "fieldname": "tmt_layanan_khusus",
+   "fieldtype": "Date",
+   "label": "TMT Layanan Khusus"
+  },
+  {
+   "fieldname": "tst_layanan_khusus",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TST Layanan Khusus"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Keterangan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-28 14:16:22.303888",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Layanan Khusus",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

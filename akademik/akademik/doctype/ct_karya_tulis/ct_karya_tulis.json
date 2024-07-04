@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 09:41:25.208662",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "judul",
+  "tahun_pembuatan",
+  "keterangan",
+  "column_break_mfdk",
+  "publikasi"
+ ],
+ "fields": [
+  {
+   "fieldname": "judul",
+   "fieldtype": "Data",
+   "label": "Judul"
+  },
+  {
+   "fieldname": "tahun_pembuatan",
+   "fieldtype": "Date",
+   "label": "Tahun Pembuatan"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Data",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break_mfdk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "publikasi",
+   "fieldtype": "Data",
+   "label": "Publikasi"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-28 11:12:34.575469",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "CT Karya Tulis",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,157 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"sIYxS6xyH8\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Aksi Cepat</b></span>\",\"col\":12}},{\"id\":\"uDwXzvDXFv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kustom Formulir\",\"col\":3}},{\"id\":\"k1za6cnkA6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Verifikasi\",\"col\":3}},{\"id\":\"1n3VYGtWXs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Profil Sekolah\",\"col\":3}},{\"id\":\"wSOmkqWOud\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Informasi PPDB\",\"col\":3}},{\"id\":\"r44QlP8Twk\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"mXOWJTFrsC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Laporan dan Master</b></span>\",\"col\":12}},{\"id\":\"Ub2umBWixQ\",\"type\":\"card\",\"data\":{\"card_name\":\"Pendaftaran\",\"col\":4}},{\"id\":\"YAdEXLXq6C\",\"type\":\"card\",\"data\":{\"card_name\":\"Pengaturan\",\"col\":4}},{\"id\":\"9tomdF_n9t\",\"type\":\"card\",\"data\":{\"card_name\":\"Laporan\",\"col\":4}}]",
+ "creation": "2024-06-24 13:54:47.414711",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "PPDB",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pengaturan",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pengaturan Sekolah",
+   "link_count": 0,
+   "link_to": "Profil Sekolah",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pengaturan PPDB",
+   "link_count": 0,
+   "link_to": "Informasi PPDB",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Laporan",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cetak Pendaftaran",
+   "link_count": 0,
+   "link_to": "Pendaftaran",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cetak Penerimaan",
+   "link_count": 0,
+   "link_to": "Pendaftaran",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pendaftaran",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Data pendaftaran",
+   "link_count": 0,
+   "link_to": "Pendaftaran",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Verifikasi pendaftaran",
+   "link_count": 0,
+   "link_to": "Pendaftaran",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Laporan pendaftaran",
+   "link_count": 0,
+   "link_to": "Pendaftaran",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-06-27 10:39:58.919413",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "PPDB",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Verifikasi",
+   "link_to": "Pendaftaran",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Profil Sekolah",
+   "link_to": "Profil Sekolah",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Kustom Formulir",
+   "type": "URL",
+   "url": "https://techtitan.cloud/app/doctype/Pendaftaran#form_builder_tab"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Informasi PPDB",
+   "link_to": "Informasi PPDB",
+   "type": "DocType"
+  }
+ ],
+ "title": "PPDB"
+}

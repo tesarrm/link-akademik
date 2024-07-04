@@ -1,0 +1,170 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"KyhoNNeOGu\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Aksi Cepat</b></span>\",\"col\":12}},{\"id\":\"u7ICEqBmYL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Profil Sekolah\",\"col\":3}},{\"id\":\"sorVw6erJO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Peserta Didik\",\"col\":3}},{\"id\":\"ro7oXqK-pn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"GTK\",\"col\":3}},{\"id\":\"M279cDNVOB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rombel\",\"col\":3}},{\"id\":\"XRXc2cvmWD\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rRiJ-_zNxH\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Laporan &amp; Master</b></span>\",\"col\":12}},{\"id\":\"zVaiiCqB_V\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"H3\",\"col\":3}},{\"id\":\"W32zR3miTE\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"GTK heading\",\"col\":3}},{\"id\":\"_uenX-c0CA\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Peserta didik heading\",\"col\":3}},{\"id\":\"S9JGUWAZm9\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Rombel heading\",\"col\":3}},{\"id\":\"xNHi6R7t2J\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tanah & Bangunan\",\"col\":3}},{\"id\":\"fI7zkF9l-3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Guru\",\"col\":3}},{\"id\":\"ac-pAS28rF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Peserta Didik\",\"col\":3}},{\"id\":\"xlvIbXJP7r\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rombel\",\"col\":3}},{\"id\":\"KkhokD4oFv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ruang\",\"col\":3}},{\"id\":\"gMUE_lVkrt\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tendik\",\"col\":3}},{\"id\":\"1c82fp8SL2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PD Keluar\",\"col\":3}},{\"id\":\"k6C37ZMosa\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Praktik\",\"col\":3}},{\"id\":\"PwOAUd_G5_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Alat\",\"col\":3}},{\"id\":\"cglbOLEUw6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"GTK Tidak Aktif\",\"col\":6}},{\"id\":\"d4EbzPlBeE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ekskul\",\"col\":3}},{\"id\":\"-0bUzphK_p\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Angkutan & Buku\",\"col\":9}},{\"id\":\"rofec4RHGi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Mapel Pilihan\",\"col\":3}},{\"id\":\"nhDjXXzDQD\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"sww-6VHGFF\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Pengaturan Heading\",\"col\":12}},{\"id\":\"ZyjkzhAhrR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Manajemen Pengguna\",\"col\":3}}]",
+ "creation": "2024-06-24 08:26:40.312866",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Sarpras heading",
+   "label": "H3"
+  },
+  {
+   "custom_block_name": "GTK heading",
+   "label": "GTK heading"
+  },
+  {
+   "custom_block_name": "Pengaturan Heading",
+   "label": "Pengaturan Heading"
+  },
+  {
+   "custom_block_name": "Peserta didik heading",
+   "label": "Peserta didik heading"
+  },
+  {
+   "custom_block_name": "Rombel heading",
+   "label": "Rombel heading"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "organization",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Akademik",
+ "links": [],
+ "modified": "2024-07-04 01:12:02.718586",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Akademik",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Profil Sekolah",
+   "link_to": "Profil Sekolah",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Tanah & Bangunan",
+   "link_to": "Tanah Bangunan",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Alat",
+   "link_to": "Alat",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Guru",
+   "type": "URL",
+   "url": "/app/gtk?tipe_gtk=Guru"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Tendik",
+   "type": "URL",
+   "url": "/app/gtk?tipe_gtk=Tendik"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "GTK Tidak Aktif",
+   "type": "URL",
+   "url": "/app/gtk?keluar=1"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "PD Keluar",
+   "type": "URL",
+   "url": "/app/peserta-didik?keluar=1"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Praktik",
+   "type": "URL",
+   "url": "htps://halo.com"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Manajemen Pengguna",
+   "link_to": "Management Pengguna",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Peserta Didik",
+   "link_to": "Peserta Didik",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Ruang",
+   "link_to": "Ruang",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Angkutan & Buku",
+   "link_to": "Angkutan Buku",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Ekskul",
+   "link_to": "Ekskul",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "GTK",
+   "link_to": "GTK",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Mapel Pilihan",
+   "type": "URL",
+   "url": "https://halo.com"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rombel",
+   "link_to": "Rombel",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Akademik"
+}

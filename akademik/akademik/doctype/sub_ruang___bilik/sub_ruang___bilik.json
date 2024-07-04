@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-02 02:20:38.846706",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_prasarana",
+  "kode_ruang",
+  "nama_ruang",
+  "registrasi_ruang",
+  "column_break_qnjz",
+  "panjang_m",
+  "lebar_m",
+  "luas_ruang_m2",
+  "kapasitas",
+  "bangunan_nama",
+  "kondisi_tab",
+  "kerusakan",
+  "nilai_kerusakan"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_prasarana",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis prasarana",
+   "options": "Bilik Laki-Laki\nBilik Perempuan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kode_ruang",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kode Ruang",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_ruang",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Ruang",
+   "reqd": 1
+  },
+  {
+   "fieldname": "registrasi_ruang",
+   "fieldtype": "Data",
+   "label": "Registrasi Ruang"
+  },
+  {
+   "fieldname": "panjang_m",
+   "fieldtype": "Float",
+   "label": "Panjang (m)"
+  },
+  {
+   "fieldname": "lebar_m",
+   "fieldtype": "Int",
+   "label": "Lebar (m)"
+  },
+  {
+   "fieldname": "luas_ruang_m2",
+   "fieldtype": "Float",
+   "label": "Luas Ruang (m2)"
+  },
+  {
+   "fieldname": "kapasitas",
+   "fieldtype": "Int",
+   "label": "Kapasitas"
+  },
+  {
+   "fetch_from": "bangunan.nama",
+   "fieldname": "bangunan_nama",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Bangunan Nama"
+  },
+  {
+   "fieldname": "kondisi_tab",
+   "fieldtype": "Tab Break",
+   "label": "Kondisi"
+  },
+  {
+   "fieldname": "kerusakan",
+   "fieldtype": "Select",
+   "label": "Kerusakan",
+   "options": "\nTidak Ada Kerusakan\nRusak Ringan: 1% - 30%\nRusak Sedang: 31% - 45%\nRusak Berat: 46% - 100%"
+  },
+  {
+   "fieldname": "nilai_kerusakan",
+   "fieldtype": "Float",
+   "label": "Nilai kerusakan"
+  },
+  {
+   "fieldname": "column_break_qnjz",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-02 02:24:21.157076",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Sub Ruang - Bilik",
+ "owner": "Administrator",
+ "permissions": [],
+ "search_fields": "bangunan_nama",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama_ruang",
+ "translated_doctype": 1
+}

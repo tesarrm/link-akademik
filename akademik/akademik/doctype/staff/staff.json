@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 09:27:46.606024",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "peran",
+  "nama_depan",
+  "nama_belakang",
+  "nomor_hp",
+  "email",
+  "gambar",
+  "gaji",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "peran",
+   "fieldtype": "Link",
+   "label": "Peran",
+   "options": "Peran Izin"
+  },
+  {
+   "fieldname": "nama_depan",
+   "fieldtype": "Data",
+   "label": "Nama Depan"
+  },
+  {
+   "fieldname": "nama_belakang",
+   "fieldtype": "Data",
+   "label": "Nama Belakang"
+  },
+  {
+   "fieldname": "nomor_hp",
+   "fieldtype": "Int",
+   "label": "Nomor Hp"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "gambar",
+   "fieldtype": "Attach Image",
+   "label": "Gambar"
+  },
+  {
+   "fieldname": "gaji",
+   "fieldtype": "Int",
+   "label": "Gaji"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Aktif\nNon Aktif"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-24 09:49:38.113358",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Staff",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 14:19:13.541450",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tipe_ujian",
+  "mapel",
+  "nilai",
+  "tambah"
+ ],
+ "fields": [
+  {
+   "fieldname": "tipe_ujian",
+   "fieldtype": "Data",
+   "label": "Tipe Ujian"
+  },
+  {
+   "fieldname": "mapel",
+   "fieldtype": "Data",
+   "label": "Mata Pelajaran"
+  },
+  {
+   "fieldname": "nilai",
+   "fieldtype": "Int",
+   "label": "Nilai"
+  },
+  {
+   "fieldname": "tambah",
+   "fieldtype": "Button",
+   "label": "Tambah"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-24 14:24:22.501508",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Rapor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

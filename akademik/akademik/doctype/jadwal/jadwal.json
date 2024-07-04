@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 13:12:12.545017",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kelas",
+  "hari",
+  "tanggal_jam",
+  "mapel",
+  "guru",
+  "tambah"
+ ],
+ "fields": [
+  {
+   "fieldname": "kelas",
+   "fieldtype": "Data",
+   "label": "Kelas"
+  },
+  {
+   "fieldname": "hari",
+   "fieldtype": "Data",
+   "label": "Hari"
+  },
+  {
+   "fieldname": "tanggal_jam",
+   "fieldtype": "Datetime",
+   "label": "Tanggal Jam"
+  },
+  {
+   "fieldname": "mapel",
+   "fieldtype": "Data",
+   "label": "Materi Pelajaran"
+  },
+  {
+   "fieldname": "guru",
+   "fieldtype": "Data",
+   "label": "Guru"
+  },
+  {
+   "fieldname": "tambah",
+   "fieldtype": "Button",
+   "label": "Tambah"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-24 13:19:21.787251",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Jadwal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

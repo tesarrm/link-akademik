@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 15:40:52.711342",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "info_sekolah_tab",
+  "informasi_umum_sekolah_section",
+  "sejarah_sekolah",
+  "visi_dan_misi_sekolah",
+  "status_akreditasi_sekolah",
+  "image_vrqr",
+  "table_nsbv",
+  "lokasi",
+  "ekstrakurikuler",
+  "struktur_organisasi",
+  "image_dmrl"
+ ],
+ "fields": [
+  {
+   "fieldname": "info_sekolah_tab",
+   "fieldtype": "Tab Break",
+   "label": "Info Sekolah"
+  },
+  {
+   "fieldname": "informasi_umum_sekolah_section",
+   "fieldtype": "Section Break",
+   "label": "Informasi Umum Sekolah"
+  },
+  {
+   "fieldname": "sejarah_sekolah",
+   "fieldtype": "Text Editor",
+   "label": "Sejarah Sekolah"
+  },
+  {
+   "fieldname": "visi_dan_misi_sekolah",
+   "fieldtype": "Text Editor",
+   "label": "Visi dan Misi Sekolah"
+  },
+  {
+   "fieldname": "status_akreditasi_sekolah",
+   "fieldtype": "Attach Image",
+   "label": "Status Akreditasi Sekolah"
+  },
+  {
+   "fieldname": "table_nsbv",
+   "fieldtype": "Table",
+   "label": "Penghargaan yang Diterima",
+   "options": "CT Prestasi"
+  },
+  {
+   "fieldname": "image_vrqr",
+   "fieldtype": "Image"
+  },
+  {
+   "fieldname": "lokasi",
+   "fieldtype": "Geolocation",
+   "label": "Lokasi"
+  },
+  {
+   "fieldname": "ekstrakurikuler",
+   "fieldtype": "Table",
+   "label": "Ekstrakurikuler",
+   "options": "CT  Ekstrakurikuler"
+  },
+  {
+   "fieldname": "struktur_organisasi",
+   "fieldtype": "Attach Image",
+   "label": "Struktur Organisasi"
+  },
+  {
+   "fieldname": "image_dmrl",
+   "fieldtype": "Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-25 08:10:56.526349",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Info Sekolah",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

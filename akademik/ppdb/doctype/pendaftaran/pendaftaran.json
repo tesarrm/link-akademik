@@ -1,0 +1,637 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 14:01:37.906501",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lulus",
+  "detail_section",
+  "nisn",
+  "nkk",
+  "nik",
+  "no_reg_akta_lahir",
+  "nama_lengkap",
+  "jenis_kelamin",
+  "no_handphone",
+  "tempat_kelahiran",
+  "tanggal_kelahiran",
+  "column_break_qgwd",
+  "agama",
+  "kewarganegaraan",
+  "status_dalam_keluarga",
+  "jumlah_kakak",
+  "jumlah_adik",
+  "anak_ke",
+  "status_anak",
+  "bahasa_sehari_hari",
+  "alamat",
+  "tinggal",
+  "kartu_sosial_section",
+  "penerimaan_kartu_sosial",
+  "column_break_ovhk",
+  "no_kip",
+  "no_kps",
+  "no_pkh",
+  "prestasi_section",
+  "olahraga",
+  "kesenian",
+  "column_break_kvls",
+  "organisasi",
+  "lainnya",
+  "informasi_kesehatan_section",
+  "golongan_darah",
+  "sakit_yang_pernah_diderita",
+  "kelainan_jasmani",
+  "column_break_iqgh",
+  "berat_badan_cm",
+  "tinggi_badan_cm",
+  "ukuran_seragam",
+  "transportasi_section",
+  "transportasi",
+  "column_break_wyzw",
+  "jarak_ke_sekolah_m",
+  "waktu_tempuh_menit",
+  "data_ortu_tab",
+  "data_ayah_section",
+  "a_nama_lengkap",
+  "a_nik",
+  "a_tempat_lahir",
+  "a_tanggal_lahir",
+  "column_break_jsla",
+  "a_pendidikan",
+  "a_pekerjaan",
+  "a_penghasilan",
+  "a_phone",
+  "data_ibu_section",
+  "i_nama_lengkap",
+  "i_nik",
+  "i_tempat_lahir",
+  "i_tanggal_lahir",
+  "column_break_gqhd",
+  "i_pendidikan",
+  "i_pekerjaan",
+  "i_penghasilan",
+  "i_phone",
+  "data_wali_section",
+  "w_nama_lengkap",
+  "w_nik",
+  "w_tempat_lahir",
+  "w_tanggal_lahir",
+  "column_break_hbej",
+  "w_pendidikan",
+  "w_pekerjaan",
+  "w_penghasilan",
+  "w_phone",
+  "tab_3_tab",
+  "npsn_sekolah",
+  "nama_sekolah",
+  "column_break_klfs",
+  "status_sekolah",
+  "alamat_sekolah",
+  "tahun_lulus",
+  "dokumen_tab",
+  "link_folder_drive"
+ ],
+ "fields": [
+  {
+   "fieldname": "nisn",
+   "fieldtype": "Data",
+   "label": "N.I.S.N"
+  },
+  {
+   "description": "<span style=\"color: red;\">*)</span> Sesuai dengan kartu keluarga",
+   "fieldname": "nkk",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NKK",
+   "reqd": 1
+  },
+  {
+   "description": "<span style=\"color: red;\">*)</span> Sesuai dengan kartu keluarga",
+   "fieldname": "nik",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NIK",
+   "reqd": 1
+  },
+  {
+   "description": "<span style=\"color: red;\">*)</span> Sesuai dengan akta kelahiran",
+   "fieldname": "no_reg_akta_lahir",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No Reg Akta Lahir",
+   "reqd": 1
+  },
+  {
+   "description": "<span style=\"color: red;\">*)</span> Sesuai dengan ijazah",
+   "fieldname": "nama_lengkap",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Lengkap",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jenis_kelamin",
+   "fieldtype": "Select",
+   "label": "Jenis Kelamin",
+   "options": "\nLaki-laki\nPerempuan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tempat_kelahiran",
+   "fieldtype": "Data",
+   "label": "Tempat Kelahiran",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tanggal_kelahiran",
+   "fieldtype": "Date",
+   "label": "Tanggal Kelahiran",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agama",
+   "fieldtype": "Select",
+   "label": "Agama",
+   "options": "\nIslam\nKristen\nKatolik\nKristen Protestan\nHindu\nBudha\nKonghucu\nLainnya",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kewarganegaraan",
+   "fieldtype": "Select",
+   "label": "Kewarganegaraan",
+   "options": "\nWNI\nWNA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status_dalam_keluarga",
+   "fieldtype": "Select",
+   "label": "Status dalam Keluarga",
+   "options": "\nAnak Kandung\nAnak Angkat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jumlah_kakak",
+   "fieldtype": "Int",
+   "label": "Jumlah Kakak",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jumlah_adik",
+   "fieldtype": "Int",
+   "label": "Jumlah Adik",
+   "reqd": 1
+  },
+  {
+   "fieldname": "anak_ke",
+   "fieldtype": "Int",
+   "label": "Anak Ke"
+  },
+  {
+   "fieldname": "status_anak",
+   "fieldtype": "Select",
+   "label": "Status Anak",
+   "options": "\nLengkap\nYatim\nPiatu\nYatim Piatu",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bahasa_sehari_hari",
+   "fieldtype": "Data",
+   "label": "Bahasa Sehari hari",
+   "reqd": 1
+  },
+  {
+   "description": "<span style=\"color: red;\">*)</span> Di tulis mulai dari Jalan, RT/RW, Dusun, Desa, Kecamatan, Kabupaten, kode pos dan provinsi. Contoh : Jl. Raya RT/RW 01/02 Ds. Turus Kec. Gurah Kab. Kediri 64181 Jawa Timur",
+   "fieldname": "alamat",
+   "fieldtype": "Data",
+   "label": "Alamat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_handphone",
+   "fieldtype": "Data",
+   "label": "No. Handphone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tinggal",
+   "fieldtype": "Select",
+   "label": "Tinggal",
+   "options": "\nOrang Tua\nSaudara\nAsrama\nKost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "golongan_darah",
+   "fieldtype": "Select",
+   "label": "Golongan Darah",
+   "options": "\nA\nB\nAB\nO"
+  },
+  {
+   "fieldname": "sakit_yang_pernah_diderita",
+   "fieldtype": "Data",
+   "label": "Sakit yang pernah diderita"
+  },
+  {
+   "fieldname": "kelainan_jasmani",
+   "fieldtype": "Data",
+   "label": "Kelainan jasmani"
+  },
+  {
+   "fieldname": "tinggi_badan_cm",
+   "fieldtype": "Float",
+   "label": "Tinggi Badan (cm)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "berat_badan_cm",
+   "fieldtype": "Float",
+   "label": "Berat Badan (cm)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kesenian",
+   "fieldtype": "Data",
+   "label": "Kesenian"
+  },
+  {
+   "fieldname": "olahraga",
+   "fieldtype": "Data",
+   "label": "Olahraga"
+  },
+  {
+   "fieldname": "organisasi",
+   "fieldtype": "Data",
+   "label": "Organisasi"
+  },
+  {
+   "fieldname": "lainnya",
+   "fieldtype": "Data",
+   "label": "Lainnya"
+  },
+  {
+   "fieldname": "penerimaan_kartu_sosial",
+   "fieldtype": "Select",
+   "label": "Penerimaan kartu sosial",
+   "options": "Tidak\nYa",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_kps",
+   "fieldtype": "Data",
+   "label": "No KPS"
+  },
+  {
+   "fieldname": "no_pkh",
+   "fieldtype": "Data",
+   "label": "No PKH"
+  },
+  {
+   "fieldname": "no_kip",
+   "fieldtype": "Data",
+   "label": "No KIP"
+  },
+  {
+   "fieldname": "transportasi",
+   "fieldtype": "Select",
+   "label": "Transportasi",
+   "options": "\nJalan kaki\nNaik sepeda\nKendaraan pribadi\nKendaraan umum\nAntar jemput",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jarak_ke_sekolah_m",
+   "fieldtype": "Float",
+   "label": "Jarak ke sekolah (m)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "waktu_tempuh_menit",
+   "fieldtype": "Int",
+   "label": "Waktu tempuh (menit)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ukuran_seragam",
+   "fieldtype": "Select",
+   "label": "Ukuran seragam",
+   "options": "\nM\nL\nXL\nXLL\nXXXL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "detail_section",
+   "fieldtype": "Section Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "column_break_qgwd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kartu_sosial_section",
+   "fieldtype": "Section Break",
+   "label": "Kartu Sosial"
+  },
+  {
+   "fieldname": "column_break_ovhk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prestasi_section",
+   "fieldtype": "Section Break",
+   "label": "Prestasi"
+  },
+  {
+   "fieldname": "column_break_kvls",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "informasi_kesehatan_section",
+   "fieldtype": "Section Break",
+   "label": "Informasi Kesehatan"
+  },
+  {
+   "fieldname": "column_break_iqgh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transportasi_section",
+   "fieldtype": "Section Break",
+   "label": "Transportasi"
+  },
+  {
+   "fieldname": "column_break_wyzw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_ortu_tab",
+   "fieldtype": "Tab Break",
+   "label": "Data Ortu"
+  },
+  {
+   "fieldname": "data_ayah_section",
+   "fieldtype": "Section Break",
+   "label": "Data Ayah"
+  },
+  {
+   "fieldname": "column_break_jsla",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Data Sekolah Asal"
+  },
+  {
+   "fieldname": "data_ibu_section",
+   "fieldtype": "Section Break",
+   "label": "Data Ibu"
+  },
+  {
+   "fieldname": "column_break_gqhd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_wali_section",
+   "fieldtype": "Section Break",
+   "label": "Data Wali"
+  },
+  {
+   "fieldname": "column_break_hbej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "npsn_sekolah",
+   "fieldtype": "Data",
+   "label": "NPSN Sekolah",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_sekolah",
+   "fieldtype": "Data",
+   "label": "Nama Sekolah",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_klfs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status_sekolah",
+   "fieldtype": "Select",
+   "label": "Status Sekolah",
+   "options": "\nNegeri\nSwasta",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alamat_sekolah",
+   "fieldtype": "Data",
+   "label": "Alamat Sekolah",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tahun_lulus",
+   "fieldtype": "Data",
+   "label": "Tahun Lulus",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dokumen_tab",
+   "fieldtype": "Tab Break",
+   "label": "Dokumen"
+  },
+  {
+   "description": "<div class=\"section-head\">Informasi</div>\n<ul>\n\t<li>Buat Folder di Google Drive: Buat folder dengan nama siswa seperti Nama_Siswa_Lengkap.</li>\n\t<li>Masukkan file ke dalam subfolder yang sesuai.</li>\n\t<li>Salin link dan masukkan di inputan link folder drive. Pastikan link di atur perizinan aksesnya.</li>\n</ul>\n<div class=\"section-head\">Penamaan Subfolder</div>\n<ul>\n\t<li><strong>Akta_Kelahiran</strong>: Salinan akta kelahiran calon siswa.</li>\n\t<li><strong>Kartu_Keluarga</strong>: Salinan kartu keluarga untuk verifikasi data keluarga siswa.</li>\n\t<li><strong>Pas_Foto</strong>: Pas foto terbaru siswa dengan ukuran standar (3x4 cm).</li>\n\t<li><strong>Ijazah_SKPL</strong>: Salinan ijazah atau SKPL pendidikan terakhir siswa.</li>\n\t<li><strong>SK_Sehat</strong>: Surat dari dokter yang menyatakan siswa sehat.</li>\n\t<li><strong>SP_Ortu</strong>: Surat persetujuan dari orang tua atau wali murid.</li>\n\t<li><strong>Rapor</strong>: Salinan rapor terakhir siswa sebagai bukti akademis.</li>\n\t<li><strong>Surat_Rekomendasi</strong>: Surat rekomendasi yang mendukung pendaftaran siswa (opsional).</li>\n</ul>",
+   "fieldname": "link_folder_drive",
+   "fieldtype": "Data",
+   "label": "Link Folder Drive",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "lulus",
+   "fieldtype": "Check",
+   "label": "Lulus"
+  },
+  {
+   "fieldname": "a_nama_lengkap",
+   "fieldtype": "Data",
+   "label": "Nama Lengkap",
+   "reqd": 1
+  },
+  {
+   "fieldname": "a_nik",
+   "fieldtype": "Data",
+   "label": "NIK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "a_tempat_lahir",
+   "fieldtype": "Data",
+   "label": "Tempat Lahir",
+   "reqd": 1
+  },
+  {
+   "fieldname": "a_tanggal_lahir",
+   "fieldtype": "Date",
+   "label": "Tanggal Lahir",
+   "reqd": 1
+  },
+  {
+   "fieldname": "a_pendidikan",
+   "fieldtype": "Select",
+   "label": "Pendidikan",
+   "options": "\nTidak Sekolah\nSD/Sederajat\nSMP/Sederajat\nSMA/Sederajat\nDiploma\nSarjana\nMagister\nDoktor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "a_pekerjaan",
+   "fieldtype": "Select",
+   "label": "Pekerjaan",
+   "options": "\nBuruh\nSwasta\nWiraswasta\nPNS\nTNI/POLRI",
+   "reqd": 1
+  },
+  {
+   "fieldname": "a_penghasilan",
+   "fieldtype": "Select",
+   "label": "Penghasilan",
+   "options": "<500rb\n500-1jt\n1jt-3jt\n3jt-5jt\n5jt-10jt\n>10jt",
+   "reqd": 1
+  },
+  {
+   "fieldname": "a_phone",
+   "fieldtype": "Data",
+   "label": "No Hanphone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "i_nama_lengkap",
+   "fieldtype": "Data",
+   "label": "Nama Lengkap ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "i_nik",
+   "fieldtype": "Data",
+   "label": "NIK ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "i_tempat_lahir",
+   "fieldtype": "Data",
+   "label": "Tempat Lahir ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "i_tanggal_lahir",
+   "fieldtype": "Date",
+   "label": "Tanggal Lahir ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "i_pendidikan",
+   "fieldtype": "Select",
+   "label": "Pendidikan ",
+   "options": "\nTidak Sekolah\nSD/Sederajat\nSMP/Sederajat\nSMA/Sederajat\nDiploma\nSarjana\nMagister\nDoktor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "i_pekerjaan",
+   "fieldtype": "Select",
+   "label": "Pekerjaan ",
+   "options": "\nBuruh\nSwasta\nWiraswasta\nPNS\nTNI/POLRI",
+   "reqd": 1
+  },
+  {
+   "fieldname": "i_penghasilan",
+   "fieldtype": "Select",
+   "label": "Penghasilan ",
+   "options": "<500rb\n500-1jt\n1jt-3jt\n3jt-5jt\n5jt-10jt\n>10jt",
+   "reqd": 1
+  },
+  {
+   "fieldname": "i_phone",
+   "fieldtype": "Data",
+   "label": "No Hanphone ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "w_nama_lengkap",
+   "fieldtype": "Data",
+   "label": "Nama Lengkap  "
+  },
+  {
+   "fieldname": "w_nik",
+   "fieldtype": "Data",
+   "label": "NIK  "
+  },
+  {
+   "fieldname": "w_tempat_lahir",
+   "fieldtype": "Data",
+   "label": "Tempat Lahir  "
+  },
+  {
+   "fieldname": "w_tanggal_lahir",
+   "fieldtype": "Date",
+   "label": "Tanggal Lahir  "
+  },
+  {
+   "fieldname": "w_pendidikan",
+   "fieldtype": "Select",
+   "label": "Pendidikan  ",
+   "options": "\nTidak Sekolah\nSD/Sederajat\nSMP/Sederajat\nSMA/Sederajat\nDiploma\nSarjana\nMagister\nDoktor"
+  },
+  {
+   "fieldname": "w_pekerjaan",
+   "fieldtype": "Select",
+   "label": "Pekerjaan  ",
+   "options": "\nBuruh\nSwasta\nWiraswasta\nPNS\nTNI/POLRI"
+  },
+  {
+   "fieldname": "w_penghasilan",
+   "fieldtype": "Select",
+   "label": "Penghasilan  ",
+   "options": "<500rb\n500-1jt\n1jt-3jt\n3jt-5jt\n5jt-10jt\n>10jt"
+  },
+  {
+   "fieldname": "w_phone",
+   "fieldtype": "Data",
+   "label": "No Hanphone  "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-25 03:39:15.250354",
+ "modified_by": "Administrator",
+ "module": "PPDB",
+ "name": "Pendaftaran",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

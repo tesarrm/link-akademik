@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 13:25:54.239114",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tipe_column",
+  "nama",
+  "tanggal",
+  "tipe",
+  "tambah"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "tipe_column",
+   "fieldtype": "Column Break",
+   "label": "tipe"
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "label": "Tanggal Ujian"
+  },
+  {
+   "fieldname": "tipe",
+   "fieldtype": "Data",
+   "label": "Tipe"
+  },
+  {
+   "fieldname": "tambah",
+   "fieldtype": "Button",
+   "label": "Tambah"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-28 09:48:30.156445",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Ujian",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

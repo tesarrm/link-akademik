@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-03 08:14:29.490123",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "username",
+  "nama",
+  "no_hp",
+  "tipe_user",
+  "role_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "no_hp",
+   "fieldtype": "Data",
+   "label": "No HP"
+  },
+  {
+   "fieldname": "tipe_user",
+   "fieldtype": "Select",
+   "label": "Tipe User",
+   "options": "Operator Sekolah\nGTK\nPeserta Didik"
+  },
+  {
+   "fieldname": "role_tab",
+   "fieldtype": "Tab Break",
+   "label": "Role"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-03 08:52:36.313579",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Management Pengguna",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-25 11:09:45.240060",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kelas",
+  "mata_pelajaran",
+  "nama_tugas",
+  "instruksi_tugas",
+  "column_break_ywyu",
+  "file_soal",
+  "tanggal_pengumpulan_terakhir",
+  "poin"
+ ],
+ "fields": [
+  {
+   "fieldname": "kelas",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kelas",
+   "options": "Kelas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mata_pelajaran",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mata Pelajaran",
+   "options": "Mapel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_tugas",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Tugas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "instruksi_tugas",
+   "fieldtype": "Small Text",
+   "label": "Instruksi Tugas"
+  },
+  {
+   "fieldname": "column_break_ywyu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "file_soal",
+   "fieldtype": "Attach",
+   "label": "File Soal"
+  },
+  {
+   "fieldname": "tanggal_pengumpulan_terakhir",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Tanggal Pengumpulan Terakhir",
+   "reqd": 1
+  },
+  {
+   "fieldname": "poin",
+   "fieldtype": "Int",
+   "label": "Poin",
+   "non_negative": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-25 11:20:08.544329",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Tugas Siswa",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

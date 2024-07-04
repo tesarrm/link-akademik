@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 11:18:55.856545",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_kesahatan",
+  "nama",
+  "penyelenggara",
+  "column_break_ifne",
+  "dari_tahun",
+  "sampai_tahun",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_kesahatan",
+   "fieldtype": "Data",
+   "label": "Jenis Kesahatan"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "penyelenggara",
+   "fieldtype": "Data",
+   "label": "Penyelenggara"
+  },
+  {
+   "fieldname": "column_break_ifne",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dari_tahun",
+   "fieldtype": "Date",
+   "label": "Dari Tahun"
+  },
+  {
+   "fieldname": "sampai_tahun",
+   "fieldtype": "Date",
+   "label": "Sampai Tahun"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-28 11:28:14.710644",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "CT Kesejahteraan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

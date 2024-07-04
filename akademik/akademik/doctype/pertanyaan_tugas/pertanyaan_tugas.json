@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-29 09:10:09.209333",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "pertanyaan",
+  "tipe",
+  "section_break_nqwt",
+  "jawaban_1",
+  "jawaban_benar",
+  "section_break_hpvs",
+  "jawab"
+ ],
+ "fields": [
+  {
+   "fieldname": "pertanyaan",
+   "fieldtype": "Text Editor",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Pertanyaan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipe",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tipe",
+   "options": "Pilihan ganda\nUraian\nUnggah foto",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_nqwt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jawaban_1",
+   "fieldtype": "Small Text",
+   "label": "Jawaban 1",
+   "mandatory_depends_on": "frappe.ui.form.on('Pertanyaan tugas', {\r\n    refresh: function(frm) {\r\n        // Trigger this when the form is loaded or refreshed\r\n        frm.trigger('set_mandatory_fields');\r\n    },\r\n    tipe: function(frm) {\r\n        // Trigger this when the tipe field is changed\r\n        frm.trigger('set_mandatory_fields');\r\n    },\r\n    set_mandatory_fields: function(frm) {\r\n        if (frm.doc.tipe == 'Uraian') {\r\n            frm.set_df_property('pertanyaan', 'reqd', true);\r\n        } else {\r\n            frm.set_df_property('pertanyaan', 'reqd', false);\r\n        }\r\n    }\r\n});"
+  },
+  {
+   "default": "0",
+   "fieldname": "jawaban_benar",
+   "fieldtype": "Check",
+   "label": "Jawaban benar"
+  },
+  {
+   "fieldname": "section_break_hpvs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jawab",
+   "fieldtype": "Small Text",
+   "label": "Jawab",
+   "mandatory_depends_on": "eval: doc.tipe == 'Uraian'"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-29 09:33:32.550950",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Pertanyaan tugas",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

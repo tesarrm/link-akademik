@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-26 10:50:05.022815",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "data_rombel_tab",
+  "tipe",
+  "jenis_rombel",
+  "tingkat_pendidikan",
+  "programkopetensi_keahlian",
+  "column_break_hgzs",
+  "kurikulum",
+  "nama_rombel",
+  "wali_kelas",
+  "ruang_kelas",
+  "anggota_rombel_tab",
+  "user",
+  "pembelajaran_tab",
+  "table_ancs"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_rombel",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Rombel",
+   "options": "Kelas\nTerbuka\nKelas Jauh / Kecil",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tingkat_pendidikan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tingkat Pendidikan",
+   "options": "Kelompok A (TK)\nKelompok B (TK)\nKelas 1\nKelas 2\nKelas 3\nKelas 4\nKelas 5\nKelas 6\nKelas 7\nKelas 8\nKelas 9\nKelas 10\nKelas 11\nKelas 12",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kurikulum",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kurikulum",
+   "options": "Kurikulum",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hgzs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nama_rombel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Rombel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "wali_kelas",
+   "fieldtype": "Link",
+   "label": "Wali Kelas",
+   "options": "GTK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ruang_kelas",
+   "fieldtype": "Link",
+   "label": "Ruang Kelas",
+   "options": "Data Ruang",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_rombel_tab",
+   "fieldtype": "Tab Break",
+   "label": "Data Rombel"
+  },
+  {
+   "fieldname": "anggota_rombel_tab",
+   "fieldtype": "Tab Break",
+   "label": "Anggota Rombel"
+  },
+  {
+   "fieldname": "pembelajaran_tab",
+   "fieldtype": "Tab Break",
+   "label": "Pembelajaran"
+  },
+  {
+   "fieldname": "table_ancs",
+   "fieldtype": "Table",
+   "options": "CT Pembelajaran"
+  },
+  {
+   "fieldname": "tipe",
+   "fieldtype": "Select",
+   "label": "Tipe",
+   "options": "\nRegular\nPraktik\nMat Pilihan"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Table",
+   "label": "User",
+   "options": "Anggota Rombel"
+  },
+  {
+   "fieldname": "programkopetensi_keahlian",
+   "fieldtype": "Link",
+   "label": "Program/Kopetensi Keahlian",
+   "options": "Program"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-03 06:39:10.872588",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Rombel",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama_rombel"
+}

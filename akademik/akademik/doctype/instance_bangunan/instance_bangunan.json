@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-02 00:37:59.588660",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_prasarana",
+  "tanah",
+  "nama",
+  "panjang_m",
+  "lebar_m",
+  "luas_bangunan_m2",
+  "column_break_brib",
+  "kepemilikan",
+  "nilai_perolehan_aset",
+  "jumlah_lantai",
+  "tahun_dibangun",
+  "tgl_sk_pemakai"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_prasarana",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis prasarana",
+   "options": "Bangunan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tanah",
+   "fieldtype": "Link",
+   "label": "Tanah",
+   "options": "Tanah"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "panjang_m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Panjang (m)"
+  },
+  {
+   "fieldname": "lebar_m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Lebar (m)"
+  },
+  {
+   "fieldname": "luas_bangunan_m2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Luas bangunan (m2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_brib",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kepemilikan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Kepemilikan",
+   "options": "Milik",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nilai_perolehan_aset",
+   "fieldtype": "Int",
+   "label": "Nilai perolehan aset"
+  },
+  {
+   "fieldname": "jumlah_lantai",
+   "fieldtype": "Int",
+   "label": "Jumlah lantai",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "tahun_dibangun",
+   "fieldtype": "Int",
+   "label": "Tahun dibangun"
+  },
+  {
+   "fieldname": "tgl_sk_pemakai",
+   "fieldtype": "Date",
+   "label": "Tgl SK pemakai",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-02 00:37:59.588660",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Instance Bangunan",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama",
+ "translated_doctype": 1
+}

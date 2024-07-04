@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-02 07:31:59.397927",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama_dokumen",
+  "jenis_dokumen",
+  "dokumen"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama_dokumen",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Dokumen"
+  },
+  {
+   "fieldname": "jenis_dokumen",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Dokumen",
+   "options": "KK\nAkta Kelahiran\nIjazah\nKIP\nLainnya",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dokumen",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Dokumen",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-02 07:34:19.608072",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "CT Dokumen Siswa",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 23:05:08.290323",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "jadwal",
+  "persyaratan_daftar_ulang",
+  "foto_bawaan",
+  "ttd_ketua_ppdb",
+  "nip_ketua_ppdb"
+ ],
+ "fields": [
+  {
+   "fieldname": "jadwal",
+   "fieldtype": "Text Editor",
+   "label": "Jadwal"
+  },
+  {
+   "fieldname": "persyaratan_daftar_ulang",
+   "fieldtype": "Text Editor",
+   "label": "Persyaratan Daftar Ulang"
+  },
+  {
+   "fieldname": "foto_bawaan",
+   "fieldtype": "Attach Image",
+   "label": "Foto Bawaan"
+  },
+  {
+   "fieldname": "ttd_ketua_ppdb",
+   "fieldtype": "Attach Image",
+   "label": "TTD Ketua PPDB"
+  },
+  {
+   "fieldname": "nip_ketua_ppdb",
+   "fieldtype": "Data",
+   "label": "NIP Ketua PPDB"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-25 04:06:23.518228",
+ "modified_by": "Administrator",
+ "module": "PPDB",
+ "name": "Informasi PPDB",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Guest",
+   "share": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

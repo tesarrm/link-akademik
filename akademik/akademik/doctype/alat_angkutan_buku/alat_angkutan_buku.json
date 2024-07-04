@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-23 15:30:57.087563",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "alat_tab",
+  "bangunan",
+  "column_break_kshv",
+  "ruang",
+  "section_break_ermx",
+  "alat"
+ ],
+ "fields": [
+  {
+   "fieldname": "ruang",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Ruang",
+   "options": "Data Ruang",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bangunan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bangunan",
+   "options": "Bangunan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kshv",
+   "fieldtype": "Column Break",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "alat_tab",
+   "fieldtype": "Tab Break",
+   "label": "Alat"
+  },
+  {
+   "fieldname": "section_break_ermx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "alat",
+   "fieldtype": "Table",
+   "label": "Alat",
+   "options": "CT Alat"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-02 17:39:24.907386",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Alat Angkutan Buku",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "bangunan",
+ "translated_doctype": 1
+}

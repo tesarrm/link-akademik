@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-23 17:02:40.964849",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nama_jurusan",
+  "kurikulum",
+  "column_break_fyfu",
+  "kompensi_keahlian",
+  "code_jurusan",
+  "column_break_mfcl",
+  "jenjang_pendidikan",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama_jurusan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Jurusan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "code_jurusan",
+   "fieldtype": "Int",
+   "label": "Code Jurusan"
+  },
+  {
+   "fieldname": "jenjang_pendidikan",
+   "fieldtype": "Link",
+   "label": "Jenjang Pendidikan",
+   "options": "Jenjang Pendidikan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kurikulum",
+   "fieldtype": "Link",
+   "label": "Kurikulum",
+   "options": "Kurikulum",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kompensi_keahlian",
+   "fieldtype": "Data",
+   "label": "Kompensi Keahlian"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Aktif\nInAktif",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fyfu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mfcl",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-25 13:57:12.375768",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Jurusan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

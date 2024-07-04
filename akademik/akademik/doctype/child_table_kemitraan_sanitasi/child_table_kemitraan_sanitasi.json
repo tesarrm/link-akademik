@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-23 08:26:24.400501",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kemitraan_sanitasi"
+ ],
+ "fields": [
+  {
+   "fieldname": "kemitraan_sanitasi",
+   "fieldtype": "Link",
+   "label": "Kemitraan Sanitasi",
+   "options": "Instance Kemitraan Sanitasi"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-23 08:29:16.638202",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Child Table Kemitraan Sanitasi",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

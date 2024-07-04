@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-27 14:29:28.118117",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "bidang_studi",
+  "nama_bidang_studi",
+  "ptk",
+  "column_break_wagm",
+  "sk_mengajar",
+  "tgl_sk",
+  "jam",
+  "max"
+ ],
+ "fields": [
+  {
+   "fieldname": "ptk",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PTK",
+   "options": "GTK"
+  },
+  {
+   "fieldname": "column_break_wagm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sk_mengajar",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SK. Mengajar"
+  },
+  {
+   "fieldname": "tgl_sk",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tgl. SK"
+  },
+  {
+   "fieldname": "jam",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Jam"
+  },
+  {
+   "fieldname": "max",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Max"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Kelompok Umum\nPraktik Kerja Lapangan"
+  },
+  {
+   "fieldname": "bidang_studi",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bidang Studi",
+   "options": "Bidang Studi"
+  },
+  {
+   "fieldname": "nama_bidang_studi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Bidang Studi"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-03 16:37:58.346665",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Pembelajaran",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

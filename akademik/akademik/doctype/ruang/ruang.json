@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-23 14:32:36.806354",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ruang_kelas_tab",
+  "kelas",
+  "guru_kepsek",
+  "kepsek_guru",
+  "ruang_laboratorium_tab",
+  "laboratorium",
+  "ruang_perpustakaan_tab",
+  "perpustakaan",
+  "kamar_mandiwc_tab",
+  "kamar_mandi",
+  "ruang_penunjang_tab",
+  "penunjang"
+ ],
+ "fields": [
+  {
+   "fieldname": "ruang_kelas_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ruang Kelas"
+  },
+  {
+   "fieldname": "kelas",
+   "fieldtype": "Table",
+   "options": "ctRuang Kelas"
+  },
+  {
+   "fieldname": "kepsek_guru",
+   "fieldtype": "Table",
+   "options": "ctRuang Kepsek Guru"
+  },
+  {
+   "fieldname": "laboratorium",
+   "fieldtype": "Table",
+   "options": "ctRuang Laboratorium"
+  },
+  {
+   "fieldname": "perpustakaan",
+   "fieldtype": "Table",
+   "options": "ctRuang Perpustakaan"
+  },
+  {
+   "fieldname": "penunjang",
+   "fieldtype": "Table",
+   "options": "ctRuang Penunjang"
+  },
+  {
+   "fieldname": "guru_kepsek",
+   "fieldtype": "Tab Break",
+   "label": "Ruang Kepsek/Guru"
+  },
+  {
+   "fieldname": "ruang_laboratorium_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ruang Laboratorium"
+  },
+  {
+   "fieldname": "ruang_perpustakaan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ruang Perpustakaan"
+  },
+  {
+   "fieldname": "kamar_mandiwc_tab",
+   "fieldtype": "Tab Break",
+   "label": "Kamar Mandi/WC"
+  },
+  {
+   "fieldname": "ruang_penunjang_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ruang Penunjang"
+  },
+  {
+   "fieldname": "kamar_mandi",
+   "fieldtype": "Table",
+   "options": "ctKamar Mandi WC"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-02 20:05:18.878139",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Ruang",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

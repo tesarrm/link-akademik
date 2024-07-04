@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-26 02:42:00.424796",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "angkutan_tab",
+  "angkutan",
+  "buku_tab",
+  "buku"
+ ],
+ "fields": [
+  {
+   "fieldname": "angkutan",
+   "fieldtype": "Table",
+   "options": "ctAngkutan"
+  },
+  {
+   "fieldname": "angkutan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Angkutan"
+  },
+  {
+   "fieldname": "buku_tab",
+   "fieldtype": "Tab Break",
+   "label": "Buku"
+  },
+  {
+   "fieldname": "buku",
+   "fieldtype": "Table",
+   "options": "ctBuku"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-02 23:14:42.259117",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Angkutan Buku",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

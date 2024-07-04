@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-03 06:36:32.845388",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nama",
+  "column_break_iplr",
+  "alias"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_iplr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alias",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Alias",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-03 14:06:40.974931",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Program",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "alias"
+}

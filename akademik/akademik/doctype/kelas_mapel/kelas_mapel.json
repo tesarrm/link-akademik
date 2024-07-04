@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 08:53:40.506931",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nama_kelas",
+  "semeter",
+  "klasifikasi",
+  "mata_pelajaran"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama_kelas",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nama Kelas",
+   "options": "Kelas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "klasifikasi",
+   "fieldtype": "Data",
+   "label": "Klasifikasi"
+  },
+  {
+   "fieldname": "semeter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Semester",
+   "options": "Semester"
+  },
+  {
+   "fieldname": "mata_pelajaran",
+   "fieldtype": "Table",
+   "label": "Mata Pelajaran",
+   "options": "Mapel Tabel",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-24 14:52:22.296027",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Kelas Mapel",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 13:52:53.328004",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nama",
+  "nomor_gr",
+  "sekolah",
+  "kelas",
+  "semester",
+  "jurusan",
+  "media",
+  "no_absen",
+  "tgl_lahir",
+  "alamat_sekarang",
+  "alamat_tetap",
+  "nisn",
+  "tempat_lahir",
+  "nik",
+  "agama",
+  "email",
+  "berat_badan",
+  "tinggi_badan"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "nomor_gr",
+   "fieldtype": "Data",
+   "label": "Nomor GR"
+  },
+  {
+   "fieldname": "sekolah",
+   "fieldtype": "Data",
+   "label": "Sekolah"
+  },
+  {
+   "fieldname": "kelas",
+   "fieldtype": "Data",
+   "label": "Kelas"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Data",
+   "label": "Semester"
+  },
+  {
+   "fieldname": "jurusan",
+   "fieldtype": "Data",
+   "label": "Jurusan"
+  },
+  {
+   "fieldname": "media",
+   "fieldtype": "Data",
+   "label": "Media"
+  },
+  {
+   "fieldname": "no_absen",
+   "fieldtype": "Int",
+   "label": "No Absen"
+  },
+  {
+   "fieldname": "tgl_lahir",
+   "fieldtype": "Date",
+   "label": "Tanggal Lahir"
+  },
+  {
+   "fieldname": "alamat_sekarang",
+   "fieldtype": "Data",
+   "label": "Alamat Sekarang"
+  },
+  {
+   "fieldname": "alamat_tetap",
+   "fieldtype": "Data",
+   "label": "Alamat Tetap"
+  },
+  {
+   "fieldname": "nisn",
+   "fieldtype": "Data",
+   "label": "NISN"
+  },
+  {
+   "fieldname": "tempat_lahir",
+   "fieldtype": "Data",
+   "label": "Tempat Lahir"
+  },
+  {
+   "fieldname": "nik",
+   "fieldtype": "Data",
+   "label": "NIK"
+  },
+  {
+   "fieldname": "agama",
+   "fieldtype": "Data",
+   "label": "Agama"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "berat_badan",
+   "fieldtype": "Int",
+   "label": "Berat Badan"
+  },
+  {
+   "fieldname": "tinggi_badan",
+   "fieldtype": "Int",
+   "label": "Tinggi Badan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-24 14:03:50.025674",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Profile",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

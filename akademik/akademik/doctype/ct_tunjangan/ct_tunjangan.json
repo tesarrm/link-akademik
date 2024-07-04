@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 09:35:55.191049",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_tunjangan",
+  "nama",
+  "instasi",
+  "sk_tunjangan",
+  "tgl_sk_tunjangan",
+  "column_break_whjj",
+  "semester",
+  "sumber_dana",
+  "dari_tahun",
+  "sampai_tahun",
+  "nominal_rp",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_tunjangan",
+   "fieldtype": "Data",
+   "label": "Jenis Tunjangan"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "instasi",
+   "fieldtype": "Data",
+   "label": "Instasi"
+  },
+  {
+   "fieldname": "sk_tunjangan",
+   "fieldtype": "Data",
+   "label": "Sk Tunjangan"
+  },
+  {
+   "fieldname": "tgl_sk_tunjangan",
+   "fieldtype": "Date",
+   "label": "Tgl Sk Tunjangan"
+  },
+  {
+   "fieldname": "column_break_whjj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Data",
+   "label": "Semester"
+  },
+  {
+   "fieldname": "sumber_dana",
+   "fieldtype": "Data",
+   "label": "Sumber Dana"
+  },
+  {
+   "fieldname": "dari_tahun",
+   "fieldtype": "Date",
+   "label": "Dari Tahun"
+  },
+  {
+   "fieldname": "sampai_tahun",
+   "fieldtype": "Date",
+   "label": "Sampai Tahun"
+  },
+  {
+   "fieldname": "nominal_rp",
+   "fieldtype": "Data",
+   "label": "Nominal (Rp)"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-28 09:40:51.625406",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "CT Tunjangan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-27 12:57:42.175162",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "no_paspor",
+  "tmt_paspor",
+  "column_break_sokv",
+  "tempat_terbit",
+  "tst_paspor"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_paspor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No Paspor"
+  },
+  {
+   "fieldname": "tempat_terbit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tempat Terbit"
+  },
+  {
+   "fieldname": "tmt_paspor",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TMT Paspor"
+  },
+  {
+   "fieldname": "tst_paspor",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TST Paspor"
+  },
+  {
+   "fieldname": "column_break_sokv",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-28 12:49:04.407590",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "CT Paspor",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

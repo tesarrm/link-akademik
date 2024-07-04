@@ -1,0 +1,240 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-06-23 14:33:29.925766",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_prasarana",
+  "bangunan",
+  "kode_ruang",
+  "nama_ruang",
+  "registrasi_ruang",
+  "lantai_ke",
+  "panjang_m",
+  "lebar_m",
+  "luas_ruang_m2",
+  "kapasitas",
+  "bangunan_nama",
+  "column_break_bdhr",
+  "luas_plester_m2",
+  "luas_plafon_m2",
+  "luas_dinding_m2",
+  "luas_daun_jendela_m2",
+  "luas_daun_pintu_m2",
+  "panjang_kusen_m",
+  "luas_tutup_lantai_m2",
+  "luas_instalasi_listrik_m2",
+  "jumlah_instalasi_listrik",
+  "panjang_drainase_m",
+  "luas_finish_struktur_m2",
+  "luas_finish_plafon_m2",
+  "luas_finish_dinding_m2",
+  "luas_finish_kpj_m2",
+  "section_break_rutn",
+  "sub_ruang",
+  "kondisi_tab",
+  "kerusakan",
+  "nilai_kerusakan"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_prasarana",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis prasarana",
+   "options": "Ruang Teori/Kelas\nRuang Kepsek/Guru\nRuang Laboratorium\nRuang Perpustakaan\nKamar Mandi/WC\nRuang Penunjang",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bangunan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bangunan",
+   "options": "Bangunan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kode_ruang",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kode Ruang",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_ruang",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Ruang",
+   "reqd": 1
+  },
+  {
+   "fieldname": "registrasi_ruang",
+   "fieldtype": "Data",
+   "label": "Registrasi Ruang"
+  },
+  {
+   "fieldname": "lantai_ke",
+   "fieldtype": "Int",
+   "label": "Lantai Ke",
+   "reqd": 1
+  },
+  {
+   "fieldname": "panjang_m",
+   "fieldtype": "Float",
+   "label": "Panjang (m)"
+  },
+  {
+   "fieldname": "lebar_m",
+   "fieldtype": "Int",
+   "label": "Lebar (m)"
+  },
+  {
+   "fieldname": "luas_ruang_m2",
+   "fieldtype": "Float",
+   "label": "Luas Ruang (m2)"
+  },
+  {
+   "fieldname": "kapasitas",
+   "fieldtype": "Int",
+   "label": "Kapasitas"
+  },
+  {
+   "fieldname": "column_break_bdhr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "luas_plester_m2",
+   "fieldtype": "Float",
+   "label": "Luas plester (m2)"
+  },
+  {
+   "fieldname": "luas_plafon_m2",
+   "fieldtype": "Float",
+   "label": "Luas plafon (m2)"
+  },
+  {
+   "fieldname": "luas_dinding_m2",
+   "fieldtype": "Float",
+   "label": "Luas dinding (m2)"
+  },
+  {
+   "fieldname": "luas_daun_jendela_m2",
+   "fieldtype": "Float",
+   "label": "Luas daun jendela (m2)"
+  },
+  {
+   "fieldname": "luas_daun_pintu_m2",
+   "fieldtype": "Float",
+   "label": "Luas daun pintu (m2)"
+  },
+  {
+   "fieldname": "panjang_kusen_m",
+   "fieldtype": "Float",
+   "label": "Panjang kusen (m)"
+  },
+  {
+   "fieldname": "luas_tutup_lantai_m2",
+   "fieldtype": "Float",
+   "label": "Luas tutup lantai (m2)"
+  },
+  {
+   "fieldname": "luas_instalasi_listrik_m2",
+   "fieldtype": "Float",
+   "label": "Luas instalasi listrik (m2)"
+  },
+  {
+   "fieldname": "jumlah_instalasi_listrik",
+   "fieldtype": "Int",
+   "label": "Jumlah instalasi listrik"
+  },
+  {
+   "fieldname": "panjang_drainase_m",
+   "fieldtype": "Float",
+   "label": "Panjang drainase (m)"
+  },
+  {
+   "fieldname": "luas_finish_struktur_m2",
+   "fieldtype": "Float",
+   "label": "Luas finish struktur (m2)"
+  },
+  {
+   "fieldname": "luas_finish_plafon_m2",
+   "fieldtype": "Float",
+   "label": "Luas finish plafon (m2)"
+  },
+  {
+   "fieldname": "luas_finish_dinding_m2",
+   "fieldtype": "Float",
+   "label": "Luas finish dinding (m2)"
+  },
+  {
+   "fieldname": "luas_finish_kpj_m2",
+   "fieldtype": "Float",
+   "label": "Luas finish KPJ (m2)"
+  },
+  {
+   "fieldname": "kondisi_tab",
+   "fieldtype": "Tab Break",
+   "label": "Kondisi"
+  },
+  {
+   "fieldname": "kerusakan",
+   "fieldtype": "Select",
+   "label": "Kerusakan",
+   "options": "Tidak Ada Kerusakan\nRusak Ringan: 1% - 30%\nRusak Sedang: 31% - 45%\nRusak Berat: 46% - 100%"
+  },
+  {
+   "fieldname": "nilai_kerusakan",
+   "fieldtype": "Float",
+   "label": "Nilai kerusakan"
+  },
+  {
+   "fetch_from": "bangunan.nama",
+   "fieldname": "bangunan_nama",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Bangunan Nama"
+  },
+  {
+   "fieldname": "section_break_rutn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.jenis_prasarana === \"Kamar Mandi/WC\"",
+   "fieldname": "sub_ruang",
+   "fieldtype": "Table",
+   "label": "Sub Ruang/Bilik",
+   "options": "Sub Ruang - Bilik"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-02 20:46:09.380690",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Ruang",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "bangunan_nama",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama_ruang",
+ "translated_doctype": 1
+}

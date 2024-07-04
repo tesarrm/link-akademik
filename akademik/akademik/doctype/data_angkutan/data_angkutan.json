@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-06-26 00:51:51.037726",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_sarana",
+  "nama",
+  "spesifikasi",
+  "merk",
+  "column_break_yeei",
+  "no_polisi",
+  "no_bpkp",
+  "alamat",
+  "kepemilikan"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_sarana",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis sarana",
+   "options": "Bis sekolah\nMobil bak terbuka\nMobil dinas\nMobil truk\nMotor\nPerahu\nSepeda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "spesifikasi",
+   "fieldtype": "Data",
+   "label": "Spesifikasi"
+  },
+  {
+   "fieldname": "merk",
+   "fieldtype": "Data",
+   "label": "Merk"
+  },
+  {
+   "fieldname": "column_break_yeei",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_polisi",
+   "fieldtype": "Data",
+   "label": "No polisi"
+  },
+  {
+   "fieldname": "no_bpkp",
+   "fieldtype": "Data",
+   "label": "No BPKP"
+  },
+  {
+   "fieldname": "alamat",
+   "fieldtype": "Data",
+   "label": "Alamat"
+  },
+  {
+   "fieldname": "kepemilikan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Kepemilikan",
+   "options": "Milik\nSewa\nPinjam\nBukan Milik",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-02 22:55:05.655393",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Angkutan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama",
+ "translated_doctype": 1
+}

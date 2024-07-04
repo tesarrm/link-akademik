@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-27 13:09:22.412838",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vid",
+  "nama_ekskul",
+  "column_break_uial",
+  "pembina",
+  "prasarana",
+  "section_break_jygk",
+  "table_nyef"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "vid",
+   "fieldtype": "Check",
+   "label": "VId"
+  },
+  {
+   "fieldname": "nama_ekskul",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Ekskul"
+  },
+  {
+   "fieldname": "column_break_uial",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pembina",
+   "fieldtype": "Link",
+   "label": "Pembina",
+   "options": "GTK"
+  },
+  {
+   "fieldname": "prasarana",
+   "fieldtype": "Link",
+   "label": "Prasarana",
+   "options": "Data Ruang"
+  },
+  {
+   "fieldname": "section_break_jygk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_nyef",
+   "fieldtype": "Table",
+   "options": "CT Siswa"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-03 04:39:14.998607",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Ekskul",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama_ekskul",
+ "translated_doctype": 1
+}

@@ -1,0 +1,570 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-06-27 08:39:58.272525",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "identitas_tab",
+  "identitas_section",
+  "nama",
+  "tempat_lahir",
+  "column_break_bgcs",
+  "jenis_kelamin",
+  "tanggal_lahir",
+  "data_pribadi_section",
+  "alamat_jalan",
+  "rt",
+  "rw",
+  "lintang",
+  "column_break_hlqh",
+  "nama_dusun",
+  "desakelurahan",
+  "kecamatan",
+  "code_pos",
+  "bujur",
+  "section_break_ngpq",
+  "nomor_kk",
+  "agama",
+  "nik",
+  "column_break_tmgo",
+  "npwp",
+  "nama_wajib_pajak",
+  "kewarganegaraan",
+  "section_break_bffm",
+  "status_perkawinan",
+  "nip_suamiistri",
+  "berkebutuhan_khusus",
+  "column_break_zuih",
+  "nama_suamiistri",
+  "pekerjaan_suamiistri",
+  "kepegawaian_section",
+  "status_pegawaian",
+  "niynigk",
+  "column_break_vedk",
+  "nomor_induk_pppk",
+  "nuptk",
+  "section_break_zbqx",
+  "nomor_registrasi_guru",
+  "tmt_pengangkatan",
+  "sk_cpns",
+  "column_break_mebf",
+  "sk_pengangkatan",
+  "lembaga_pengangkat",
+  "tmt_cpns",
+  "section_break_gqoa",
+  "tmt_pengangkatan_pppk",
+  "sumber_gaji",
+  "kariskarsu",
+  "column_break_dtbq",
+  "pangkatgolongan",
+  "kartu_pegawai",
+  "kopetensi_khusus_section",
+  "punya_lisensi_kepala_sekolah",
+  "keahlian_laboratorium",
+  "keahlian_braille",
+  "column_break_jjeo",
+  "no_registrasi_sttpp",
+  "mampu_menangani_kebkhusus",
+  "keahalian_bahasa_isyarat",
+  "kontak_section",
+  "nomor_telp_rumah",
+  "nomor_hp",
+  "email_telah_terverifikasi",
+  "paspor_tab",
+  "rwy_sertifikasi_tab",
+  "rwy_pendidikan_formal_tab",
+  "kopetensi_tab",
+  "anak_tab",
+  "beasiswa_tab",
+  "buku_tab",
+  "diklat_tab",
+  "karya_tulis_tab",
+  "kesejahteraan_tab",
+  "tunjangan_tab",
+  "tugas_tambahan_tab",
+  "penghargaan_tab",
+  "nilai_test_tab",
+  "rwy_gaji_belaka_tab",
+  "rwy_kepangkatan_tab",
+  "rwy_karir_guru_tab",
+  "rwy_jab_pendidiktenaga_pendidikan_tab",
+  "rwy_jab_fungsional_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "identitas_tab",
+   "fieldtype": "Tab Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "identitas_section",
+   "fieldtype": "Section Break",
+   "label": "Identitas"
+  },
+  {
+   "description": "<p style=\"color: red;\">*) Nama Tanpa Gelar</p>",
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tempat_lahir",
+   "fieldtype": "Data",
+   "label": "Tempat Lahir",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bgcs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jenis_kelamin",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Kelamin",
+   "options": "Laki - Laki\nPerempuan"
+  },
+  {
+   "fieldname": "tanggal_lahir",
+   "fieldtype": "Date",
+   "label": "Tanggal Lahir",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_pribadi_section",
+   "fieldtype": "Section Break",
+   "label": "Data Pribadi"
+  },
+  {
+   "fieldname": "alamat_jalan",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Alamat Jalan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rt",
+   "fieldtype": "Int",
+   "label": "RT"
+  },
+  {
+   "fieldname": "rw",
+   "fieldtype": "Int",
+   "label": "RW"
+  },
+  {
+   "fieldname": "lintang",
+   "fieldtype": "Int",
+   "label": "Lintang"
+  },
+  {
+   "fieldname": "column_break_hlqh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nama_dusun",
+   "fieldtype": "Data",
+   "label": "Nama Dusun"
+  },
+  {
+   "fieldname": "desakelurahan",
+   "fieldtype": "Data",
+   "label": "Desa/Kelurahan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kecamatan",
+   "fieldtype": "Data",
+   "label": "Kecamatan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "code_pos",
+   "fieldtype": "Int",
+   "label": "Code Pos",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "bujur",
+   "fieldtype": "Int",
+   "label": "Bujur"
+  },
+  {
+   "fieldname": "section_break_ngpq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "<p style=\"color: red;\">*) Nomor Sesuai Dengan KK</p>",
+   "fieldname": "nomor_kk",
+   "fieldtype": "Int",
+   "label": "Nomor KK"
+  },
+  {
+   "fieldname": "agama",
+   "fieldtype": "Select",
+   "label": "Agama",
+   "options": "Islam\nKristen\nKonghucu\nKatholik\nBuddha\nHindu",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nik",
+   "fieldtype": "Int",
+   "label": "NIK",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tmgo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "npwp",
+   "fieldtype": "Data",
+   "label": "NPWP"
+  },
+  {
+   "fieldname": "nama_wajib_pajak",
+   "fieldtype": "Data",
+   "label": "Nama Wajib Pajak"
+  },
+  {
+   "fieldname": "kewarganegaraan",
+   "fieldtype": "Select",
+   "label": "Kewarganegaraan",
+   "options": "\nWNI\nWNA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_bffm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status_perkawinan",
+   "fieldtype": "Select",
+   "label": "Status Perkawinan",
+   "options": "Menikah\nBelum Menikah\nJanda/Duda"
+  },
+  {
+   "fieldname": "nip_suamiistri",
+   "fieldtype": "Data",
+   "label": "NIP Suami/Istri"
+  },
+  {
+   "fieldname": "berkebutuhan_khusus",
+   "fieldtype": "Select",
+   "label": "Berkebutuhan Khusus",
+   "options": "Disabilitas penglihatan.\nDisabilitas pendengaran.\nDisabilitas intelektual.\nDisabilitas fisik.\nDisabilitas sosial"
+  },
+  {
+   "fieldname": "column_break_zuih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nama_suamiistri",
+   "fieldtype": "Data",
+   "label": "Nama Suami/Istri"
+  },
+  {
+   "fieldname": "pekerjaan_suamiistri",
+   "fieldtype": "Data",
+   "label": "Pekerjaan Suami/Istri",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kepegawaian_section",
+   "fieldtype": "Section Break",
+   "label": "Kepegawaian"
+  },
+  {
+   "fieldname": "status_pegawaian",
+   "fieldtype": "Data",
+   "label": "Status Pegawaian"
+  },
+  {
+   "fieldname": "niynigk",
+   "fieldtype": "Data",
+   "label": "NIY/NIGK"
+  },
+  {
+   "fieldname": "column_break_vedk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nomor_induk_pppk",
+   "fieldtype": "Data",
+   "label": "Nomor Induk PPPK"
+  },
+  {
+   "fieldname": "nuptk",
+   "fieldtype": "Data",
+   "label": "NUPTK"
+  },
+  {
+   "fieldname": "section_break_zbqx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nomor_registrasi_guru",
+   "fieldtype": "Int",
+   "label": "Nomor Registrasi Guru",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "tmt_pengangkatan",
+   "fieldtype": "Date",
+   "label": "TMT Pengangkatan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sk_cpns",
+   "fieldtype": "Data",
+   "label": "SK CPNS"
+  },
+  {
+   "fieldname": "column_break_mebf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sk_pengangkatan",
+   "fieldtype": "Data",
+   "label": "SK Pengangkatan"
+  },
+  {
+   "fieldname": "lembaga_pengangkat",
+   "fieldtype": "Data",
+   "label": "Lembaga Pengangkat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tmt_cpns",
+   "fieldtype": "Date",
+   "label": "TMT CPNS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_gqoa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tmt_pengangkatan_pppk",
+   "fieldtype": "Date",
+   "label": "TMT Pengangkatan PPPK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sumber_gaji",
+   "fieldtype": "Select",
+   "label": "Sumber Gaji",
+   "options": "BRI\nBNI\nDLL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kariskarsu",
+   "fieldtype": "Data",
+   "label": "Karis/Karsu"
+  },
+  {
+   "fieldname": "column_break_dtbq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pangkatgolongan",
+   "fieldtype": "Data",
+   "label": "Pangkat/Golongan"
+  },
+  {
+   "fieldname": "kartu_pegawai",
+   "fieldtype": "Data",
+   "label": "Kartu Pegawai"
+  },
+  {
+   "fieldname": "kopetensi_khusus_section",
+   "fieldtype": "Section Break",
+   "label": "Kopetensi Khusus"
+  },
+  {
+   "fieldname": "punya_lisensi_kepala_sekolah",
+   "fieldtype": "Data",
+   "label": "Punya Lisensi Kepala Sekolah"
+  },
+  {
+   "fieldname": "keahlian_laboratorium",
+   "fieldtype": "Data",
+   "label": "Keahlian Laboratorium"
+  },
+  {
+   "fieldname": "keahlian_braille",
+   "fieldtype": "Data",
+   "label": "Keahlian Braille"
+  },
+  {
+   "fieldname": "column_break_jjeo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_registrasi_sttpp",
+   "fieldtype": "Data",
+   "label": "No Registrasi (STTPP)"
+  },
+  {
+   "fieldname": "mampu_menangani_kebkhusus",
+   "fieldtype": "Data",
+   "label": "Mampu Menangani Keb.Khusus"
+  },
+  {
+   "fieldname": "keahalian_bahasa_isyarat",
+   "fieldtype": "Data",
+   "label": "Keahalian Bahasa Isyarat"
+  },
+  {
+   "fieldname": "kontak_section",
+   "fieldtype": "Section Break",
+   "label": "Kontak"
+  },
+  {
+   "fieldname": "nomor_telp_rumah",
+   "fieldtype": "Int",
+   "label": "Nomor Telp Rumah",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "nomor_hp",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Nomor HP",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "email_telah_terverifikasi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Telah Terverifikasi"
+  },
+  {
+   "fieldname": "paspor_tab",
+   "fieldtype": "Tab Break",
+   "label": "Paspor"
+  },
+  {
+   "fieldname": "rwy_sertifikasi_tab",
+   "fieldtype": "Tab Break",
+   "label": "Rwy. Sertifikasi"
+  },
+  {
+   "fieldname": "rwy_pendidikan_formal_tab",
+   "fieldtype": "Tab Break",
+   "label": "Rwy. Pendidikan Formal"
+  },
+  {
+   "fieldname": "kopetensi_tab",
+   "fieldtype": "Tab Break",
+   "label": "Kopetensi"
+  },
+  {
+   "fieldname": "anak_tab",
+   "fieldtype": "Tab Break",
+   "label": "Anak"
+  },
+  {
+   "fieldname": "beasiswa_tab",
+   "fieldtype": "Tab Break",
+   "label": "Beasiswa"
+  },
+  {
+   "fieldname": "buku_tab",
+   "fieldtype": "Tab Break",
+   "label": "Buku"
+  },
+  {
+   "fieldname": "diklat_tab",
+   "fieldtype": "Tab Break",
+   "label": "Diklat"
+  },
+  {
+   "fieldname": "karya_tulis_tab",
+   "fieldtype": "Tab Break",
+   "label": "Karya Tulis"
+  },
+  {
+   "fieldname": "kesejahteraan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Kesejahteraan"
+  },
+  {
+   "fieldname": "tunjangan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tunjangan"
+  },
+  {
+   "fieldname": "tugas_tambahan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tugas Tambahan"
+  },
+  {
+   "fieldname": "penghargaan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Penghargaan"
+  },
+  {
+   "fieldname": "nilai_test_tab",
+   "fieldtype": "Tab Break",
+   "label": "Nilai Test"
+  },
+  {
+   "fieldname": "rwy_gaji_belaka_tab",
+   "fieldtype": "Tab Break",
+   "label": "Rwy. Gaji Belaka"
+  },
+  {
+   "fieldname": "rwy_kepangkatan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Rwy. Kepangkatan"
+  },
+  {
+   "fieldname": "rwy_karir_guru_tab",
+   "fieldtype": "Tab Break",
+   "label": "Rwy. Karir Guru"
+  },
+  {
+   "fieldname": "rwy_jab_pendidiktenaga_pendidikan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Rwy. Jab. Pendidik/Tenaga Pendidikan"
+  },
+  {
+   "fieldname": "rwy_jab_fungsional_tab",
+   "fieldtype": "Tab Break",
+   "label": "Rwy. Jab. Fungsional"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-27 08:39:58.272525",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Tendik",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama",
+ "translated_doctype": 1
+}

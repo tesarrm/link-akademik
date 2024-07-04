@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-03 08:48:16.946409",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tahun_ajaran",
+  "semester",
+  "rombel",
+  "column_break_pczm",
+  "mata_pelajaran",
+  "aktivitas",
+  "keterangan_aktivitas",
+  "semester_1_tab",
+  "nilai_pd_smt_1",
+  "semester_2_tab",
+  "nilai_pd_smt_2",
+  "semester_3_tab",
+  "nilai_pd_smt_3",
+  "semester_4_tab",
+  "nilai_pd_smt_4",
+  "semester_5_tab",
+  "nilai_pd_smt_5",
+  "semester_6_tab",
+  "nilai_pd_smt_6"
+ ],
+ "fields": [
+  {
+   "fieldname": "semester_1_tab",
+   "fieldtype": "Tab Break",
+   "label": "Semester 1"
+  },
+  {
+   "fieldname": "semester_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Semester 2"
+  },
+  {
+   "fieldname": "semester_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Semester 3"
+  },
+  {
+   "fieldname": "semester_4_tab",
+   "fieldtype": "Tab Break",
+   "label": "Semester 4"
+  },
+  {
+   "fieldname": "semester_5_tab",
+   "fieldtype": "Tab Break",
+   "label": "Semester 5"
+  },
+  {
+   "fieldname": "semester_6_tab",
+   "fieldtype": "Tab Break",
+   "label": "Semester 6"
+  },
+  {
+   "fieldname": "nilai_pd_smt_1",
+   "fieldtype": "Table",
+   "label": "Nilai Peserta Didik",
+   "options": "CT Nilai Peserta Didik"
+  },
+  {
+   "fieldname": "nilai_pd_smt_2",
+   "fieldtype": "Table",
+   "label": "Nilai Peserta Didik",
+   "options": "CT Nilai Peserta Didik"
+  },
+  {
+   "fieldname": "nilai_pd_smt_3",
+   "fieldtype": "Table",
+   "label": "Nilai Peserta Didik",
+   "options": "CT Nilai Peserta Didik"
+  },
+  {
+   "fieldname": "nilai_pd_smt_4",
+   "fieldtype": "Table",
+   "label": "Nilai Peserta Didik",
+   "options": "CT Nilai Peserta Didik"
+  },
+  {
+   "fieldname": "nilai_pd_smt_5",
+   "fieldtype": "Table",
+   "label": "Nilai Peserta Didik",
+   "options": "CT Nilai Peserta Didik"
+  },
+  {
+   "fieldname": "nilai_pd_smt_6",
+   "fieldtype": "Table",
+   "label": "Nilai Peserta Didik",
+   "options": "CT Nilai Peserta Didik"
+  },
+  {
+   "fieldname": "tahun_ajaran",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tahun Ajaran",
+   "options": "Tahun Ajaran",
+   "reqd": 1
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Semester",
+   "options": "Semester",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pczm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mata_pelajaran",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mata Pelajaran",
+   "options": "Mapel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "aktivitas",
+   "fieldtype": "Link",
+   "label": "Aktivitas",
+   "options": "Aktivitas Peserta Didik",
+   "reqd": 1
+  },
+  {
+   "fieldname": "keterangan_aktivitas",
+   "fieldtype": "Data",
+   "label": "Keterangan Aktivitas"
+  },
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Rombel",
+   "options": "Rombel",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-03 14:14:07.460560",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Nilai Peserta Didik",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "rombel"
+}

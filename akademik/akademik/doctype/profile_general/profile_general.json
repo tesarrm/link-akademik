@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-27 10:19:45.859745",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "detail_tab",
+  "username",
+  "email",
+  "admin_sekolah_tab",
+  "guru_tab",
+  "profile_guru_section",
+  "table_noak",
+  "siswa_tab",
+  "profile_siswa_section",
+  "table_hgrs",
+  "wali_siswa_tab",
+  "table_gkan"
+ ],
+ "fields": [
+  {
+   "fieldname": "admin_sekolah_tab",
+   "fieldtype": "Tab Break",
+   "label": "Admin Sekolah"
+  },
+  {
+   "fieldname": "guru_tab",
+   "fieldtype": "Tab Break",
+   "label": "Guru"
+  },
+  {
+   "fieldname": "siswa_tab",
+   "fieldtype": "Tab Break",
+   "label": "Siswa"
+  },
+  {
+   "fieldname": "table_hgrs",
+   "fieldtype": "Table",
+   "options": "CT Siswa"
+  },
+  {
+   "fieldname": "wali_siswa_tab",
+   "fieldtype": "Tab Break",
+   "label": "Wali Siswa"
+  },
+  {
+   "fieldname": "table_gkan",
+   "fieldtype": "Table",
+   "options": "CT Wali Siswa"
+  },
+  {
+   "fieldname": "detail_tab",
+   "fieldtype": "Tab Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Username",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "profile_guru_section",
+   "fieldtype": "Section Break",
+   "label": "Profile Guru"
+  },
+  {
+   "fieldname": "table_noak",
+   "fieldtype": "Table",
+   "options": "CT Guru"
+  },
+  {
+   "fieldname": "profile_siswa_section",
+   "fieldtype": "Section Break",
+   "label": "Profile Siswa"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-03 12:46:24.075066",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Profile General",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

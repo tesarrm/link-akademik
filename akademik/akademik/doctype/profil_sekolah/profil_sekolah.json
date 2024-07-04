@@ -1,0 +1,732 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-22 21:55:02.534972",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "identitas_sekolah_tab",
+  "nama",
+  "npsn",
+  "bentuk_pendidikan",
+  "status_sekolah",
+  "telepon",
+  "email",
+  "column_break_xzzl",
+  "alamat",
+  "desakelurahan",
+  "kecamatan",
+  "logo",
+  "data_periodik_tab",
+  "waktu_penyelenggaraan",
+  "sumber_listrik",
+  "daya_listrik_watt",
+  "waktu_ketersediaan_listrik",
+  "column_break_aqrq",
+  "bersedia_menerima_bosp",
+  "sertifikasi_iso",
+  "kecepatan_internet",
+  "instansi",
+  "sanitasi_section",
+  "sumber_air",
+  "sumber_air_minum",
+  "kecukupan_air_bersih",
+  "jamban_disable",
+  "tipe_jamban",
+  "sekolah_menyediakan_pembalut_cadangan",
+  "hari_cuci_tangan",
+  "column_break_nknk",
+  "jlh_cuci_tangan",
+  "jml_cuci_tangan_rusak",
+  "air_mengalir_cuci_tangan",
+  "memiliki_pembuangan_jamban",
+  "menguras_jamban_3_to_5_thn",
+  "stratifikasi_uks_section",
+  "2_1",
+  "2_2",
+  "2_3",
+  "2_4",
+  "2_5",
+  "2_6",
+  "2_8",
+  "2_7",
+  "column_break_cepe",
+  "info_1",
+  "jamban_bisa",
+  "jamban_l_bisa",
+  "jamban_p_bisa",
+  "jamban_b_bisa",
+  "jamban_tidak_bisa",
+  "jamban_l_tidak",
+  "jamban_p_tidak",
+  "jamban_b_tidak",
+  "sekolah_memiliki_section",
+  "cuci_tangan",
+  "3_1_1",
+  "3_1_2",
+  "3_1_3",
+  "3_1_4",
+  "3_1_5",
+  "3_1_6",
+  "keamanan_pangan",
+  "3_3_1",
+  "3_3_2",
+  "3_3_3",
+  "3_3_4",
+  "3_3_5",
+  "3_3_6",
+  "column_break_fvdi",
+  "menstruasi",
+  "3_2_1",
+  "3_2_2",
+  "3_2_3",
+  "3_2_4",
+  "3_2_5",
+  "3_2_6",
+  "ayo_minum_air",
+  "3_4_1",
+  "3_4_2",
+  "3_4_3",
+  "3_4_4",
+  "3_4_5",
+  "3_4_6",
+  "data_dinamis_tab",
+  "data_dinamis",
+  "info_sekolah_tab",
+  "informasi_umum_sekolah_section",
+  "sejarah_sekolah",
+  "kepanitiaan_sekolah_tab",
+  "table_gsnm",
+  "blockgrant_tab",
+  "blockgrant",
+  "layanan_khusus_tab",
+  "layanan_khusus",
+  "program_inklusi_tab",
+  "ekstrakulikuler_tab",
+  "table_fgpa",
+  "penyelenggara_pondok_pesantren_tab",
+  "akreditasi_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "npsn",
+   "fieldtype": "Data",
+   "label": "NPSN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bentuk_pendidikan",
+   "fieldtype": "Select",
+   "label": "Bentuk Pendidikan",
+   "options": "\nPAUD\nSD\nSMP\nSMA\nSMK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status_sekolah",
+   "fieldtype": "Select",
+   "label": "Status Sekolah",
+   "options": "\nNegeri\nSwasta",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alamat",
+   "fieldtype": "Data",
+   "label": "Alamat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "desakelurahan",
+   "fieldtype": "Data",
+   "label": "Desa/Kelurahan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kecamatan",
+   "fieldtype": "Data",
+   "label": "Kecamatan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "waktu_penyelenggaraan",
+   "fieldtype": "Select",
+   "label": "Waktu Penyelenggaraan",
+   "options": "\nPagi/5 hari\nPagi/6 hari\nSiang/6 hari\nDouble shift/6 hari\nSiang/6 hari\nMalam/6 hari\nSehari penuh/5 hari\nSehari penuh/6 hari",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sumber_listrik",
+   "fieldtype": "Select",
+   "label": "Sumber Listrik",
+   "options": "\nTidak Ada\nPLN\nDiesel\nTenaga Surya\nPLN & Diesel\nBiogas\nMenumpang\nLainnya",
+   "reqd": 1
+  },
+  {
+   "fieldname": "identitas_sekolah_tab",
+   "fieldtype": "Tab Break",
+   "label": "Identitas Sekolah"
+  },
+  {
+   "fieldname": "data_periodik_tab",
+   "fieldtype": "Tab Break",
+   "label": "Data Periodik"
+  },
+  {
+   "fieldname": "daya_listrik_watt",
+   "fieldtype": "Data",
+   "label": "Daya Listrik (Watt)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "waktu_ketersediaan_listrik",
+   "fieldtype": "Select",
+   "label": "Waktu Ketersediaan Listrik",
+   "options": "\nSepanjang Waktu\nPagi\nMalam",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bersedia_menerima_bosp",
+   "fieldtype": "Select",
+   "label": "Bersedia Menerima BOSP?",
+   "options": "\nYa\nTidak",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sertifikasi_iso",
+   "fieldtype": "Select",
+   "label": "Sertifikasi ISO",
+   "options": "\n9001:2000\n9001:2008\nProses Sertifikasi\nBelum Bersertifikat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kecepatan_internet",
+   "fieldtype": "Int",
+   "label": "Kecepatan Internet (Mb)",
+   "options": "3 Mb\n30 Mb\n300 Mb\n",
+   "reqd": 1
+  },
+  {
+   "description": "Catatan: Sebelum mengisikan jumlah jamban, harap isiskan terlebih dahulu sarana kloset pada menu alat yang berada dalam kamar mandi/wc gtk atau peserta didik beserta dengan jumalh pada data periodiknya",
+   "fieldname": "sanitasi_section",
+   "fieldtype": "Section Break",
+   "label": "Variable Sustainable Development Goals (SDG)"
+  },
+  {
+   "fieldname": "sumber_air",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sumber air",
+   "options": "\nAir kemasan\nLedeng/PAM\nPompa\nAir sungai\nAir hujan\nSumur terlindungi\nSumur tidak terlindungi\nMata air terlindungi\nLainnya",
+   "reqd": 1
+  },
+  {
+   "fieldname": "instansi",
+   "fieldtype": "Tab Break",
+   "label": "Sanitasi",
+   "options": "\nAir kemasan\nledeng/PAM\nPompa\nAir sungai\nAir hujan\nLainnya\nSumur terlindungi\nSumur tidak terlindungi\nMata air terlindungi\nLainnya"
+  },
+  {
+   "fieldname": "sumber_air_minum",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sumber air minum",
+   "options": "\nDisediakan oleh siswa\nDisediakan oleh sekolah\nTidak ada",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kecukupan_air_bersih",
+   "fieldtype": "Select",
+   "label": "Kecukupan air bersih",
+   "options": "\nTidak cukup sepanjang waktu\nCukup sepanjang waktu"
+  },
+  {
+   "fieldname": "tipe_jamban",
+   "fieldtype": "Select",
+   "label": "Tipe jamban",
+   "options": "\nLeher angsa (toilet duduk/jongkok)\nCubluk dengan tutup\nJamban menggantung di atas sungai\nCubluk tanpa tutup\nTidak tersedia jamban"
+  },
+  {
+   "fieldname": "sekolah_menyediakan_pembalut_cadangan",
+   "fieldtype": "Select",
+   "label": "Sekolah menyediakan pembalut cadangan",
+   "options": "\nTidak\nMenyediakan dengan cara siswi harus membeli\nMenyediakan dengan cara memberikan gratis"
+  },
+  {
+   "fieldname": "hari_cuci_tangan",
+   "fieldtype": "Select",
+   "label": "Jml hari dlm seminggu siswa mengikuti kegiatan cuci tangan berkelompok",
+   "options": "\nTidak pernah\n1 hari\n2 hari\n3 hari\n4 hari\n5 hari"
+  },
+  {
+   "fieldname": "jlh_cuci_tangan",
+   "fieldtype": "Int",
+   "label": "Jml keseluruhan tempat cuci tangan",
+   "read_only": 1
+  },
+  {
+   "description": "<span style=\"color:red;\">*)</span> Jumlah tempat cuci tangan diperoleh dari inputan data alat dengan jenis sarana (wastafel atau tempat cuci tangan)",
+   "fieldname": "jml_cuci_tangan_rusak",
+   "fieldtype": "Int",
+   "label": "Jml tempat cuci tangan yang rusak",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xzzl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_aqrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nknk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jamban_disable",
+   "fieldtype": "Select",
+   "label": "Menyediakan jamban dengan fasilitas berkebutuhan khusus",
+   "options": "\nYa\nTidak"
+  },
+  {
+   "fieldname": "air_mengalir_cuci_tangan",
+   "fieldtype": "Select",
+   "label": "Apakah sabun dan air mengalir pada tempat cuci tangan",
+   "options": "\nTidak\nYa"
+  },
+  {
+   "fieldname": "memiliki_pembuangan_jamban",
+   "fieldtype": "Select",
+   "label": "Sekolah memiliki saluran pembuangan air limbah dari jamban",
+   "options": "\nAda saluran pembuangan air limbah ke tanki septik atau IPAL\nAda saluran pembuangan air limbah ke sekolah/kali sungai"
+  },
+  {
+   "fieldname": "menguras_jamban_3_to_5_thn",
+   "fieldtype": "Select",
+   "label": "Sekolah pernah menguras tangki septik dalam 3 hingga 5 tahun terakhir dengan truk/motor sedot tinja",
+   "options": "\nTidak/Tidak tahu\nYa"
+  },
+  {
+   "fieldname": "stratifikasi_uks_section",
+   "fieldtype": "Section Break",
+   "label": "Stratifikasi UKS"
+  },
+  {
+   "fieldname": "2_1",
+   "fieldtype": "Select",
+   "label": "Sekolah memiliki selokan untuk menghindari genangan air",
+   "options": "\nTidak\nYa"
+  },
+  {
+   "fieldname": "2_2",
+   "fieldtype": "Select",
+   "label": "Sekolah menyediakan tempat sampah di setiap ruang kelas (Sesuai pemendikbud tentang standar sapras)",
+   "options": "\nTidak\nYa"
+  },
+  {
+   "fieldname": "2_3",
+   "fieldtype": "Select",
+   "label": "Sekolah menyediakan tempat sampah tertutup di setiap unit jamban perempuan",
+   "options": "\nTidak\nYa"
+  },
+  {
+   "fieldname": "2_4",
+   "fieldtype": "Select",
+   "label": "Sekolah menyediakan cermin di setiap unit jamban perempuan",
+   "options": "\nTidak\nYa"
+  },
+  {
+   "fieldname": "2_5",
+   "fieldtype": "Select",
+   "label": "Sekolah memliki tempat pembuangan sampah sementara diangkut (TPS) yang rutin",
+   "options": "\nTidak\nYa"
+  },
+  {
+   "fieldname": "2_6",
+   "fieldtype": "Select",
+   "label": "Sampah dari tempat pembuangan sampah sementara diangkut secara rutin",
+   "options": "\nTidak\nYa"
+  },
+  {
+   "fieldname": "2_7",
+   "fieldtype": "Select",
+   "label": "Ada perencanaan & penyelanggaraan untuk kegiatan pemeliharaan dan perawatan sanitasi sekolah",
+   "options": "\nTidak\nYa"
+  },
+  {
+   "fieldname": "column_break_cepe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "2_8",
+   "fieldtype": "Table MultiSelect",
+   "label": "Ada kemitraan dengan pihak luar untuk sanitasi sekolah",
+   "options": "Child Table Kemitraan Sanitasi"
+  },
+  {
+   "description": "<label class=\"control-label\">\n    <span style=\"color:red;\">*)</span><strong> Jumlah jamban diperoleh oleh inputan data pada menu ruang (kamar mandi/wc) dan alat (kloset/jamban)</strong>\n</label>",
+   "fieldname": "info_1",
+   "fieldtype": "Data",
+   "label": "tes"
+  },
+  {
+   "description": "Jumlah jamban yang dapat digunakan<span style=\"color: red;\">*</span>",
+   "fieldname": "jamban_bisa",
+   "fieldtype": "Data",
+   "label": "jamban bisa"
+  },
+  {
+   "fieldname": "jamban_l_bisa",
+   "fieldtype": "Int",
+   "label": "Jamban laki-laki",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jamban_p_bisa",
+   "fieldtype": "Int",
+   "label": "Jamban perempuan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jamban_b_bisa",
+   "fieldtype": "Int",
+   "label": "Jamban bersama",
+   "read_only": 1
+  },
+  {
+   "description": "Jumlah jamban yang tidak dapat digunakan<span style=\"color: red;\">*</span>",
+   "fieldname": "jamban_tidak_bisa",
+   "fieldtype": "Data",
+   "label": "jamban tidak bisa"
+  },
+  {
+   "fieldname": "jamban_l_tidak",
+   "fieldtype": "Int",
+   "label": "Jamban laki-laki",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jamban_p_tidak",
+   "fieldtype": "Int",
+   "label": "Jamban perempuan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jamban_b_tidak",
+   "fieldtype": "Int",
+   "label": "Jamban bersama",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sekolah_memiliki_section",
+   "fieldtype": "Section Break",
+   "label": "Komunikasi Informasi dan Edukasi (KIE)"
+  },
+  {
+   "description": "<strong>Cuci tangan pakai sabun</strong>",
+   "fieldname": "cuci_tangan",
+   "fieldtype": "Data",
+   "label": "Cuci tangan pakai sabun"
+  },
+  {
+   "fieldname": "3_1_1",
+   "fieldtype": "Select",
+   "label": "KIE oleh guru",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_1_2",
+   "fieldtype": "Select",
+   "label": "KIE di ruang kelas",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_1_3",
+   "fieldtype": "Select",
+   "label": "KIE di toilet",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_1_4",
+   "fieldtype": "Select",
+   "label": "KIE di selasar",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_1_5",
+   "fieldtype": "Select",
+   "label": "KIE di ruang UKS",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_1_6",
+   "fieldtype": "Select",
+   "label": "KIE di kantin",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "column_break_fvdi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "<strong>Kebersihan dan kesehatan mestruasi</strong>",
+   "fieldname": "menstruasi",
+   "fieldtype": "Data",
+   "label": "Kebersihan dan kesehatan mestruasi"
+  },
+  {
+   "fieldname": "3_2_1",
+   "fieldtype": "Select",
+   "label": "KIE oleh guru",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_2_2",
+   "fieldtype": "Select",
+   "label": "KIE di ruang kelas",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_2_3",
+   "fieldtype": "Select",
+   "label": "KIE di tolilet",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_2_4",
+   "fieldtype": "Select",
+   "label": "KIE di selasar",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_2_5",
+   "fieldtype": "Select",
+   "label": "KIE di ruang UKS",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_2_6",
+   "fieldtype": "Select",
+   "label": "KIE di kantin",
+   "options": "Tidak\nYa"
+  },
+  {
+   "description": "<br>\n<strong>Keamanan pangan</strong>",
+   "fieldname": "keamanan_pangan",
+   "fieldtype": "Data",
+   "label": "Keamanan pangan"
+  },
+  {
+   "fieldname": "3_3_6",
+   "fieldtype": "Select",
+   "label": "KIE di kantin",
+   "options": "Tidak\nYa"
+  },
+  {
+   "description": "<br>\n<strong>Ayo minum air</strong>",
+   "fieldname": "ayo_minum_air",
+   "fieldtype": "Data",
+   "label": "Ayo minum air"
+  },
+  {
+   "fieldname": "3_3_1",
+   "fieldtype": "Select",
+   "label": "KIE oleh guru",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_3_2",
+   "fieldtype": "Select",
+   "label": "KIE di ruang kelas",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_3_3",
+   "fieldtype": "Select",
+   "label": "KIE di toilet",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_3_4",
+   "fieldtype": "Select",
+   "label": "KIE di selasar",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_3_5",
+   "fieldtype": "Select",
+   "label": "KIE di ruang UKS",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_4_1",
+   "fieldtype": "Select",
+   "label": "KIE oleh guru",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_4_2",
+   "fieldtype": "Select",
+   "label": "KIE di ruang kelas",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_4_3",
+   "fieldtype": "Select",
+   "label": "KIE di toilet",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_4_4",
+   "fieldtype": "Select",
+   "label": "KIE di selasar",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_4_5",
+   "fieldtype": "Select",
+   "label": "KIE di ruang UKS",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "3_4_6",
+   "fieldtype": "Select",
+   "label": "KIE di kantin",
+   "options": "Tidak\nYa"
+  },
+  {
+   "fieldname": "info_sekolah_tab",
+   "fieldtype": "Tab Break",
+   "label": "Info Sekolah"
+  },
+  {
+   "fieldname": "informasi_umum_sekolah_section",
+   "fieldtype": "Section Break",
+   "label": "Informasi Umum Sekolah"
+  },
+  {
+   "fieldname": "sejarah_sekolah",
+   "fieldtype": "Text Editor",
+   "label": "Sejarah Sekolah"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "telepon",
+   "fieldtype": "Data",
+   "label": "Telepon"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "data_dinamis_tab",
+   "fieldtype": "Tab Break",
+   "label": "Data Dinamis"
+  },
+  {
+   "fieldname": "kepanitiaan_sekolah_tab",
+   "fieldtype": "Tab Break",
+   "label": "Kepanitiaan Sekolah"
+  },
+  {
+   "fieldname": "blockgrant_tab",
+   "fieldtype": "Tab Break",
+   "label": "Blockgrant"
+  },
+  {
+   "fieldname": "layanan_khusus_tab",
+   "fieldtype": "Tab Break",
+   "label": "Layanan Khusus"
+  },
+  {
+   "fieldname": "program_inklusi_tab",
+   "fieldtype": "Tab Break",
+   "label": "Program Inklusi"
+  },
+  {
+   "fieldname": "ekstrakulikuler_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ekstrakulikuler"
+  },
+  {
+   "fieldname": "penyelenggara_pondok_pesantren_tab",
+   "fieldtype": "Tab Break",
+   "label": "Penyelenggara Pondok Pesantren"
+  },
+  {
+   "fieldname": "akreditasi_tab",
+   "fieldtype": "Tab Break",
+   "label": "Akreditasi"
+  },
+  {
+   "fieldname": "table_fgpa",
+   "fieldtype": "Table",
+   "options": "CT Ekskul"
+  },
+  {
+   "fieldname": "data_dinamis",
+   "fieldtype": "Table",
+   "label": "Data Dinamis",
+   "options": "CT Data Dinamis"
+  },
+  {
+   "fieldname": "blockgrant",
+   "fieldtype": "Table",
+   "label": "Blockgrant",
+   "options": "CT Blockgrant"
+  },
+  {
+   "fieldname": "table_gsnm",
+   "fieldtype": "Table",
+   "label": "Kepanitiaan Sekolah",
+   "options": "CT Kepanitiaan Sekolah"
+  },
+  {
+   "fieldname": "layanan_khusus",
+   "fieldtype": "Table",
+   "label": "Layanan Khusus",
+   "options": "CT Layanan Khusus"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-02 16:59:19.545439",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Profil Sekolah",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Guest",
+   "share": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 13:02:37.817400",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "judul",
+  "link_video",
+  "gambar",
+  "column_break_zqxr",
+  "mata_pelajaran",
+  "pengaturan_pelajaran_section",
+  "aktifkan",
+  "aktifkan_pada",
+  "section_break_agbd",
+  "kata_pengantar_singkat",
+  "keterangan",
+  "bab"
+ ],
+ "fields": [
+  {
+   "fieldname": "judul",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Judul",
+   "reqd": 1
+  },
+  {
+   "fieldname": "link_video",
+   "fieldtype": "Data",
+   "label": "Link video"
+  },
+  {
+   "fieldname": "gambar",
+   "fieldtype": "Attach Image",
+   "label": "Gambar",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zqxr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mata_pelajaran",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mata pelajaran",
+   "options": "Mapel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pengaturan_pelajaran_section",
+   "fieldtype": "Section Break",
+   "label": "Pengaturan pelajaran"
+  },
+  {
+   "default": "0",
+   "fieldname": "aktifkan",
+   "fieldtype": "Check",
+   "label": "Aktifkan"
+  },
+  {
+   "fieldname": "aktifkan_pada",
+   "fieldtype": "Date",
+   "label": "Aktifkan pada"
+  },
+  {
+   "fieldname": "section_break_agbd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "kata_pengantar_singkat",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "kata pengantar singkat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Keterangan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bab",
+   "fieldtype": "Table",
+   "label": "Bab",
+   "options": "Bab"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-28 14:51:40.331759",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Pelajaran",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

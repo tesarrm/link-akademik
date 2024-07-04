@@ -1,0 +1,190 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-02 00:38:51.426864",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "informasi_tanah_section",
+  "vid",
+  "jenis_prasarana",
+  "nama",
+  "no_sertifikat",
+  "kepemilikan",
+  "column_break_njcm",
+  "panjang_m",
+  "lebar_m",
+  "luas_m2",
+  "luas_lahan_tersedia_m2",
+  "ket_tanah",
+  "lokasi_tanah_section",
+  "alamat_jalan",
+  "rt",
+  "rw",
+  "column_break_cdpy",
+  "nama_dusun",
+  "desa_kelurahan",
+  "kecamatan",
+  "section_break_gfut",
+  "bangunan"
+ ],
+ "fields": [
+  {
+   "fieldname": "informasi_tanah_section",
+   "fieldtype": "Section Break",
+   "label": "Informasi Tanah"
+  },
+  {
+   "default": "0",
+   "fieldname": "vid",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "VId",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jenis_prasarana",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Prasarana",
+   "options": "Tanah",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_sertifikat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No Sertifikat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kepemilikan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kepemilikan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_njcm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "panjang_m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Panjang (m)"
+  },
+  {
+   "fieldname": "lebar_m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Lebar (m)"
+  },
+  {
+   "fieldname": "luas_m2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Luas (m2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "luas_lahan_tersedia_m2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Luas Lahan Tersedia (m2)"
+  },
+  {
+   "fieldname": "ket_tanah",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ket Tanah"
+  },
+  {
+   "fieldname": "lokasi_tanah_section",
+   "fieldtype": "Section Break",
+   "label": "Lokasi Tanah"
+  },
+  {
+   "fieldname": "alamat_jalan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Alamat Jalan"
+  },
+  {
+   "fieldname": "rt",
+   "fieldtype": "Int",
+   "label": "RT"
+  },
+  {
+   "fieldname": "rw",
+   "fieldtype": "Data",
+   "label": "RW"
+  },
+  {
+   "fieldname": "column_break_cdpy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nama_dusun",
+   "fieldtype": "Data",
+   "label": "Nama Dusun"
+  },
+  {
+   "fieldname": "desa_kelurahan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Desa Kelurahan"
+  },
+  {
+   "fieldname": "kecamatan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kecamatan"
+  },
+  {
+   "fieldname": "section_break_gfut",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bangunan",
+   "fieldtype": "Table",
+   "label": "Bangunan",
+   "options": "Instance Bangunan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-02 01:30:27.769769",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Instance Tanah",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama",
+ "translated_doctype": 1
+}

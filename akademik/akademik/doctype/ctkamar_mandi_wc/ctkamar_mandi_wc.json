@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-23 15:04:49.102792",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bangunan",
+  "column_break_suho",
+  "kamar_mandiwc"
+ ],
+ "fields": [
+  {
+   "fieldname": "kamar_mandiwc",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kamar Mandi/WC",
+   "link_filters": "[[\"Ruangan\",\"jenis_prasarana\",\"=\",\"Kamar Mandi/WC\"]]",
+   "options": "Data Ruang",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "kamar_mandiwc.bangunan_nama",
+   "fieldname": "bangunan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bangunan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_suho",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-02 20:59:06.893192",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctKamar Mandi WC",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

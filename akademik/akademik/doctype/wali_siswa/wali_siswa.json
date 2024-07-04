@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-06-22 22:25:23.588841",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "data_wali_siswa_section",
+  "nama_lengkap",
+  "jenis_kelamin",
+  "column_break_nkkw",
+  "email",
+  "nomor_handphone",
+  "gambar"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_wali_siswa_section",
+   "fieldtype": "Section Break",
+   "label": "Data Wali Siswa"
+  },
+  {
+   "fieldname": "nama_lengkap",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Lengkap",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jenis_kelamin",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Kelamin",
+   "options": "Laki-laki\nPerempuan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nomor_handphone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nomor Handphone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gambar",
+   "fieldtype": "Attach Image",
+   "label": "Gambar"
+  },
+  {
+   "fieldname": "column_break_nkkw",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-01 13:57:10.189606",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Wali Siswa",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

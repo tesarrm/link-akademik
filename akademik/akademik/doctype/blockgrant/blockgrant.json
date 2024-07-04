@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 13:56:17.799314",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nama",
+  "tahun",
+  "sumber_data",
+  "jenis_bantuan",
+  "peruntukan_dana",
+  "besar_bantuan"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama"
+  },
+  {
+   "fieldname": "tahun",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tahun"
+  },
+  {
+   "fieldname": "sumber_data",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sumber Data",
+   "options": "Direktorat PSD\nDll"
+  },
+  {
+   "fieldname": "jenis_bantuan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis Bantuan"
+  },
+  {
+   "fieldname": "peruntukan_dana",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Peruntukan Dana "
+  },
+  {
+   "fieldname": "besar_bantuan",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Besar Bantuan",
+   "non_negative": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-28 13:59:49.726170",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Blockgrant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

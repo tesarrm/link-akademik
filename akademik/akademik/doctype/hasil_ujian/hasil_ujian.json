@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 13:30:54.376372",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nama",
+  "kelas",
+  "tanggal",
+  "nilai",
+  "nilai_max",
+  "tipe_ujian",
+  "tambah"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "kelas",
+   "fieldtype": "Data",
+   "label": "Kelas"
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "label": "Tanggal"
+  },
+  {
+   "fieldname": "nilai",
+   "fieldtype": "Int",
+   "label": "Nilai"
+  },
+  {
+   "fieldname": "nilai_max",
+   "fieldtype": "Int",
+   "label": "Nilai Maksimal"
+  },
+  {
+   "fieldname": "tipe_ujian",
+   "fieldtype": "Data",
+   "label": "Tipe Ujian"
+  },
+  {
+   "fieldname": "tambah",
+   "fieldtype": "Button",
+   "label": "Tambah"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-24 13:39:03.832741",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Hasil Ujian",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 14:16:59.966800",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama",
+  "kode_mapel"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nama",
+   "options": "Mapel",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "nama.code",
+   "fieldname": "kode_mapel",
+   "fieldtype": "Data",
+   "label": "Kode Mapel"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-24 14:32:29.620081",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Mapel Tabel",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

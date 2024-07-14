@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-14 22:21:19.323355",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bidang_studi_section",
+  "bidang_studi",
+  "jenjang_pendidikan",
+  "gelar_akademik",
+  "satuan_pendidikan",
+  "fakultas",
+  "kependidikan",
+  "column_break_dzux",
+  "tahun_masuk",
+  "tahun_lulus",
+  "dataid",
+  "kuliah",
+  "semester",
+  "ratanilai"
+ ],
+ "fields": [
+  {
+   "fieldname": "bidang_studi_section",
+   "fieldtype": "Section Break",
+   "label": "Bidang studi"
+  },
+  {
+   "fieldname": "bidang_studi",
+   "fieldtype": "Data",
+   "label": "Bidang studi"
+  },
+  {
+   "fieldname": "jenjang_pendidikan",
+   "fieldtype": "Select",
+   "label": "Jenjang pendidikan"
+  },
+  {
+   "fieldname": "gelar_akademik",
+   "fieldtype": "Select",
+   "label": "Gelar akademik"
+  },
+  {
+   "fieldname": "satuan_pendidikan",
+   "fieldtype": "Data",
+   "label": "Satuan pendidikan formal"
+  },
+  {
+   "fieldname": "fakultas",
+   "fieldtype": "Data",
+   "label": "Fakultas"
+  },
+  {
+   "fieldname": "kependidikan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kependidikan"
+  },
+  {
+   "fieldname": "column_break_dzux",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tahun_masuk",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tahun masuk"
+  },
+  {
+   "fieldname": "tahun_lulus",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tahun lulus"
+  },
+  {
+   "fieldname": "dataid",
+   "fieldtype": "Int",
+   "label": "NIS/NISN/NIM"
+  },
+  {
+   "fieldname": "kuliah",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Masih studi/kuliah",
+   "options": "Tidak\nYa",
+   "reqd": 1
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Int",
+   "label": "Semester"
+  },
+  {
+   "fieldname": "ratanilai",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rata nilai Ujian / IPK / GPA ",
+   "non_negative": 1,
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 22:21:19.323355",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctPendidikan Formal",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

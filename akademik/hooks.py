@@ -4,6 +4,8 @@ app_publisher = "Tim SiakadPlus"
 app_description = "Akademik"
 app_email = "siakadplus@gmail.com"
 app_license = "mit"
+
+
 # required_apps = []
 
 # Includes in <head>
@@ -12,8 +14,8 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/akademik/css/akademik.css"
-app_include_js = "/assets/akademik/js/akademik3.js"
-app_include_js = "testing.bundle.js"
+# app_include_js = "/assets/akademik/js/akademik.js"
+# app_include_js = "testing.bundle.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/akademik/css/akademik.css"
@@ -30,7 +32,7 @@ app_include_js = "testing.bundle.js"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Data Tanah" : "public/js/akademik.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}

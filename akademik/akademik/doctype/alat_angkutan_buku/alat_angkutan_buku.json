@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-06-23 15:30:57.087563",
+ "creation": "2024-07-14 21:13:49.656313",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -18,25 +18,14 @@
  ],
  "fields": [
   {
-   "fieldname": "bangunan",
-   "fieldtype": "Select",
-   "hidden": 1,
-   "label": "tes"
-  },
-  {
    "fieldname": "alat_tab",
    "fieldtype": "Tab Break",
    "label": "Alat"
   },
   {
-   "fieldname": "angkutan_tab",
-   "fieldtype": "Tab Break",
-   "label": "Angkutan"
-  },
-  {
-   "fieldname": "buku_tab",
-   "fieldtype": "Tab Break",
-   "label": "Buku"
+   "fieldname": "ruang_bangunan",
+   "fieldtype": "Select",
+   "label": "Pilih Ruang"
   },
   {
    "fieldname": "alat",
@@ -46,14 +35,20 @@
    "read_only": 1
   },
   {
-   "fieldname": "ruang_bangunan",
-   "fieldtype": "Select",
-   "label": "Pilih Ruang"
-  },
-  {
    "fieldname": "tambah_alat",
    "fieldtype": "Button",
    "label": "Tambah Alat"
+  },
+  {
+   "fieldname": "bangunan",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "tes"
+  },
+  {
+   "fieldname": "angkutan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Angkutan"
   },
   {
    "fieldname": "angkutan",
@@ -62,20 +57,25 @@
    "read_only": 1
   },
   {
-   "fieldname": "buku",
-   "fieldtype": "Table",
-   "options": "ctBuku"
-  },
-  {
    "fieldname": "tambah_angkutan",
    "fieldtype": "Button",
    "label": "Tambah Angkutan"
+  },
+  {
+   "fieldname": "buku_tab",
+   "fieldtype": "Tab Break",
+   "label": "Buku"
+  },
+  {
+   "fieldname": "buku",
+   "fieldtype": "Table",
+   "options": "ctBuku"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-07-06 22:01:52.916297",
+ "modified": "2024-07-14 21:13:49.656313",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Alat Angkutan Buku",

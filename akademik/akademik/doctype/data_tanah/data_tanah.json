@@ -162,7 +162,7 @@
   },
   {
    "fieldname": "kecamatan",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Kecamatan",
    "reqd": 1
@@ -216,7 +216,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-12 19:47:39.223783",
+ "modified": "2024-07-14 09:52:20.382592",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Data Tanah",

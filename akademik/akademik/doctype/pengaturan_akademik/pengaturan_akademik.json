@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-07-10 10:57:35.777466",
+ "creation": "2024-07-14 10:19:05.899239",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -19,10 +19,6 @@
    "options": "Tahun Ajaran"
   },
   {
-   "fieldname": "column_break_tziu",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "semester_sekarang",
    "fieldtype": "Data",
    "label": "Semester Sekarang"
@@ -31,6 +27,10 @@
    "fieldname": "gambar_kop_sekolah",
    "fieldtype": "Attach",
    "label": "Gambar Kop Sekolah"
+  },
+  {
+   "fieldname": "column_break_tziu",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "kurikulum",
@@ -42,7 +42,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-07-11 17:38:49.044999",
+ "modified": "2024-07-14 10:19:05.899239",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Pengaturan Akademik",

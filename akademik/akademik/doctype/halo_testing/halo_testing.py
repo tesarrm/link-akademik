@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class AlatAngkutanBuku(Document):
+class halotesting(Document):
 	pass

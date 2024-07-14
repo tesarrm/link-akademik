@@ -2,12 +2,12 @@ frappe.ui.form.on("Pembayaran", {
   refresh: function(frm) {
       frm.add_custom_button(__('Select All Rombel'), function() {
           frappe.call({
-              method: "akademik.akademik.doctype.pembayaran.get_all_rombels",
+              method: "akademik.akademik.doctype.pembayaran.pembayaran.get_all_rombels",
               callback: function(r) {
                   if(r.message) {
                       console.log("Received rombels: ", r.message);
                       let all_rombels = r.message.map(function(rombel) {
-                          return { "rombel": rombel.name };
+                          return { "rombel": rombel.nama_rombel };
                       });
                       console.log("Setting value for rombel: ", all_rombels);
                       frm.set_value('rombel', all_rombels);

@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 04:50:55.958799",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "riwayat_sertifikasi_guru_section",
+  "kode_lembaga_sertifikasi",
+  "bidang_sudi",
+  "sertif",
+  "tgl_mulai_berlaku",
+  "tgl_habis_berlaku",
+  "column_break_ighy",
+  "nomor_sertifikat",
+  "nomor_registrasi",
+  "nomor_peserta",
+  "kualifikasi"
+ ],
+ "fields": [
+  {
+   "fieldname": "riwayat_sertifikasi_guru_section",
+   "fieldtype": "Section Break",
+   "label": "Riwayat sertifikasi guru"
+  },
+  {
+   "fieldname": "kode_lembaga_sertifikasi",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Kode Lembaga sertifikasi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bidang_sudi",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Bidang Studi",
+   "options": "IPA\nIPS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sertif",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Sertifikasi",
+   "options": "PENDIDIKAN\nMENGAJAR",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tgl_mulai_berlaku",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tgl mulai berlaku",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tgl_habis_berlaku",
+   "fieldtype": "Date",
+   "label": "Tgl habis berlaku",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ighy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nomor_sertifikat",
+   "fieldtype": "Data",
+   "label": "Nomor Sertifikat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nomor_registrasi",
+   "fieldtype": "Data",
+   "label": "Nomor Registrasi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nomor_peserta",
+   "fieldtype": "Data",
+   "label": "Nomor Peserta",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kualifikasi",
+   "fieldtype": "Data",
+   "label": "Kualifikasi",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 20:19:30.740427",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctSertifikasi",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

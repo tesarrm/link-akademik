@@ -9,10 +9,12 @@
   "alat_tab",
   "column_break_kshv",
   "ruang",
+  "nama_ruang",
   "column_break_fsdf",
   "bangunan",
   "section_break_ermx",
-  "alat"
+  "alat",
+  "tambah_alat"
  ],
  "fields": [
   {
@@ -32,6 +34,7 @@
    "in_standard_filter": 1,
    "label": "Ruang",
    "options": "Data Ruang",
+   "read_only": 1,
    "unique": 1
   },
   {
@@ -45,7 +48,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Bangunan",
-   "options": "Bangunan",
+   "options": "Data Bangunan",
    "read_only": 1
   },
   {
@@ -53,15 +56,27 @@
    "fieldtype": "Section Break"
   },
   {
+   "fieldname": "tambah_alat",
+   "fieldtype": "Button",
+   "label": "Tambah Alat"
+  },
+  {
+   "fetch_from": "ruang.nama_ruang",
+   "fieldname": "nama_ruang",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Nama Ruang"
+  },
+  {
    "fieldname": "alat",
    "fieldtype": "Table",
-   "label": "Alat",
-   "options": "ctAlat"
+   "options": "ctAlat 4"
   }
  ],
+ "force_re_route_to_default_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-02 21:49:22.539445",
+ "modified": "2024-07-06 21:18:16.840413",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Alat",
@@ -78,10 +93,7 @@
    "write": 1
   }
  ],
- "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": [],
- "title_field": "bangunan",
- "translated_doctype": 1
+ "states": []
 }

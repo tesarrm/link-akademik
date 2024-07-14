@@ -48,7 +48,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Jenis Prasarana",
-   "options": "Tanah",
+   "options": "Data Tanah",
    "reqd": 1
   },
   {
@@ -162,7 +162,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-02 01:30:27.769769",
+ "modified": "2024-07-04 21:53:25.156083",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Instance Tanah",

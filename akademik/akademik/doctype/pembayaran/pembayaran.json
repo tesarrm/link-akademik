@@ -5,18 +5,22 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "nama",
+  "pembayaran_section",
+  "tipe_pembayaran",
   "column_break_lcqm",
   "start_date",
   "column_break_qxit",
-  "end_date"
+  "end_date",
+  "detail_section",
+  "tahun_ajaran",
+  "rombel",
+  "column_break_hekp",
+  "kompetensi_keahlian",
+  "total_bayar",
+  "section_break_yrwd",
+  "table_dgpx"
  ],
  "fields": [
-  {
-   "fieldname": "nama",
-   "fieldtype": "Data",
-   "label": "Nama"
-  },
   {
    "fieldname": "column_break_lcqm",
    "fieldtype": "Column Break"
@@ -24,7 +28,9 @@
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
-   "label": "Start Date"
+   "in_list_view": 1,
+   "label": "Mulai tanggal",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_qxit",
@@ -33,12 +39,72 @@
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
-   "label": "End Date"
+   "in_list_view": 1,
+   "label": "Jatuh tempo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pembayaran_section",
+   "fieldtype": "Section Break",
+   "label": "Pembayaran"
+  },
+  {
+   "fieldname": "detail_section",
+   "fieldtype": "Section Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "tahun_ajaran",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tahun Ajaran",
+   "options": "Tahun Ajaran",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hekp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kompetensi_keahlian",
+   "fieldtype": "Link",
+   "label": "Kompetensi Keahlian",
+   "options": "Data Kompetensi Keahlian",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipe_pembayaran",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tipe Pembayaran",
+   "options": "Tipe Pembayaran",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Table MultiSelect",
+   "label": "Rombel",
+   "options": "ctRombel"
+  },
+  {
+   "fieldname": "section_break_yrwd",
+   "fieldtype": "Section Break",
+   "label": "Peserta Didik"
+  },
+  {
+   "fieldname": "table_dgpx",
+   "fieldtype": "Table",
+   "options": "Anggota Rombel"
+  },
+  {
+   "fieldname": "total_bayar",
+   "fieldtype": "Currency",
+   "label": "Total bayar"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-24 10:34:20.972341",
+ "modified": "2024-07-11 16:15:14.781399",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Pembayaran",

@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 04:51:23.230462",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama",
+  "jenis_sarana",
+  "spesifikasi",
+  "column_break_ahuk",
+  "kepemilikan",
+  "jumlah_total",
+  "jumlah_layak"
+ ],
+ "fields": [
+  {
+   "fetch_from": "alat.jenis_sarana",
+   "fieldname": "jenis_sarana",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis sarana",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "alat.spesifikasi",
+   "fieldname": "spesifikasi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Spesifikasi",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ahuk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "alat.kepemilikan",
+   "fieldname": "kepemilikan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kepemilikan",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "alat.jumlah_total",
+   "fieldname": "jumlah_total",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jumlah total",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "alat.jumlah_layak",
+   "fieldname": "jumlah_layak",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jumlah layak",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nama",
+   "options": "Data Alat",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-06 18:03:48.411841",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctAlat 4",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

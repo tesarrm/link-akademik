@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-08 00:23:47.499561",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "data_pribadi_section",
+  "foto_profil",
+  "nama",
+  "jenis_kelamin",
+  "nis",
+  "kwarganegaraan",
+  "nik",
+  "no_kk",
+  "tempat_lahir",
+  "tanggal_lahir",
+  "column_break_vtbi",
+  "no_akta",
+  "berkebutuhan_khusus",
+  "agama",
+  "anak_ke",
+  "penerima_kpspkh",
+  "apakah_punya_kip",
+  "apakah_peserta_didik_tersebut_layak_mendapatkan_kip",
+  "alasan_layak_kip"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_pribadi_section",
+   "fieldtype": "Section Break",
+   "label": "Data Pribadi"
+  },
+  {
+   "fieldname": "foto_profil",
+   "fieldtype": "Attach Image",
+   "label": "Foto Profil"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jenis_kelamin",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Jenis kelamin",
+   "options": "Laki-laki\nPerempuan"
+  },
+  {
+   "fieldname": "nis",
+   "fieldtype": "Data",
+   "label": "NISN"
+  },
+  {
+   "fieldname": "kwarganegaraan",
+   "fieldtype": "Select",
+   "label": "Kwarganegaraan",
+   "options": "WNI\nWNA"
+  },
+  {
+   "fieldname": "nik",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "NIK"
+  },
+  {
+   "fieldname": "no_kk",
+   "fieldtype": "Data",
+   "label": "No KK"
+  },
+  {
+   "fieldname": "tempat_lahir",
+   "fieldtype": "Data",
+   "label": "Tempat Lahir"
+  },
+  {
+   "fieldname": "tanggal_lahir",
+   "fieldtype": "Date",
+   "label": "Tanggal Lahir"
+  },
+  {
+   "fieldname": "column_break_vtbi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_akta",
+   "fieldtype": "Data",
+   "label": "No Akta"
+  },
+  {
+   "fieldname": "berkebutuhan_khusus",
+   "fieldtype": "Select",
+   "label": "Berkebutuhan khusus",
+   "options": "Tidak ada\nNetra (A)\nRungu (B)\nGrahita Ringan (C)\nGrahita Sedang (C1)\nDaksa Ringan (D)\nDaksa Sedang (D1)\nLaras (E)\nWicara (F)\nHyperaktif (H)\nCerdas Istimewa (I)\nBakat Istimewa (J)\nKesulitan Belajar (K)\nNarkoba (N)\nIndigo (O)\nDown Syndrome (P)\nAutis (Q)"
+  },
+  {
+   "fieldname": "agama",
+   "fieldtype": "Select",
+   "label": "Agama",
+   "options": "\nIslam\nKristen\nKatholik\nKonghuchu\nBudha\nHindu"
+  },
+  {
+   "description": "Sesuai data KK",
+   "fieldname": "anak_ke",
+   "fieldtype": "Int",
+   "label": "Anak ke (berdasarkan KK)"
+  },
+  {
+   "fieldname": "penerima_kpspkh",
+   "fieldtype": "Select",
+   "label": "Penerima KPS/PKH",
+   "options": "\nTidak\nYa"
+  },
+  {
+   "fieldname": "apakah_punya_kip",
+   "fieldtype": "Select",
+   "label": "Apakah punya KIP?",
+   "options": "\nTidak\nYa"
+  },
+  {
+   "fieldname": "apakah_peserta_didik_tersebut_layak_mendapatkan_kip",
+   "fieldtype": "Select",
+   "label": "Apakah peserta didik tersebut layak mendapatkan KIP?",
+   "options": "\nTidak\nYa"
+  },
+  {
+   "fieldname": "alasan_layak_kip",
+   "fieldtype": "Data",
+   "label": "Alasan layak KIP?"
+  }
+ ],
+ "image_field": "foto_profil",
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-08 23:35:43.034138",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctPeserta Didik 2",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama"
+}

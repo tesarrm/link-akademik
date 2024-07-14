@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 18:39:42.760525",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kelompok_produksi",
+  "column_break_yuru",
+  "nama_unit_produksi"
+ ],
+ "fields": [
+  {
+   "fieldname": "kelompok_produksi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kelompok Produksi"
+  },
+  {
+   "fieldname": "column_break_yuru",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nama_unit_produksi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Unit Produksi"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-05 18:40:59.043625",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctUnit Produksi",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

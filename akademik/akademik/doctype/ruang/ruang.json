@@ -1,89 +1,112 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-06-23 14:32:36.806354",
+ "creation": "2024-07-06 19:34:57.311702",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "ruang_kelas_tab",
-  "kelas",
-  "guru_kepsek",
-  "kepsek_guru",
-  "ruang_laboratorium_tab",
-  "laboratorium",
-  "ruang_perpustakaan_tab",
-  "perpustakaan",
-  "kamar_mandiwc_tab",
-  "kamar_mandi",
-  "ruang_penunjang_tab",
-  "penunjang"
+  "section_break_asdd",
+  "tipe",
+  "ruang_kelas",
+  "ruang_kepsekguru",
+  "ruang_laboratorium",
+  "ruang_perpustakaan",
+  "ruang_praktik_siswa",
+  "kamar_mandiwc",
+  "ruang_penunjang",
+  "tambah_ruang",
+  "section_break_soph",
+  "nama"
  ],
  "fields": [
   {
-   "fieldname": "ruang_kelas_tab",
-   "fieldtype": "Tab Break",
-   "label": "Ruang Kelas"
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
   },
   {
-   "fieldname": "kelas",
+   "fieldname": "section_break_asdd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 10,
+   "fieldname": "tipe",
+   "fieldtype": "Select",
+   "label": "Tipe",
+   "options": "Kelas\nKepsek/Guru\nLaboratorium\nPerpustakaan\nPraktik Siswa\nKamar Mandi/WC\nPenunjang"
+  },
+  {
+   "depends_on": "eval:doc.tipe==\"Kelas\"",
+   "fieldname": "ruang_kelas",
    "fieldtype": "Table",
-   "options": "ctRuang Kelas"
+   "label": "Ruang Kelas",
+   "options": "ctRuang",
+   "read_only": 1
   },
   {
-   "fieldname": "kepsek_guru",
+   "depends_on": "eval:doc.tipe==\"Kepsek/Guru\"",
+   "fieldname": "ruang_kepsekguru",
    "fieldtype": "Table",
-   "options": "ctRuang Kepsek Guru"
+   "label": "Ruang Kepsek/Guru",
+   "options": "ctRuang",
+   "read_only": 1
   },
   {
-   "fieldname": "laboratorium",
+   "depends_on": "eval:doc.tipe==\"Laboratorium\"",
+   "fieldname": "ruang_laboratorium",
    "fieldtype": "Table",
-   "options": "ctRuang Laboratorium"
+   "label": "Ruang Laboratorium",
+   "options": "ctRuang",
+   "read_only": 1
   },
   {
-   "fieldname": "perpustakaan",
+   "depends_on": "eval:doc.tipe==\"Perpustakaan\"",
+   "fieldname": "ruang_perpustakaan",
    "fieldtype": "Table",
-   "options": "ctRuang Perpustakaan"
+   "label": "Ruang Perpustakaan",
+   "options": "ctRuang",
+   "read_only": 1
   },
   {
-   "fieldname": "penunjang",
+   "depends_on": "eval:doc.tipe==\"Praktik Siswa\"",
+   "fieldname": "ruang_praktik_siswa",
    "fieldtype": "Table",
-   "options": "ctRuang Penunjang"
+   "label": "Ruang Praktik Siswa",
+   "options": "ctRuang",
+   "read_only": 1
   },
   {
-   "fieldname": "guru_kepsek",
-   "fieldtype": "Tab Break",
-   "label": "Ruang Kepsek/Guru"
-  },
-  {
-   "fieldname": "ruang_laboratorium_tab",
-   "fieldtype": "Tab Break",
-   "label": "Ruang Laboratorium"
-  },
-  {
-   "fieldname": "ruang_perpustakaan_tab",
-   "fieldtype": "Tab Break",
-   "label": "Ruang Perpustakaan"
-  },
-  {
-   "fieldname": "kamar_mandiwc_tab",
-   "fieldtype": "Tab Break",
-   "label": "Kamar Mandi/WC"
-  },
-  {
-   "fieldname": "ruang_penunjang_tab",
-   "fieldtype": "Tab Break",
-   "label": "Ruang Penunjang"
-  },
-  {
-   "fieldname": "kamar_mandi",
+   "depends_on": "eval:doc.tipe==\"Kamar Mandi/WC\"",
+   "fieldname": "kamar_mandiwc",
    "fieldtype": "Table",
-   "options": "ctKamar Mandi WC"
+   "label": "Kamar Mandi/WC",
+   "options": "ctRuang",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.tipe==\"Penunjang\"",
+   "fieldname": "ruang_penunjang",
+   "fieldtype": "Table",
+   "label": "Ruang Penunjang",
+   "options": "ctRuang",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tambah_ruang",
+   "fieldtype": "Button",
+   "label": "Tambah Ruang"
+  },
+  {
+   "fieldname": "section_break_soph",
+   "fieldtype": "Section Break",
+   "hidden": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-07-02 20:05:18.878139",
+ "modified": "2024-07-06 19:40:06.050315",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Ruang",
@@ -100,7 +123,12 @@
    "write": 1
   }
  ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "nama",
+ "translated_doctype": 1
 }

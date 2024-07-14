@@ -1,52 +1,116 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-06-24 13:12:12.545017",
+ "creation": "2024-07-09 17:37:35.630143",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "kelas",
+  "rombel",
+  "nama_rombel",
+  "column_break_rbpd",
+  "ruang",
+  "column_break_ksko",
   "hari",
-  "tanggal_jam",
-  "mapel",
-  "guru",
-  "tambah"
+  "section_break_ivju",
+  "jadwal_senin",
+  "jadwal_selasa",
+  "jadwal_rabu",
+  "jadwal_kamis",
+  "jadwal_jumat",
+  "jadwal_sabtu",
+  "jadwal_minggu"
  ],
  "fields": [
   {
-   "fieldname": "kelas",
-   "fieldtype": "Data",
-   "label": "Kelas"
+   "fieldname": "column_break_ksko",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "hari",
+   "fieldtype": "Select",
+   "label": "Hari",
+   "options": "Senin\nSelasa\nRabu\nKamis\nJumat\nSabtu\nMinggu"
+  },
+  {
+   "fieldname": "section_break_ivju",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.hari==\"Senin\"",
+   "fieldname": "jadwal_senin",
+   "fieldtype": "Table",
+   "label": "Jadwal Senin",
+   "options": "ctJadwal"
+  },
+  {
+   "depends_on": "eval:doc.hari==\"Selasa\"",
+   "fieldname": "jadwal_selasa",
+   "fieldtype": "Table",
+   "label": "Jadwal Selasa",
+   "options": "ctJadwal"
+  },
+  {
+   "depends_on": "eval:doc.hari==\"Rabu\"",
+   "fieldname": "jadwal_rabu",
+   "fieldtype": "Table",
+   "label": "Jadwal Rabu",
+   "options": "ctJadwal"
+  },
+  {
+   "depends_on": "eval:doc.hari==\"Kamis\"",
+   "fieldname": "jadwal_kamis",
+   "fieldtype": "Table",
+   "label": "Jadwal Kamis",
+   "options": "ctJadwal"
+  },
+  {
+   "depends_on": "eval:doc.hari==\"Jumat\"",
+   "fieldname": "jadwal_jumat",
+   "fieldtype": "Table",
+   "label": "Jadwal Jumat",
+   "options": "ctJadwal"
+  },
+  {
+   "depends_on": "eval:doc.hari==\"Sabtu\"",
+   "fieldname": "jadwal_sabtu",
+   "fieldtype": "Table",
+   "label": "Jadwal Sabtu",
+   "options": "ctJadwal"
+  },
+  {
+   "depends_on": "eval:doc.hari==\"Minggu\"",
+   "fieldname": "jadwal_minggu",
+   "fieldtype": "Table",
+   "label": "Jadwal Minggu",
+   "options": "ctJadwal"
+  },
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Link",
+   "label": "Rombel",
+   "options": "Rombel"
+  },
+  {
+   "fieldname": "column_break_rbpd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ruang",
+   "fieldtype": "Link",
+   "label": "Ruang",
+   "options": "Data Ruang"
+  },
+  {
+   "fetch_from": "rombel.nama_rombel",
+   "fieldname": "nama_rombel",
    "fieldtype": "Data",
-   "label": "Hari"
-  },
-  {
-   "fieldname": "tanggal_jam",
-   "fieldtype": "Datetime",
-   "label": "Tanggal Jam"
-  },
-  {
-   "fieldname": "mapel",
-   "fieldtype": "Data",
-   "label": "Materi Pelajaran"
-  },
-  {
-   "fieldname": "guru",
-   "fieldtype": "Data",
-   "label": "Guru"
-  },
-  {
-   "fieldname": "tambah",
-   "fieldtype": "Button",
-   "label": "Tambah"
+   "hidden": 1,
+   "label": "Nama Rombel"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-24 13:19:21.787251",
+ "modified": "2024-07-09 22:02:05.599288",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Jadwal",
@@ -56,16 +120,17 @@
    "create": 1,
    "delete": 1,
    "email": 1,
-   "export": 1,
    "print": 1,
    "read": 1,
-   "report": 1,
    "role": "System Manager",
    "share": 1,
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "nama_rombel",
+ "translated_doctype": 1
 }

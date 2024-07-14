@@ -1,24 +1,51 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-06-26 03:10:54.316006",
+ "creation": "2024-07-06 18:20:02.116063",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "informasi_section",
+  "bangunan",
+  "ruang",
   "jenis_sarana",
+  "link",
   "nama",
   "column_break_jsvd",
   "spesifikasi",
   "kepemilikan",
   "jumlah_total",
-  "jumlah_layak"
+  "jumlah_layak",
+  "nama_ruang"
  ],
  "fields": [
+  {
+   "fieldname": "informasi_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "ruang.bangunan_nama",
+   "fieldname": "bangunan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bangunan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ruang",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Ruang",
+   "options": "Data Ruang"
+  },
   {
    "fieldname": "jenis_sarana",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Jenis sarana",
    "reqd": 1
   },
@@ -26,6 +53,7 @@
    "fieldname": "nama",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Nama",
    "reqd": 1
   },
@@ -43,6 +71,7 @@
    "fieldname": "kepemilikan",
    "fieldtype": "Select",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Kepemilikan",
    "options": "Milik",
    "reqd": 1
@@ -58,17 +87,34 @@
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Jumlah layak"
+  },
+  {
+   "fetch_from": "ruang.nama_ruang",
+   "fieldname": "nama_ruang",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Nama Ruang"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Link ke Alat",
+   "options": "Data Alat",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-03 23:51:51.709159",
+ "modified": "2024-07-06 21:13:49.286924",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "ctAlat",
  "owner": "Administrator",
  "permissions": [],
+ "search_fields": "nama_ruang",
  "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",

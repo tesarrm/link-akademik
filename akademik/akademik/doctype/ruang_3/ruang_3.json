@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-23 14:32:36.806354",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ruang_kelas_tab",
+  "column_break_uojj",
+  "kelas",
+  "guru_kepsek",
+  "kepsek_guru",
+  "ruang_laboratorium_tab",
+  "laboratorium",
+  "ruang_perpustakaan_tab",
+  "perpustakaan",
+  "kamar_mandiwc_tab",
+  "kamar_mandi",
+  "ruang_penunjang_tab",
+  "penunjang"
+ ],
+ "fields": [
+  {
+   "fieldname": "ruang_kelas_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ruang Kelas"
+  },
+  {
+   "fieldname": "kelas",
+   "fieldtype": "Table",
+   "in_filter": 1,
+   "options": "ctRuang Kelas"
+  },
+  {
+   "fieldname": "kepsek_guru",
+   "fieldtype": "Table",
+   "options": "ctRuang Kepsek Guru"
+  },
+  {
+   "fieldname": "laboratorium",
+   "fieldtype": "Table",
+   "options": "ctRuang Laboratorium"
+  },
+  {
+   "fieldname": "perpustakaan",
+   "fieldtype": "Table",
+   "options": "ctRuang Perpustakaan"
+  },
+  {
+   "fieldname": "penunjang",
+   "fieldtype": "Table",
+   "options": "ctRuang Penunjang"
+  },
+  {
+   "fieldname": "guru_kepsek",
+   "fieldtype": "Tab Break",
+   "label": "Ruang Kepsek/Guru",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ruang_laboratorium_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ruang Laboratorium",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ruang_perpustakaan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ruang Perpustakaan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kamar_mandiwc_tab",
+   "fieldtype": "Tab Break",
+   "label": "Kamar Mandi/WC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ruang_penunjang_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ruang Penunjang",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kamar_mandi",
+   "fieldtype": "Table",
+   "options": "ctRuang Kamar Mandi WC"
+  },
+  {
+   "fieldname": "column_break_uojj",
+   "fieldtype": "Column Break",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-06 06:59:13.120435",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Ruang 3",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

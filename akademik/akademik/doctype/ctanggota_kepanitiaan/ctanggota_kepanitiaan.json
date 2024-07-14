@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-04 14:36:18.440057",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "unsur",
+  "guru_bila_guru",
+  "pd_ortu",
+  "column_break_onhj",
+  "peran",
+  "nama_anggota",
+  "no_kontak"
+ ],
+ "fields": [
+  {
+   "fieldname": "unsur",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Unsur",
+   "options": "Guru dan Tendik\nOrang Tua\nKomite Sekolah"
+  },
+  {
+   "fieldname": "guru_bila_guru",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Guru (bila guru)",
+   "options": "GTK"
+  },
+  {
+   "fieldname": "pd_ortu",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Peserta Didik (bila peserta didik & orang tua)",
+   "options": "Peserta Didik"
+  },
+  {
+   "fieldname": "column_break_onhj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "peran",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Peran"
+  },
+  {
+   "fieldname": "nama_anggota",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Anggota"
+  },
+  {
+   "fieldname": "no_kontak",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No Kontak"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-04 14:39:37.898297",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctAnggota Kepanitiaan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

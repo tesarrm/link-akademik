@@ -5,13 +5,10 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "nama_thn_ajar",
+  "tahun_ajaran",
   "column_break_urpo",
   "tgl_mulai",
-  "column_break_jeag",
-  "tgl_akhir",
-  "semester",
-  "status"
+  "tgl_akhir"
  ],
  "fields": [
   {
@@ -22,45 +19,29 @@
    "fieldname": "tgl_mulai",
    "fieldtype": "Date",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Tgl Mulai",
    "reqd": 1
-  },
-  {
-   "fieldname": "column_break_jeag",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "tgl_akhir",
    "fieldtype": "Date",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Tgl Akhir",
    "reqd": 1
   },
   {
-   "fieldname": "nama_thn_ajar",
+   "fieldname": "tahun_ajaran",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Nama Tahun Ajaran",
-   "reqd": 1
-  },
-  {
-   "fieldname": "semester",
-   "fieldtype": "Link",
-   "label": "Semester",
-   "options": "Semester",
-   "reqd": 1
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Aktif\nNonAktif",
+   "label": "Tahun Ajaran",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-03 14:04:00.615659",
+ "modified": "2024-07-11 18:00:05.516931",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Tahun Ajaran",
@@ -83,5 +64,6 @@
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
- "title_field": "nama_thn_ajar"
+ "title_field": "tahun_ajaran",
+ "translated_doctype": 1
 }

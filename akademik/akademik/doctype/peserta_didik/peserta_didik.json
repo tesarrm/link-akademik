@@ -9,37 +9,46 @@
   "data_pokok_tab",
   "data_pribadi_section",
   "nama",
-  "jenis_kelamin",
+  "nama_panggilan",
   "nis",
-  "kwarganegaraan",
+  "jenis_kelamin",
+  "nisn",
   "nik",
   "no_kk",
-  "tempat_lahir",
-  "tanggal_lahir",
-  "no_akta",
-  "berkebutuhan_khusus",
-  "agama",
-  "catatan",
   "foto_profil",
   "column_break_vtbi",
-  "alamat_jalan",
+  "kwarganegaraan",
+  "tempat_lahir",
+  "tanggal_lahir",
+  "agama",
+  "anak_ke",
+  "no_akta",
+  "berkebutuhan_khusus",
+  "alamat_peserta_didik_section",
+  "provinsi",
+  "kecamatan",
   "rt",
-  "rw",
   "nama_dusun",
-  "desakelurahan",
   "kode_pos",
+  "transportasi",
+  "column_break_ivqx",
+  "kabupatenkota",
+  "desakelurahan",
+  "rw",
+  "alamat_jalan",
+  "tempat_tinggal",
+  "column_break_albv",
   "lintang",
   "bujur",
-  "tempat_tinggal",
-  "transportasi",
-  "anak_ke",
+  "map",
+  "bank_diperuntukkan_pip_diisi_oleh_pusat_section",
   "penerima_kpspkh",
   "apakah_punya_kip",
   "apakah_peserta_didik_tersebut_layak_mendapatkan_kip",
-  "bank_diperuntukkan_pip_diisi_oleh_pusat_section",
+  "alasan_layak_kip",
+  "column_break_dszm",
   "nama_bank",
   "no_rekening",
-  "column_break_dszm",
   "kantor_cabang_pemilu_kcp",
   "rekening_atas_nama",
   "section_break_opta",
@@ -71,11 +80,10 @@
   "kebutuhan_khusus_wali",
   "kontak_section",
   "nomor_telepon_rumah",
+  "column_break_kewl",
   "nomor_hp",
   "column_break_ypnz",
   "email",
-  "dokumen_section",
-  "tabel_dokumen",
   "registrasi_tab",
   "pendaftaran_masuk_section",
   "jenis_pendaftaran",
@@ -87,39 +95,55 @@
   "apakah_pernah_paud_no_formal_kbtpasps",
   "hobi",
   "cita_cita",
+  "rombel",
   "pendaftaran_ujian_nasional_sekolah_dasar_section",
   "no_un",
+  "column_break_oaol",
   "no_ijazah",
+  "column_break_njap",
   "no_skhun",
   "diisi_saat_keluar_section",
   "keluar_karena",
-  "column_break_tptj",
   "tgl_keluar_sekolah",
-  "section_break_skli",
-  "alasan",
   "keluar",
+  "column_break_tptj",
+  "alasan",
+  "data_periodik_tab",
+  "tinggi_badan_cm",
+  "berat_badan_cm",
+  "lingkar_kepala_cm",
+  "jarak_rumah_ke_sekolah",
+  "sebutkan_dalam_meter",
+  "waktu_tempuh_ke_sekolah",
   "prestasi_tab",
   "prestasi",
   "beasiswa_tab",
   "beasiswa",
-  "kitas_tab",
-  "kitas",
+  "kesejahteraan_tab",
+  "kesejahteraan",
   "paspor_tab",
   "paspor",
-  "data_periodik_tab",
-  "tinggi_badan_cm"
+  "sertifikasi_tab",
+  "sertifikasi",
+  "akun_tab",
+  "akun_section",
+  "buat_akun"
  ],
  "fields": [
   {
    "fieldname": "tanggal_lahir",
    "fieldtype": "Date",
-   "label": "Tanggal Lahir"
+   "label": "Tanggal Lahir",
+   "reqd": 1
   },
   {
    "fieldname": "jenis_kelamin",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Jenis kelamin",
-   "options": "Laki-laki\nPerempuan"
+   "options": "Laki-laki\nPerempuan",
+   "reqd": 1
   },
   {
    "fieldname": "data_pokok_tab",
@@ -130,11 +154,6 @@
    "fieldname": "beasiswa_tab",
    "fieldtype": "Tab Break",
    "label": "Beasiswa"
-  },
-  {
-   "fieldname": "kitas_tab",
-   "fieldtype": "Tab Break",
-   "label": "KITAS"
   },
   {
    "fieldname": "paspor_tab",
@@ -157,12 +176,15 @@
   {
    "fieldname": "nis",
    "fieldtype": "Data",
-   "label": "NIS"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "NIS",
+   "reqd": 1
   },
   {
    "fieldname": "kwarganegaraan",
    "fieldtype": "Select",
-   "label": "Kwarganegaraan",
+   "label": "Kewarganegaraan",
    "options": "WNI\nWNA"
   },
   {
@@ -178,7 +200,8 @@
   {
    "fieldname": "tempat_lahir",
    "fieldtype": "Data",
-   "label": "Tempat Lahir"
+   "label": "Tempat Lahir",
+   "reqd": 1
   },
   {
    "fieldname": "no_akta",
@@ -234,12 +257,12 @@
   {
    "fieldname": "lintang",
    "fieldtype": "Data",
-   "label": "Lintang"
+   "label": "Lintang (Latitude)"
   },
   {
    "fieldname": "bujur",
    "fieldtype": "Data",
-   "label": "Bujur"
+   "label": "Bujur (Longitude)"
   },
   {
    "fieldname": "tempat_tinggal",
@@ -254,10 +277,9 @@
    "options": "\nJalan kaki\nAngkutan umum\nMobil\nKereta api\nSepeda\nSepeda motor\nLainnya"
   },
   {
-   "description": "Sesuai data KK",
    "fieldname": "anak_ke",
    "fieldtype": "Int",
-   "label": "Anak ke"
+   "label": "Anak ke (berdasarkan KK)"
   },
   {
    "fieldname": "penerima_kpspkh",
@@ -278,6 +300,7 @@
    "options": "\nTidak\nYa"
   },
   {
+   "collapsible": 1,
    "fieldname": "bank_diperuntukkan_pip_diisi_oleh_pusat_section",
    "fieldtype": "Section Break",
    "label": "Bank diperuntukkan PIP (diisi oleh pusat)"
@@ -307,6 +330,7 @@
    "label": "Rekening atas nama"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_opta",
    "fieldtype": "Section Break",
    "label": "Data Ayah Kandung"
@@ -314,17 +338,21 @@
   {
    "fieldname": "nama_ayah",
    "fieldtype": "Data",
-   "label": "Nama ayah"
+   "label": "Nama ayah",
+   "reqd": 1
   },
   {
    "fieldname": "nik_ayah",
    "fieldtype": "Data",
-   "label": "NIK ayah"
+   "label": "NIK ayah",
+   "reqd": 1
   },
   {
    "fieldname": "tahun_lahir_ayah",
    "fieldtype": "Int",
-   "label": "Tahun lahir ayah"
+   "label": "Tahun lahir ayah",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break_lqbd",
@@ -334,19 +362,22 @@
    "fieldname": "pendidikan_ayah",
    "fieldtype": "Select",
    "label": "Pendidikan ayah",
-   "options": "Tidak sekolah\nSD/Sederajat\nSMP/Sederajat\nSMA/Sederajat\nDiploma\nS1\nS2\nS3"
+   "options": "Tidak sekolah\nSD/Sederajat\nSMP/Sederajat\nSMA/Sederajat\nDiploma\nS1\nS2\nS3",
+   "reqd": 1
   },
   {
    "fieldname": "pekerjaan_ayah",
    "fieldtype": "Select",
    "label": "Pekerjaan ayah",
-   "options": "Tidak bekerja\nWirausaha\nWiraswasta\nBuruh\nNelayan\nPetani\nPeternak\nPNS/TNI/Polri\nKaryawan Swasta\nPedagang kecil\nPedagang besar\nMeninggal\nLainnya"
+   "options": "Tidak bekerja\nWirausaha\nWiraswasta\nBuruh\nNelayan\nPetani\nPeternak\nPNS/TNI/Polri\nKaryawan Swasta\nPedagang kecil\nPedagang besar\nMeninggal\nLainnya",
+   "reqd": 1
   },
   {
    "fieldname": "penghasilan_ayah",
    "fieldtype": "Select",
    "label": "Penghasilan ayah",
-   "options": "<500rb\n500-1jt\n1jt-3jt\n3jt-5jt"
+   "options": "<500rb\n500-1jt\n1jt-3jt\n3jt-5jt",
+   "reqd": 1
   },
   {
    "fieldname": "kebutuhan_khusus_ayah",
@@ -354,6 +385,7 @@
    "label": "Kebutuhan khusus ayah"
   },
   {
+   "collapsible": 1,
    "fieldname": "data_ibu_kandung_section",
    "fieldtype": "Section Break",
    "label": "Data Ibu Kandung"
@@ -361,17 +393,21 @@
   {
    "fieldname": "nama_ibu",
    "fieldtype": "Data",
-   "label": "Nama ibu"
+   "label": "Nama ibu",
+   "reqd": 1
   },
   {
    "fieldname": "nik_ibu",
    "fieldtype": "Data",
-   "label": "NIK ibu"
+   "label": "NIK ibu",
+   "reqd": 1
   },
   {
    "fieldname": "tahun_lahir_ibu",
    "fieldtype": "Int",
-   "label": "Tahun lahir ibu"
+   "label": "Tahun lahir ibu",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break_kwhr",
@@ -381,19 +417,22 @@
    "fieldname": "pendidikan_ibu",
    "fieldtype": "Select",
    "label": "Pendidikan ibu",
-   "options": "Tidak sekolah\nSD/Sederajat\nSMP/Sederajat\nSMA/Sederajat\nDiploma\nS1\nS2\nS3"
+   "options": "Tidak sekolah\nSD/Sederajat\nSMP/Sederajat\nSMA/Sederajat\nDiploma\nS1\nS2\nS3",
+   "reqd": 1
   },
   {
    "fieldname": "pekerjaan_ibu",
    "fieldtype": "Select",
    "label": "Pekerjaan ibu",
-   "options": "Tidak bekerja\nWirausaha\nWiraswasta\nBuruh\nNelayan\nPetani\nPeternak\nPNS/TNI/Polri\nKaryawan Swasta\nPedagang kecil\nPedagang besar\nMeninggal\nLainnya"
+   "options": "Tidak bekerja\nWirausaha\nWiraswasta\nBuruh\nNelayan\nPetani\nPeternak\nPNS/TNI/Polri\nKaryawan Swasta\nPedagang kecil\nPedagang besar\nMeninggal\nLainnya",
+   "reqd": 1
   },
   {
    "fieldname": "penghasilan_ibu",
    "fieldtype": "Select",
    "label": "Penghasilan ibu",
-   "options": "<500rb\n500-1jt\n1jt-3jt\n3jt-5jt"
+   "options": "<500rb\n500-1jt\n1jt-3jt\n3jt-5jt",
+   "reqd": 1
   },
   {
    "fieldname": "kebutuhan_khusus_ibu",
@@ -401,6 +440,7 @@
    "label": "Kebutuhan khusus ibu"
   },
   {
+   "collapsible": 1,
    "fieldname": "data_wali_section",
    "fieldtype": "Section Break",
    "label": "Data wali"
@@ -448,6 +488,7 @@
    "label": "Kebutuhan khusus wali"
   },
   {
+   "collapsible": 1,
    "fieldname": "kontak_section",
    "fieldtype": "Section Break",
    "label": "Kontak"
@@ -458,8 +499,11 @@
    "label": "Nomor telepon rumah"
   },
   {
+   "default": "62",
    "fieldname": "nomor_hp",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Nomor HP"
   },
   {
@@ -469,6 +513,8 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Email"
   },
   {
@@ -480,7 +526,7 @@
    "fieldname": "prestasi",
    "fieldtype": "Table",
    "label": "Prestasi",
-   "options": "CT Prestasi"
+   "options": "ctPrestasi"
   },
   {
    "fieldname": "data_periodik_tab",
@@ -495,41 +541,17 @@
   {
    "fieldname": "beasiswa",
    "fieldtype": "Table",
-   "label": "Beasiswa",
-   "options": "CT Beasiswas"
-  },
-  {
-   "fieldname": "kitas",
-   "fieldtype": "Table",
-   "label": "Kitas",
-   "options": "CT Kitas"
+   "options": "ctBeasiswa"
   },
   {
    "fieldname": "paspor",
    "fieldtype": "Table",
-   "label": "Paspor",
-   "options": "CT Paspor"
-  },
-  {
-   "fieldname": "dokumen_section",
-   "fieldtype": "Section Break",
-   "label": "Lampiran"
-  },
-  {
-   "fieldname": "tabel_dokumen",
-   "fieldtype": "Table",
-   "label": "Tabel Dokumen",
-   "options": "CT Dokumen Siswa"
+   "options": "ctPaspor"
   },
   {
    "fieldname": "foto_profil",
    "fieldtype": "Attach Image",
    "label": "Foto Profil"
-  },
-  {
-   "fieldname": "catatan",
-   "fieldtype": "Small Text",
-   "label": "Catatan"
   },
   {
    "fieldname": "registrasi_tab",
@@ -592,26 +614,29 @@
    "label": "Cita cita"
   },
   {
+   "collapsible": 1,
    "fieldname": "pendaftaran_ujian_nasional_sekolah_dasar_section",
    "fieldtype": "Section Break",
-   "label": "Pendaftaran Ujian Nasional Sekolah Dasar"
+   "label": "Pendaftaran Ujian Nasional Sekolah Menengah"
   },
   {
    "fieldname": "no_un",
    "fieldtype": "Data",
-   "label": "No peserta UN SD/MI"
+   "label": "No peserta UN SMP/MTs"
   },
   {
    "fieldname": "no_ijazah",
    "fieldtype": "Data",
-   "label": "No seri ijazah UN SD/MI"
+   "label": "No seri ijazah UN SMP/MTs"
   },
   {
    "fieldname": "no_skhun",
    "fieldtype": "Data",
-   "label": "No SKHUN UN SD/MI"
+   "label": "No SKHUN UN SMP/MTs"
   },
   {
+   "collapsible": 1,
+   "description": "Peserta didik yang bisa diluluskan hanyalah peserta didik yang berada pada rombongan belajar tingkat akhir",
    "fieldname": "diisi_saat_keluar_section",
    "fieldtype": "Section Break",
    "label": "Diisi saat Keluar"
@@ -632,10 +657,6 @@
    "label": "Tgl keluar sekolah"
   },
   {
-   "fieldname": "section_break_skli",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "alasan",
    "fieldtype": "Small Text",
    "label": "Alasan"
@@ -646,12 +667,144 @@
    "fieldtype": "Check",
    "hidden": 1,
    "label": "Keluar"
+  },
+  {
+   "fieldname": "column_break_oaol",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_njap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Geolocation",
+   "label": "Map"
+  },
+  {
+   "documentation_url": "https://indonesia.com",
+   "fieldname": "alasan_layak_kip",
+   "fieldtype": "Data",
+   "label": "Alasan layak KIP?"
+  },
+  {
+   "fieldname": "column_break_kewl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "alamat_peserta_didik_section",
+   "fieldtype": "Section Break",
+   "label": "Alamat "
+  },
+  {
+   "fieldname": "column_break_albv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kesejahteraan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Kesejahteraan"
+  },
+  {
+   "fieldname": "kesejahteraan",
+   "fieldtype": "Table",
+   "options": "ctKesejahteraan"
+  },
+  {
+   "fieldname": "sertifikasi_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sertifikasi"
+  },
+  {
+   "fieldname": "sertifikasi",
+   "fieldtype": "Table",
+   "options": "ctSertifikasi"
+  },
+  {
+   "fieldname": "berat_badan_cm",
+   "fieldtype": "Int",
+   "label": "Berat badan (cm)"
+  },
+  {
+   "fieldname": "lingkar_kepala_cm",
+   "fieldtype": "Int",
+   "label": "Lingkar kepala (cm)"
+  },
+  {
+   "fieldname": "jarak_rumah_ke_sekolah",
+   "fieldtype": "Select",
+   "label": "Jarak rumah ke sekolah",
+   "options": "Kurang dari 1 km\nLebih dari 1 km"
+  },
+  {
+   "fieldname": "sebutkan_dalam_meter",
+   "fieldtype": "Int",
+   "label": "Sebutkan (dalam meter)"
+  },
+  {
+   "fieldname": "waktu_tempuh_ke_sekolah",
+   "fieldtype": "Time",
+   "label": "Waktu tempuh ke sekolah"
+  },
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Link",
+   "label": "Rombel",
+   "options": "Rombel"
+  },
+  {
+   "fieldname": "nisn",
+   "fieldtype": "Data",
+   "label": "NISN"
+  },
+  {
+   "fieldname": "kecamatan",
+   "fieldtype": "Select",
+   "label": "Kecamatan"
+  },
+  {
+   "fieldname": "kabupatenkota",
+   "fieldtype": "Select",
+   "label": "Kabupaten/Kota",
+   "reqd": 1
+  },
+  {
+   "fieldname": "provinsi",
+   "fieldtype": "Select",
+   "label": "Provinsi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "akun_tab",
+   "fieldtype": "Tab Break",
+   "label": "Akun"
+  },
+  {
+   "fieldname": "akun_section",
+   "fieldtype": "Section Break",
+   "label": "Akun"
+  },
+  {
+   "fieldname": "buat_akun",
+   "fieldtype": "Button",
+   "label": "Buat Akun"
+  },
+  {
+   "description": "Data ini tidak wajib diisi karena nama panggilan bersifat Opsional.",
+   "fieldname": "nama_panggilan",
+   "fieldtype": "Data",
+   "label": "Nama Panggilan"
+  },
+  {
+   "fieldname": "column_break_ivqx",
+   "fieldtype": "Column Break"
   }
  ],
  "image_field": "foto_profil",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-03 06:15:19.431624",
+ "modified": "2024-07-12 20:00:10.805023",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Peserta Didik",

@@ -38,7 +38,7 @@ def sinkron_buku():
 				"judul": b['title'],
 			})
 			doc.insert()
-		else: 
+		else:
 			doc = frappe.get_doc(
 				"Data Buku", {"id_buku": b['id']}
 			)

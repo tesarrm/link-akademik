@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-04 13:47:13.331306",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pernyataan_data_dinamis",
+  "jawaban",
+  "column_break_rcjw",
+  "keterangan"
+ ],
+ "fields": [
+  {
+   "fieldname": "jawaban",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jawaban",
+   "options": "Ya\nTidak"
+  },
+  {
+   "fieldname": "column_break_rcjw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Data",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "pernyataan_data_dinamis",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pertanyaan",
+   "options": "Data Dinamis"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-10 12:21:25.642925",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctData Dinamis",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

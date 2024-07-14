@@ -9,16 +9,17 @@
   "bangunan",
   "column_break_kgaw",
   "ruang_kelas",
-  "nama_ruang"
+  "nama_ruang",
+  "jenis_prasarana"
  ],
  "fields": [
   {
    "fieldname": "ruang_kelas",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Ruang Kelas",
-   "link_filters": "[[\"Ruangan\",\"jenis_prasarana\",\"=\",\"Ruang Teori/Kelas\"]]",
+   "link_filters": "[[\"Data Ruang\",\"jenis_prasarana\",\"=\",\"Ruang Teori/Kelas\"]]",
    "options": "Data Ruang",
+   "read_only": 1,
    "reqd": 1,
    "unique": 1
   },
@@ -38,13 +39,21 @@
    "fetch_from": "ruang_kelas.nama_ruang",
    "fieldname": "nama_ruang",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Nama Ruang"
+  },
+  {
+   "fetch_from": "ruang_kelas.jenis_prasarana",
+   "fieldname": "jenis_prasarana",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Jenis Prasarana"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-03 22:35:26.897887",
+ "modified": "2024-07-06 10:16:02.167228",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "ctRuang Kelas",

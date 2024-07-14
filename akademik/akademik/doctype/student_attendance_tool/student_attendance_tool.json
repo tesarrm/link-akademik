@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "creation": "2024-07-10 08:47:49.159581",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "based_on",
+  "group_based_on",
+  "column_break_waxe",
+  "student_group",
+  "academic_year",
+  "course_schedule",
+  "date",
+  "attendance_section",
+  "students_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "based_on",
+   "fieldtype": "Select",
+   "label": "Based On",
+   "options": "\nStudent Group\nCourse Schedule"
+  },
+  {
+   "depends_on": "eval:doc.based_on == \"Student Group\"",
+   "fieldname": "group_based_on",
+   "fieldtype": "Select",
+   "label": "Group Based On",
+   "options": "Batch\nCourse\nActivity"
+  },
+  {
+   "fieldname": "column_break_waxe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.based_on ==\"Student Group\"",
+   "fieldname": "student_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Group",
+   "options": "Grup Peserta Didik",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.based_on == \"Student Group\"",
+   "fetch_from": "student_group.tahun_ajaran",
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Academic Year",
+   "options": "Tahun Ajaran"
+  },
+  {
+   "depends_on": "eval:doc.based_on ==\"Student Group\"",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "mandatory_depends_on": "eval:doc.based_on == \"Student Group\"",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval: (doc.course_schedule \r\n|| (doc.student_group && doc.date))",
+   "fieldname": "attendance_section",
+   "fieldtype": "Section Break",
+   "label": "Attendance"
+  },
+  {
+   "fieldname": "students_html",
+   "fieldtype": "HTML",
+   "label": "Students HTML"
+  },
+  {
+   "depends_on": "eval:doc.based_on ==\"Course Schedule\"",
+   "fieldname": "course_schedule",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Course Schedule",
+   "options": "Rombel",
+   "reqd": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-10 09:01:38.138382",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Student Attendance Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -9,9 +9,11 @@ app_license = "mit"
 # Includes in <head>
 # ------------------
 
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/akademik/css/akademik.css"
-# app_include_js = "/assets/akademik/js/akademik.js"
+app_include_js = "/assets/akademik/js/akademik3.js"
+app_include_js = "testing.bundle.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/akademik/css/akademik.css"
@@ -129,6 +131,17 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+
+# apps/akademik/akademik/akademik/hooks.py
+
+doc_events = {
+    "Import Data": {
+        "on_update": "akademik.akademik.doctype.import_data.import_data.ImportData.on_update"
+    }
+}
+
+
+
 
 # Scheduled Tasks
 # ---------------

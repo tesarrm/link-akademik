@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 19:32:51.803530",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_aktifitas_pd",
+  "judul",
+  "sk_tugas",
+  "tgl_sk_tugas",
+  "tgl_mulai",
+  "tgl_selesai",
+  "column_break_vdiw",
+  "keterangan",
+  "anggota_section",
+  "peserta_didik",
+  "pembimbing_section",
+  "pembimbing"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_aktifitas_pd",
+   "fieldtype": "Data",
+   "label": "Jenis Aktifitas PD"
+  },
+  {
+   "fieldname": "judul",
+   "fieldtype": "Data",
+   "label": "Judul"
+  },
+  {
+   "fieldname": "sk_tugas",
+   "fieldtype": "Data",
+   "label": "SK Tugas"
+  },
+  {
+   "fieldname": "tgl_sk_tugas",
+   "fieldtype": "Date",
+   "label": "Tgl. SK Tugas"
+  },
+  {
+   "fieldname": "tgl_mulai",
+   "fieldtype": "Date",
+   "label": "Tgl. Mulai"
+  },
+  {
+   "fieldname": "tgl_selesai",
+   "fieldtype": "Date",
+   "label": "Tgl. Selesai"
+  },
+  {
+   "fieldname": "column_break_vdiw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "anggota_section",
+   "fieldtype": "Section Break",
+   "label": "Anggota"
+  },
+  {
+   "fieldname": "peserta_didik",
+   "fieldtype": "Table",
+   "options": "ctPeserta Didik"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "pembimbing_section",
+   "fieldtype": "Section Break",
+   "label": "Pembimbing"
+  },
+  {
+   "fieldname": "pembimbing",
+   "fieldtype": "Table",
+   "options": "ctPembimbing Aktivitas PD"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-05 19:56:17.440458",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Prakerin Teaching Factory",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "judul",
+ "translated_doctype": 1
+}

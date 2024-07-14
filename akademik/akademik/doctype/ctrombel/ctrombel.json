@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-11 16:13:33.908693",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rombel"
+ ],
+ "fields": [
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Link",
+   "label": "Rombel",
+   "options": "Rombel"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-11 16:14:46.818801",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctRombel",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

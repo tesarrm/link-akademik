@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 12:42:11.983079",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "peserta_didik",
+  "nama_peserta_didik",
+  "read_only_xzqt",
+  "rombel",
+  "grup_peserta_didik",
+  "column_break_dlch",
+  "tanggal",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "EDU-ATT-.YYYY.-"
+  },
+  {
+   "fieldname": "peserta_didik",
+   "fieldtype": "Link",
+   "label": "Peserta Didik",
+   "options": "Peserta Didik",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "peserta_didik.nama",
+   "fieldname": "nama_peserta_didik",
+   "fieldtype": "Read Only",
+   "in_global_search": 1,
+   "label": "Nama Peserta Didik"
+  },
+  {
+   "fetch_from": "peserta_didik.nomor_hp",
+   "fieldname": "read_only_xzqt",
+   "fieldtype": "Read Only",
+   "label": "Nomor Hp Peserta Didik"
+  },
+  {
+   "fieldname": "grup_peserta_didik",
+   "fieldtype": "Link",
+   "label": "Grup Peserta Didik",
+   "options": "Grup Peserta Didik"
+  },
+  {
+   "fieldname": "column_break_dlch",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "label": "Tanggal",
+   "reqd": 1
+  },
+  {
+   "default": "Hadir",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nHadir\nTidak Hadir\nIzin",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Link",
+   "label": "Rombel",
+   "options": "Rombel"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-09 13:59:34.365063",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Kehadiran Peserta Didik",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Hadir"
+  },
+  {
+   "color": "Orange",
+   "title": "Tidak Hadir"
+  },
+  {
+   "color": "Red",
+   "title": "Izin"
+  }
+ ]
+}

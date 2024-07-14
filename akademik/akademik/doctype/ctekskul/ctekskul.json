@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-27 14:07:42.194943",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ekskul",
+  "jenis_ekskul",
+  "sk_ekskul",
+  "column_break_cjjo",
+  "tgl_sk_ekskul",
+  "jam_keg_per_minggu"
+ ],
+ "fields": [
+  {
+   "fieldname": "ekskul",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ekskul",
+   "options": "Ekskul"
+  },
+  {
+   "fieldname": "jenis_ekskul",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Ekskul",
+   "options": "Seni Musik\nOlahraga/Beladiri\nKomputer dan teknologi\nseni media dan jurnalist\nBahasa\nKerohanian\nPaskibra\nPramuka"
+  },
+  {
+   "fieldname": "column_break_cjjo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tgl_sk_ekskul",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tgl SK Ekskul"
+  },
+  {
+   "fieldname": "jam_keg_per_minggu",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Jam Keg. Per Minggu"
+  },
+  {
+   "fieldname": "sk_ekskul",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SK Ekskul"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-13 20:00:16.287910",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctEkskul",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

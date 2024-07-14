@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 14:00:28.506591",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama",
+  "tahun",
+  "sumber_data",
+  "jenis_bantuan",
+  "column_break_peeb",
+  "pertuntukan_dana",
+  "besar_bantuan",
+  "dana_pendamping",
+  "section_break_daan",
+  "bangunan_dihasilkan",
+  "column_break_jguu",
+  "alat_dihasilkan"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tahun",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tahun",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sumber_data",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sumber Data",
+   "options": "Badan PSDMPK dan PMP\nBalitbang\nBantuan Asing\nBantuan Swasta\nBiro PKLN\nCSR suatu perusahaan/instuti\nDikti\nDinas Kabupaten\nDinas Provinsi\nDirektorat Khusus dan Pelatihan\nDirektorat P2TK Dikdas\nDirektorat PKLK Dikmen\nDirektorat PAUD\nDirektorat Pendidikan\nKeaksaraan dan Kesastraan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jenis_bantuan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Bantuan",
+   "options": "Bantuan TIK\nKeterjangkauan\nLainnya\nOperasional\nPeningkatan Fungsi\nPeningkatan Kapasitas\nPeningkatan Mutu\nRehabilitas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_peeb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pertuntukan_dana",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pertuntukan Dana",
+   "reqd": 1
+  },
+  {
+   "fieldname": "besar_bantuan",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Besar Bantuan"
+  },
+  {
+   "fieldname": "section_break_daan",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bangunan_dihasilkan",
+   "fieldtype": "Table",
+   "label": "Bangunan Dihasilkan",
+   "options": "ctBangunan Dihasilkan"
+  },
+  {
+   "fieldname": "column_break_jguu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alat_dihasilkan",
+   "fieldtype": "Table",
+   "label": "Alat Dihasilkan",
+   "options": "ctAlat Dihasilkan"
+  },
+  {
+   "fieldname": "dana_pendamping",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Dana Pendamping"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-08 15:07:03.100223",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Bantuan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama",
+ "translated_doctype": 1
+}

@@ -10,6 +10,7 @@
   "kode_ruang",
   "nama_ruang",
   "registrasi_ruang",
+  "lantai_ke",
   "column_break_qnjz",
   "panjang_m",
   "lebar_m",
@@ -46,27 +47,33 @@
   {
    "fieldname": "registrasi_ruang",
    "fieldtype": "Data",
-   "label": "Registrasi Ruang"
+   "in_list_view": 1,
+   "label": "Registrasi Ruang",
+   "reqd": 1
   },
   {
    "fieldname": "panjang_m",
-   "fieldtype": "Float",
-   "label": "Panjang (m)"
+   "fieldtype": "Int",
+   "label": "Panjang (m)",
+   "non_negative": 1
   },
   {
    "fieldname": "lebar_m",
    "fieldtype": "Int",
-   "label": "Lebar (m)"
+   "label": "Lebar (m)",
+   "non_negative": 1
   },
   {
    "fieldname": "luas_ruang_m2",
-   "fieldtype": "Float",
-   "label": "Luas Ruang (m2)"
+   "fieldtype": "Int",
+   "label": "Luas Ruang (m2)",
+   "non_negative": 1
   },
   {
    "fieldname": "kapasitas",
    "fieldtype": "Int",
-   "label": "Kapasitas"
+   "label": "Kapasitas",
+   "non_negative": 1
   },
   {
    "fetch_from": "bangunan.nama",
@@ -94,12 +101,20 @@
   {
    "fieldname": "column_break_qnjz",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lantai_ke",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Lantai ke",
+   "non_negative": 1,
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-02 02:24:21.157076",
+ "modified": "2024-07-06 18:53:06.681249",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Sub Ruang - Bilik",

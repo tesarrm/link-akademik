@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 13:50:37.722379",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "satuan_tugas",
+  "nama_satuan_tugas",
+  "instansi",
+  "tingkat_satuan_tugas",
+  "column_break_yrck",
+  "sk_tugas",
+  "tmt_sk_tugas",
+  "terpasang_papan__plang",
+  "tersedia_formulir",
+  "section_break_yygv",
+  "anggota_kepanitiaan"
+ ],
+ "fields": [
+  {
+   "fieldname": "satuan_tugas",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Satuan Tugas",
+   "options": "Kegiatan Keaagamaan\nLiterasi Sekolah\nPenanggulangan Tindak Kekerasan di Sekolah\nPenerimaan Peserta Didik Baru\nPengenalan Lingkungan Sekolah\nPenyelenggara Komite Sekolah\nPenyelenggara Ujian Nasional\nTim Bos Sekolah\nTim Pendataan Sekolah",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_satuan_tugas",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Satuan Tugas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "instansi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Instansi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tingkat_satuan_tugas",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tingkat Satuan Tugas",
+   "options": "Lokal / Satuan Pendidikan\nDaerah",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sk_tugas",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SK Tugas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tmt_sk_tugas",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TMT SK Tugas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "terpasang_papan__plang",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Terpasang Papan / Plang",
+   "options": "Ya\nTidak",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tersedia_formulir",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tersedia Formulir",
+   "options": "Ya\nTidak",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_yrck",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yygv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "anggota_kepanitiaan",
+   "fieldtype": "Table",
+   "label": "Anggota Kepanitiaan",
+   "options": "ctAnggota Kepanitiaan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-08 01:50:03.675016",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Kepanitiaan Sekolah",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama_satuan_tugas",
+ "translated_doctype": 1
+}

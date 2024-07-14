@@ -25,14 +25,14 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Jenis prasarana",
-   "options": "Bangunan",
+   "options": "Data Bangunan",
    "reqd": 1
   },
   {
    "fieldname": "tanah",
    "fieldtype": "Link",
    "label": "Tanah",
-   "options": "Tanah"
+   "options": "Data Tanah"
   },
   {
    "fieldname": "nama",
@@ -98,7 +98,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-02 00:37:59.588660",
+ "modified": "2024-07-04 21:53:24.900874",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Instance Bangunan",

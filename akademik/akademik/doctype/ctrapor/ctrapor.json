@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 00:40:13.810178",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama_mata_evaluasi",
+  "column_break_dqah",
+  "kkm_pengetahuan",
+  "column_break_mfmd",
+  "kkm_keterampilan"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama_mata_evaluasi",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nama Evaluasi Mata Pelajaran",
+   "options": "Data Rapor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dqah",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "nama_mata_evaluasi.kkm_pengetahuan",
+   "fieldname": "kkm_pengetahuan",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "KKM Pengetahuan",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "nama_mata_evaluasi.kkm_keterampilan",
+   "fieldname": "kkm_keterampilan",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "KKM Keterampilan",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mfmd",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-12 20:06:00.944239",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctRapor",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

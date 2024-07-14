@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 20:00:09.193272",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama_dudi",
+  "column_break_vwru",
+  "jenis_kerja_sama",
+  "jenis_usaha_industri"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama_dudi",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nama DUDI",
+   "options": "Data Perjanjian Kerja Sama"
+  },
+  {
+   "fieldname": "column_break_vwru",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "nama_dudi.jenis_kerja_sama",
+   "fieldname": "jenis_kerja_sama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis Kerja Sama"
+  },
+  {
+   "fetch_from": "nama_dudi.jenis_industri",
+   "fieldname": "jenis_usaha_industri",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis Usaha & Industri"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-05 20:02:46.208425",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctPerjanjian Kerja Sama",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -11,7 +11,14 @@
   "no_whatsapp",
   "column_break_cjhz",
   "email",
-  "url_sekolah"
+  "url_sekolah",
+  "server_section",
+  "server",
+  "status",
+  "column_break_dcly",
+  "server_label",
+  "server_host",
+  "server_port"
  ],
  "fields": [
   {
@@ -22,12 +29,14 @@
   {
    "fieldname": "nama_sekolah",
    "fieldtype": "Data",
-   "label": "Nama Sekolah"
+   "label": "Nama Sekolah",
+   "reqd": 1
   },
   {
    "fieldname": "no_whatsapp",
    "fieldtype": "Phone",
-   "label": "No Whatsapp"
+   "label": "No Whatsapp",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_cjhz",
@@ -36,19 +45,64 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "url_sekolah",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "URL Sekolah",
+   "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "server_section",
+   "fieldtype": "Section Break",
+   "label": "Server"
+  },
+  {
+   "fieldname": "server",
+   "fieldtype": "Link",
+   "label": "Server",
+   "options": "Server",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dcly",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "server.host",
+   "fieldname": "server_host",
+   "fieldtype": "Data",
+   "label": "Host",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "server.label",
+   "fieldname": "server_label",
+   "fieldtype": "Data",
+   "label": "Label",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "server.port",
+   "fieldname": "server_port",
+   "fieldtype": "Data",
+   "label": "Port",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Aktif\nNon-Aktif"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-01 12:33:23.401839",
+ "modified": "2024-07-09 06:45:18.123135",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Pendaftaran Sekolah",

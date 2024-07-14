@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 20:05:30.235262",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "email",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "email",
+   "options": "User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-09 20:15:29.203591",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctUser",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

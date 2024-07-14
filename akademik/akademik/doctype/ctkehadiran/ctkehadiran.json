@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-10 12:53:09.879058",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rombel",
+  "pembelajaran",
+  "column_break_bosz",
+  "peserta_didik_id",
+  "peserta_didik",
+  "tanggal",
+  "kehadiran"
+ ],
+ "fields": [
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Link",
+   "label": "Rombel",
+   "options": "Rombel"
+  },
+  {
+   "fieldname": "pembelajaran",
+   "fieldtype": "Link",
+   "label": "Pembelajaran",
+   "options": "Data Pembelajaran"
+  },
+  {
+   "fieldname": "column_break_bosz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "peserta_didik",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Peserta Didik"
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "label": "Tanggal"
+  },
+  {
+   "fieldname": "kehadiran",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Kehadiran",
+   "options": "Ya\nTidak"
+  },
+  {
+   "fieldname": "peserta_didik_id",
+   "fieldtype": "Link",
+   "label": "Peserta Didik ID",
+   "options": "Peserta Didik"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-10 13:39:22.242490",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctKehadiran",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

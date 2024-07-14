@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 12:11:07.602613",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "peserta_didik",
+  "nama_peseta_didik",
+  "column_break_yuxg",
+  "nomor_role_grub",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "peserta_didik",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Peserta Didik",
+   "options": "Peserta Didik",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "peserta_didik.nama",
+   "fieldname": "nama_peseta_didik",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Peseta Didik ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_yuxg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nomor_role_grub",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Nomor Role Grub"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Active"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-09 17:20:32.977597",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Peserta didik Grup Peserta Didik",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

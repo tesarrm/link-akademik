@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-06 07:03:12.186914",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bangunan",
+  "column_break_dzgk",
+  "ruang_praktik_siswa"
+ ],
+ "fields": [
+  {
+   "fetch_from": "ruang_perpustakaan.bangunan_nama",
+   "fieldname": "bangunan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bangunan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dzgk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ruang_praktik_siswa",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ruang Praktik Siswa",
+   "link_filters": "[[\"Data Ruang\",\"jenis_prasarana\",\"=\",\"Ruang Praktik Siswa (RPS)\"]]",
+   "options": "Data Ruang",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-06 07:05:44.153979",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctRuang Praktik Siswa",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

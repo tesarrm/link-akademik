@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 09:03:28.955716",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sarpras_section",
+  "tanah",
+  "alat",
+  "column_break_wjxj",
+  "bangunan",
+  "angkutan",
+  "column_break_lurn",
+  "ruang",
+  "buku",
+  "gtk_section",
+  "guru",
+  "peserta_didik_section",
+  "peserta_didik",
+  "akademik_section",
+  "rombel",
+  "ekstrakurikuler",
+  "column_break_sljn",
+  "praktik",
+  "mapel_pilihan"
+ ],
+ "fields": [
+  {
+   "fieldname": "sarpras_section",
+   "fieldtype": "Section Break",
+   "label": "Sarpras"
+  },
+  {
+   "fieldname": "tanah",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Tanah"
+  },
+  {
+   "fieldname": "bangunan",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Bangunan"
+  },
+  {
+   "fieldname": "angkutan",
+   "fieldtype": "Attach",
+   "label": "Angkutan"
+  },
+  {
+   "fieldname": "column_break_lurn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ruang",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Ruang"
+  },
+  {
+   "fieldname": "alat",
+   "fieldtype": "Attach",
+   "label": "Alat"
+  },
+  {
+   "fieldname": "buku",
+   "fieldtype": "Attach",
+   "label": "Buku"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "gtk_section",
+   "fieldtype": "Section Break",
+   "label": "GTK"
+  },
+  {
+   "fieldname": "guru",
+   "fieldtype": "Attach",
+   "label": "Guru"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "peserta_didik_section",
+   "fieldtype": "Section Break",
+   "label": "Peserta Didik"
+  },
+  {
+   "fieldname": "peserta_didik",
+   "fieldtype": "Attach",
+   "label": "Peserta Didik"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "akademik_section",
+   "fieldtype": "Section Break",
+   "label": "Akademik"
+  },
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Attach",
+   "label": "Rombel"
+  },
+  {
+   "fieldname": "ekstrakurikuler",
+   "fieldtype": "Attach",
+   "label": "Ekstrakurikuler"
+  },
+  {
+   "fieldname": "column_break_sljn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "praktik",
+   "fieldtype": "Attach",
+   "label": "Praktik"
+  },
+  {
+   "fieldname": "mapel_pilihan",
+   "fieldtype": "Attach",
+   "label": "Mapel Pilihan"
+  },
+  {
+   "fieldname": "column_break_wjxj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-09 11:52:19.866829",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Import Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

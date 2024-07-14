@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 00:47:03.692272",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama_peserta_didik",
+  "nis",
+  "deskripsi",
+  "column_break_uyii",
+  "np",
+  "pp",
+  "nk",
+  "pk",
+  "nilai_sikap_section",
+  "predikat",
+  "column_break_wsel",
+  "deskripsi_sikap"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama_peserta_didik",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Peserta Didik",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nis",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NIS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uyii",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "np",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "NP"
+  },
+  {
+   "fieldname": "pp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PP"
+  },
+  {
+   "fieldname": "nk",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "NK"
+  },
+  {
+   "fieldname": "pk",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PK"
+  },
+  {
+   "fieldname": "deskripsi",
+   "fieldtype": "Small Text",
+   "label": "Deskripsi"
+  },
+  {
+   "fieldname": "nilai_sikap_section",
+   "fieldtype": "Section Break",
+   "label": "Nilai Sikap"
+  },
+  {
+   "fieldname": "predikat",
+   "fieldtype": "Data",
+   "label": "Predikat"
+  },
+  {
+   "fieldname": "column_break_wsel",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deskripsi_sikap",
+   "fieldtype": "Small Text",
+   "label": "Deskripsi"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-09 02:12:27.514281",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctRapor Nilai",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

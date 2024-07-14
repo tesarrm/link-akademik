@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 17:41:26.460464",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pembelajaran",
+  "column_break_mvux",
+  "guru",
+  "nama_guru"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_mvux",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pembelajaran",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pembelajaran",
+   "options": "Data Pembelajaran"
+  },
+  {
+   "fetch_from": "pembelajaran.ptk",
+   "fieldname": "guru",
+   "fieldtype": "Link",
+   "label": "Guru ID",
+   "options": "GTK"
+  },
+  {
+   "fetch_from": "pembelajaran.nama_guru",
+   "fieldname": "nama_guru",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guru"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-09 22:16:32.788362",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctJadwal",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

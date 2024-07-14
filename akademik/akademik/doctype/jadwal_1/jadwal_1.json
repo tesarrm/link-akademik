@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 13:12:12.545017",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kelas",
+  "ruang",
+  "hari",
+  "tanggal_jam",
+  "mapel",
+  "guru",
+  "rombel"
+ ],
+ "fields": [
+  {
+   "fieldname": "kelas",
+   "fieldtype": "Select",
+   "label": "Urutan Pembelajaran",
+   "options": "Pembelajaran ke-1\nPembelajaran ke-2\nPembelajaran ke-3\nPembelajaran ke-4\nPembelajaran ke-5\nPembelajaran ke-6\nPembelajaran ke-7\nPembelajaran ke-8\nPembelajaran ke-9\nPembelajaran ke-10"
+  },
+  {
+   "fieldname": "hari",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Hari",
+   "options": "Senin\nSelasa\nRabu\nKamis\nJumat"
+  },
+  {
+   "fieldname": "tanggal_jam",
+   "fieldtype": "Datetime",
+   "label": "Tanggal Jam"
+  },
+  {
+   "fieldname": "mapel",
+   "fieldtype": "Data",
+   "label": "Materi Pelajaran"
+  },
+  {
+   "fieldname": "guru",
+   "fieldtype": "Data",
+   "label": "Guru"
+  },
+  {
+   "fieldname": "ruang",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Ruang",
+   "options": "Ruang 1\nRuang 2\nRuang 3\nRuang 4\nRuang 5\nRuang 6\nRuang 7\nRuang 8\nRuang 9"
+  },
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Select",
+   "label": "Rombel",
+   "options": "XI  OTKP\nIX OTKP\nX  OTKP\nXI RPL\nIX RPL\nX  RPL"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-09 12:55:13.926202",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Jadwal 1",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "mapel"
+}

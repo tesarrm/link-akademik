@@ -5,30 +5,66 @@ import frappe
 from frappe.model.document import Document
 
 class DataRuang(Document):
-    def before_insert(self):
-        # Logika sebelum dokumen disimpan pertama kali
-        frappe.msgprint("Before Insert Triggered")
+    pass
 
-    def after_insert(self):
-        frappe.msgprint("After Insert Triggered")
 
-        # Logika setelah dokumen disimpan pertama kali
+def get_all_detail(doc):
+    docs = frappe.get_all(doc)
 
-    def validate(self):
-        # Logika validasi sebelum dokumen disimpan
-        frappe.msgprint("Validation Triggered")
+    data = []
+    for d in docs:
+        a = frappe.get_doc(doc, d.name)
+        data.append(a)
 
-    def before_save(self):
-        frappe.msgprint("Before Save Triggered")
-        frappe.msgprint(self.nama_ruang)
+    return data
 
-        # Logika sebelum dokumen disimpan
+"""
+- get all alat from child table Ruang 
+- insert ruang berdasar relasi dengan data_bangunan 
+	- seperti 2 relasi: data_bangunan relasi dengan ruang, ruang relasi dengan data_bangunan
+	- namun proses tambah ruang ada di Data Ruang dengan relasi data_bangunannya. Setelah itu auto sinkron di DataBangunan dan Ruang
+	- jadi DataBangunan child table ruang dan Ruang hanya tampilan saja
+- hanya satu proses insert di Data Ruang, maka semuanya akan sinkron di DataBangunan dan Ruang
+"""
 
-    def on_update(self):
-        frappe.msgprint("On Update Triggered")
-        # Logika setelah dokumen diupdate
-        insert_alat_angkutan_buku(self)
 
+# @frappe.whitelist()
+# def sinkron_alat():
+#     ruang = get_all_detail("Data Ruang")
+#     ruang_alat = get_all_detail("Alat")
+    
+#     for a in ruang:
+#         for b in ruang_alat:
+#             if a.name == b.ruang:
+#                 doc = frappe.get_doc(
+#                     "Data Ruang", {"name": a.name}
+#                 )
+#                 doc.update({
+#                     "alat": b.alat 
+#                 })
+#                 doc.save(ignore_permissions=True)
+
+
+# @frappe.whitelist()
+# def sinkron_alat2():
+#     ruang = get_all_detail("Data Ruang")
+#     ruang_alat = get_all_detail("Alat")
+    
+#     for a in ruang_alat:
+#         for b in ruang:
+#             if a.ruang == b.name:
+#                 doc = frappe.get_doc(
+#                     "Alat", {"ruang": a.ruang}
+#                 )
+#                 doc.update({
+#                     "alat": b.alat 
+#                 })
+#                 doc.save(ignore_permissions=True)
+
+
+
+## ===================
+## ===================
 def insert_alat_angkutan_buku(self):
     if not frappe.db.exists(
         "Alat Angkutan Buku", {

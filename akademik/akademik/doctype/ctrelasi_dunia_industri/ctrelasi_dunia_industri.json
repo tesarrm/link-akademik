@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 18:14:49.793673",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "no_induk_berusaha_nib",
+  "nama",
+  "bidang_usaha",
+  "alamat_jalan",
+  "rt",
+  "rw",
+  "nama_dusun",
+  "desa_kelurahan",
+  "kecamatankabupaten",
+  "kode_pos",
+  "column_break_dkko",
+  "lintang",
+  "bujur",
+  "map",
+  "section_break_ijxf",
+  "nomor_fax",
+  "email",
+  "column_break_gjwk",
+  "website",
+  "npwp"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_induk_berusaha_nib",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No Induk Berusaha (NIB)"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama"
+  },
+  {
+   "fieldname": "bidang_usaha",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bidang Usaha"
+  },
+  {
+   "fieldname": "alamat_jalan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Alamat Jalan"
+  },
+  {
+   "fieldname": "rt",
+   "fieldtype": "Int",
+   "label": "RT"
+  },
+  {
+   "fieldname": "rw",
+   "fieldtype": "Int",
+   "label": "RW"
+  },
+  {
+   "fieldname": "nama_dusun",
+   "fieldtype": "Data",
+   "label": "Nama Dusun"
+  },
+  {
+   "fieldname": "desa_kelurahan",
+   "fieldtype": "Data",
+   "label": "Desa Kelurahan"
+  },
+  {
+   "fieldname": "kecamatankabupaten",
+   "fieldtype": "Data",
+   "label": "Kecamatan/Kabupaten"
+  },
+  {
+   "fieldname": "kode_pos",
+   "fieldtype": "Int",
+   "label": "Kode Pos"
+  },
+  {
+   "fieldname": "column_break_dkko",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lintang",
+   "fieldtype": "Data",
+   "label": "Lintang"
+  },
+  {
+   "fieldname": "bujur",
+   "fieldtype": "Data",
+   "label": "Bujur"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Geolocation",
+   "label": "Map"
+  },
+  {
+   "fieldname": "section_break_ijxf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nomor_fax",
+   "fieldtype": "Data",
+   "label": "Nomor Fax"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_gjwk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "npwp",
+   "fieldtype": "Data",
+   "label": "NPWP"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-05 18:24:17.160406",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctRelasi Dunia Industri",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

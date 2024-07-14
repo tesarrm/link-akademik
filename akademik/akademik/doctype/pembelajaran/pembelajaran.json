@@ -1,16 +1,19 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2024-06-27 14:29:28.118117",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "type",
-  "bidang_studi",
-  "nama_bidang_studi",
-  "ptk",
+  "jenis_matpel",
+  "kelompok_matpel",
+  "matpel",
+  "nama_matpel",
+  "kode_matpel",
   "column_break_wagm",
+  "ptk",
   "sk_mengajar",
   "tgl_sk",
   "jam",
@@ -32,13 +35,13 @@
    "fieldname": "sk_mengajar",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "SK. Mengajar"
+   "label": "SK Mengajar"
   },
   {
    "fieldname": "tgl_sk",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Tgl. SK"
+   "label": "Tgl SK"
   },
   {
    "fieldname": "jam",
@@ -53,28 +56,38 @@
    "label": "Max"
   },
   {
-   "fieldname": "type",
+   "fieldname": "kode_matpel",
+   "fieldtype": "Data",
+   "label": "Kode Matpel"
+  },
+  {
+   "fieldname": "kelompok_matpel",
    "fieldtype": "Select",
-   "label": "Type",
-   "options": "Kelompok Umum\nPraktik Kerja Lapangan"
+   "label": "Kelompok Matpel",
+   "options": "Matpel Bidang Studi Wajib (tambahan max 2jam)\nMatpel Muatan Nasional\nMatpel Muatan Kewilayahan\nKompetensi Keahlian (C3)\nMatpel Lainnya"
   },
   {
-   "fieldname": "bidang_studi",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Bidang Studi",
-   "options": "Bidang Studi"
+   "fieldname": "jenis_matpel",
+   "fieldtype": "Select",
+   "label": "Jenis Mapel",
+   "options": "Kelompok Umum\nPraktik Kerja Lapangan\nPraktik"
   },
   {
-   "fieldname": "nama_bidang_studi",
+   "fieldname": "matpel",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Nama Bidang Studi"
+   "label": "Matpel"
+  },
+  {
+   "fieldname": "nama_matpel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Matpel"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-03 16:37:58.346665",
+ "modified": "2024-07-11 17:30:24.062010",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Pembelajaran",
@@ -93,7 +106,10 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "nama_matpel",
+ "translated_doctype": 1
 }

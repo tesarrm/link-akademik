@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-11 21:58:54.207502",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_matpel",
+  "kelompok_matpel",
+  "matpel",
+  "nama_matpel",
+  "kode_matpel",
+  "column_break_wagm",
+  "ptk",
+  "sk_mengajar",
+  "tgl_sk",
+  "jam",
+  "max"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_matpel",
+   "fieldtype": "Select",
+   "label": "Jenis Mapel",
+   "options": "Kelompok Umum\nPraktik Kerja Lapangan\nPraktik"
+  },
+  {
+   "fieldname": "kelompok_matpel",
+   "fieldtype": "Select",
+   "label": "Kelompok Matpel",
+   "options": "Matpel Bidang Studi Wajib (tambahan max 2jam)\nMatpel Muatan Nasional\nMatpel Muatan Kewilayahan\nKompetensi Keahlian (C3)\nMatpel Lainnya"
+  },
+  {
+   "fieldname": "matpel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Matpel"
+  },
+  {
+   "fieldname": "nama_matpel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Matpel"
+  },
+  {
+   "fieldname": "kode_matpel",
+   "fieldtype": "Data",
+   "label": "Kode Matpel"
+  },
+  {
+   "fieldname": "column_break_wagm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ptk",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PTK",
+   "options": "GTK"
+  },
+  {
+   "fieldname": "sk_mengajar",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SK Mengajar"
+  },
+  {
+   "fieldname": "tgl_sk",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tgl SK"
+  },
+  {
+   "fieldname": "jam",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Jam"
+  },
+  {
+   "fieldname": "max",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Max"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-11 21:59:26.238564",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctTemplate Pembelajaran",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama_matpel",
+ "translated_doctype": 1
+}

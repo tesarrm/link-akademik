@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 02:16:56.793582",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_bnje",
+  "column_break_qruz",
+  "nama_mata_evaluasi",
+  "column_break_dqah",
+  "kkm_pengetahuan",
+  "column_break_hisi",
+  "kkm_keterampilan",
+  "column_break_pkve",
+  "tahun_ajaran",
+  "column_break_kpux",
+  "rombel",
+  "section_break_nvat",
+  "nilai_rapor",
+  "nama_bidang_studi_pembelajaran"
+ ],
+ "fields": [
+  {
+   "columns": 10,
+   "fieldname": "section_break_bnje",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 4,
+   "fieldname": "column_break_qruz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nama_mata_evaluasi",
+   "fieldtype": "Link",
+   "label": "Nama Mata Evaluasi",
+   "options": "Pembelajaran",
+   "width": "full"
+  },
+  {
+   "columns": 1,
+   "fieldname": "column_break_dqah",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kkm_pengetahuan",
+   "fieldtype": "Int",
+   "label": "KKM Pengetahuan"
+  },
+  {
+   "columns": 1,
+   "fieldname": "column_break_hisi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kkm_keterampilan",
+   "fieldtype": "Int",
+   "label": "KKM Keterampilan"
+  },
+  {
+   "columns": 1,
+   "fieldname": "column_break_pkve",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tahun_ajaran",
+   "fieldtype": "Data",
+   "label": "Tahun Ajaran"
+  },
+  {
+   "columns": 2,
+   "fieldname": "column_break_kpux",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Link",
+   "label": "Rombel",
+   "options": "Rombel"
+  },
+  {
+   "fieldname": "section_break_nvat",
+   "fieldtype": "Section Break",
+   "label": "Nilai Rapor"
+  },
+  {
+   "fieldname": "nilai_rapor",
+   "fieldtype": "Table",
+   "options": "ctNilai US"
+  },
+  {
+   "fetch_from": "nama_mata_evaluasi.nama_bidang_studi",
+   "fieldname": "nama_bidang_studi_pembelajaran",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Nama Bidang Studi Pembelajaran"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-09 02:18:39.484987",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data US",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama_bidang_studi_pembelajaran",
+ "translated_doctype": 1
+}

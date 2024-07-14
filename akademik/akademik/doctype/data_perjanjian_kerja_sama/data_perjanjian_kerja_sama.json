@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 19:28:30.430242",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_kerja_sama",
+  "jenis_industri",
+  "nama_dudi",
+  "nomor_pks",
+  "judul_pks",
+  "tgl_mulai",
+  "tgl_selesai",
+  "column_break_vgja",
+  "npwp_dudi",
+  "nama_bidang_usaha",
+  "tlp_kantor",
+  "fax",
+  "contact_person",
+  "tlp_cp",
+  "jab_cp",
+  "unit_produksi_kerja_sama_section",
+  "table_mfpg",
+  "prakerinteaching_factory_section",
+  "table_mphs"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "unit_produksi_kerja_sama_section",
+   "fieldtype": "Section Break",
+   "label": "Unit Produksi Kerja Sama"
+  },
+  {
+   "default": "unit_produksi_kerja_sama",
+   "fieldname": "table_mfpg",
+   "fieldtype": "Table",
+   "options": "ctUnit Produksi Kerja Sama"
+  },
+  {
+   "fieldname": "jenis_kerja_sama",
+   "fieldtype": "Select",
+   "label": "Jenis Kerja Sama",
+   "options": "Magang Praktek Kerja Industri"
+  },
+  {
+   "fieldname": "jenis_industri",
+   "fieldtype": "Data",
+   "label": "Jenis Usaha & Industri"
+  },
+  {
+   "fieldname": "nama_dudi",
+   "fieldtype": "Data",
+   "label": "Nama DUDI"
+  },
+  {
+   "fieldname": "nomor_pks",
+   "fieldtype": "Data",
+   "label": "Nomor PKS"
+  },
+  {
+   "fieldname": "judul_pks",
+   "fieldtype": "Data",
+   "label": "Judul PKS"
+  },
+  {
+   "fieldname": "column_break_vgja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tgl_mulai",
+   "fieldtype": "Date",
+   "label": "Tgl. Mulai"
+  },
+  {
+   "fieldname": "tgl_selesai",
+   "fieldtype": "Date",
+   "label": "Tgl. Selesai"
+  },
+  {
+   "fieldname": "npwp_dudi",
+   "fieldtype": "Data",
+   "label": "NPWP DUDI"
+  },
+  {
+   "fieldname": "nama_bidang_usaha",
+   "fieldtype": "Data",
+   "label": "Nama Bidang Usaha"
+  },
+  {
+   "fieldname": "tlp_kantor",
+   "fieldtype": "Data",
+   "label": "Tlp. Kantor"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Data",
+   "label": "Fax"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "tlp_cp",
+   "fieldtype": "Data",
+   "label": "Tlp. CP"
+  },
+  {
+   "fieldname": "jab_cp",
+   "fieldtype": "Data",
+   "label": "Jab. CP"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "prakerinteaching_factory_section",
+   "fieldtype": "Section Break",
+   "label": "Prakerin/Teaching Factory"
+  },
+  {
+   "fieldname": "table_mphs",
+   "fieldtype": "Table",
+   "options": "ctPrakerin Teaching Factory"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-07 10:47:38.209598",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Perjanjian Kerja Sama",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama_dudi",
+ "translated_doctype": 1
+}

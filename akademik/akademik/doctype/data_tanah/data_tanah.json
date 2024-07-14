@@ -1,0 +1,244 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-06-23 12:06:48.580303",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "informasi_tanah_section",
+  "jenis_prasarana",
+  "nama",
+  "no_sertifikat",
+  "kepemilikan",
+  "column_break_njcm",
+  "panjang_m",
+  "lebar_m",
+  "luas_m2",
+  "luas_lahan_tersedia_m2",
+  "ket_tanah",
+  "lokasi_tanah_section",
+  "provinsi",
+  "kecamatan",
+  "nama_dusun",
+  "rt",
+  "kode_pos",
+  "column_break_tnst",
+  "kabupatenkota",
+  "desa_kelurahan",
+  "alamat_jalan",
+  "rw",
+  "column_break_cdpy",
+  "lintang",
+  "bujur",
+  "map",
+  "section_break_dudm",
+  "bangunan"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_prasarana",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Jenis Prasarana",
+   "options": "Tanah",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_sertifikat",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "No Sertifikat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kepemilikan",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Kepemilikan",
+   "options": "Milik\nSewa\nPinjam\nBukan Milik",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_njcm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "panjang_m",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Panjang (m)",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "lebar_m",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Lebar (m)",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "luas_m2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Luas (m2)",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "luas_lahan_tersedia_m2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Luas Lahan Tersedia (m2)",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "ket_tanah",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ket Tanah"
+  },
+  {
+   "fieldname": "informasi_tanah_section",
+   "fieldtype": "Section Break",
+   "label": "Informasi Tanah"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "lokasi_tanah_section",
+   "fieldtype": "Section Break",
+   "label": "Lokasi Tanah"
+  },
+  {
+   "fieldname": "alamat_jalan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Alamat Jalan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rt",
+   "fieldtype": "Int",
+   "label": "RT"
+  },
+  {
+   "fieldname": "rw",
+   "fieldtype": "Int",
+   "label": "RW"
+  },
+  {
+   "fieldname": "column_break_cdpy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nama_dusun",
+   "fieldtype": "Data",
+   "label": "Nama Dusun"
+  },
+  {
+   "fieldname": "desa_kelurahan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Desa Kelurahan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kecamatan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Kecamatan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bangunan",
+   "fieldtype": "Table",
+   "in_filter": 1,
+   "options": "ctBangunan"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_dudm",
+   "fieldtype": "Section Break",
+   "label": "Bangunan"
+  },
+  {
+   "fieldname": "kode_pos",
+   "fieldtype": "Int",
+   "label": "Kode Pos"
+  },
+  {
+   "fieldname": "lintang",
+   "fieldtype": "Data",
+   "label": "Lintang  (Latitude)"
+  },
+  {
+   "fieldname": "bujur",
+   "fieldtype": "Data",
+   "label": "Bujur (Longitude)"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Geolocation",
+   "label": "Map"
+  },
+  {
+   "fieldname": "column_break_tnst",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "provinsi",
+   "fieldtype": "Select",
+   "label": "Provinsi "
+  },
+  {
+   "fieldname": "kabupatenkota",
+   "fieldtype": "Select",
+   "label": "Kabupaten/Kota"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-12 19:47:39.223783",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Tanah",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama",
+ "translated_doctype": 1
+}

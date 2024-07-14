@@ -18,6 +18,7 @@
    "label": "Ruang Laboratorium",
    "link_filters": "[[\"Ruangan\",\"jenis_prasarana\",\"=\",\"Ruang Laboratorium\"]]",
    "options": "Data Ruang",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -36,7 +37,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-02 17:39:24.147941",
+ "modified": "2024-07-04 08:55:25.297620",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "ctRuang Laboratorium",

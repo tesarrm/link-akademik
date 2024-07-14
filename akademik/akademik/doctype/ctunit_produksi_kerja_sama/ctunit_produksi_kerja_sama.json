@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 19:29:19.201236",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "unit_produksi",
+  "sumber_dana",
+  "column_break_oorq",
+  "produk_barang_dihasilkan",
+  "omset_penjualan_perbulan"
+ ],
+ "fields": [
+  {
+   "fieldname": "unit_produksi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit Produksi"
+  },
+  {
+   "fieldname": "sumber_dana",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sumber Dana"
+  },
+  {
+   "fieldname": "column_break_oorq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "produk_barang_dihasilkan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Produk Barang Dihasilkan"
+  },
+  {
+   "fieldname": "omset_penjualan_perbulan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Omset Penjualan Perbulan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-05 19:30:41.316288",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctUnit Produksi Kerja Sama",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

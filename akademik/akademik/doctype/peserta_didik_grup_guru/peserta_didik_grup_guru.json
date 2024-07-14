@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 12:16:43.206822",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "guru",
+  "column_break_kmcg",
+  "nama_guru"
+ ],
+ "fields": [
+  {
+   "fieldname": "guru",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Guru",
+   "options": "GTK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kmcg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "guru.nama",
+   "fieldname": "nama_guru",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Guru",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-09 12:32:41.553489",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Peserta didik grup guru",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

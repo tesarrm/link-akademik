@@ -1,40 +1,30 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-06-24 14:19:13.541450",
+ "creation": "2024-07-09 00:35:51.672266",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "tipe_ujian",
-  "mapel",
-  "nilai",
-  "tambah"
+  "tahun_ajaran",
+  "rapor"
  ],
  "fields": [
   {
-   "fieldname": "tipe_ujian",
-   "fieldtype": "Data",
-   "label": "Tipe Ujian"
+   "fieldname": "rapor",
+   "fieldtype": "Table",
+   "options": "ctRapor"
   },
   {
-   "fieldname": "mapel",
-   "fieldtype": "Data",
-   "label": "Mata Pelajaran"
-  },
-  {
-   "fieldname": "nilai",
-   "fieldtype": "Int",
-   "label": "Nilai"
-  },
-  {
-   "fieldname": "tambah",
-   "fieldtype": "Button",
-   "label": "Tambah"
+   "fieldname": "tahun_ajaran",
+   "fieldtype": "Link",
+   "label": "Tahun Ajaran",
+   "options": "Tahun Ajaran"
   }
  ],
  "index_web_pages_for_search": 1,
+ "issingle": 1,
  "links": [],
- "modified": "2024-06-24 14:24:22.501508",
+ "modified": "2024-07-09 01:42:23.423139",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Rapor",
@@ -44,10 +34,8 @@
    "create": 1,
    "delete": 1,
    "email": 1,
-   "export": 1,
    "print": 1,
    "read": 1,
-   "report": 1,
    "role": "System Manager",
    "share": 1,
    "write": 1

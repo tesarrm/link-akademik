@@ -14,14 +14,14 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Tanah",
-   "options": "Tanah",
+   "options": "Data Tanah",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-06-23 14:28:16.250320",
+ "modified": "2024-07-04 21:53:24.715557",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "ctTanah",

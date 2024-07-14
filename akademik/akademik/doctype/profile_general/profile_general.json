@@ -37,7 +37,7 @@
   {
    "fieldname": "table_hgrs",
    "fieldtype": "Table",
-   "options": "CT Siswa"
+   "options": "ctPeserta Didik"
   },
   {
    "fieldname": "wali_siswa_tab",
@@ -86,7 +86,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-03 12:46:24.075066",
+ "modified": "2024-07-05 19:36:22.496427",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Profile General",

@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 14:14:31.419101",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_layanan_khusus",
+  "sk_layanan_khusus",
+  "column_break_noml",
+  "tmt_layanan_khusus",
+  "tst_layanan_khusus",
+  "section_break_rqbt",
+  "keterangan"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_layanan_khusus",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Layanan Khusus",
+   "options": "Sekolah Terintegrasi\nSekolah kecil\nSekolah terbuka\nSekolah darurat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sk_layanan_khusus",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SK Layanan Khusus",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tmt_layanan_khusus",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TMT Layanan Khusus",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tst_layanan_khusus",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TST Layanan Khusus",
+   "reqd": 1
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break_noml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rqbt",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-06 23:42:23.851886",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctLayanan Khusus",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

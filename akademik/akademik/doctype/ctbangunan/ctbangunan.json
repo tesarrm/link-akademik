@@ -14,14 +14,14 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Bangunan",
-   "options": "Bangunan",
+   "options": "Data Bangunan",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-03 13:41:59.952218",
+ "modified": "2024-07-04 18:17:18.765646",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "ctBangunan",

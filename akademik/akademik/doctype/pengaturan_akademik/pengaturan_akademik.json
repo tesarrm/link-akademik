@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-10 10:57:35.777466",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tahun_ajaran_sekarang",
+  "semester_sekarang",
+  "gambar_kop_sekolah",
+  "column_break_tziu",
+  "kurikulum"
+ ],
+ "fields": [
+  {
+   "fieldname": "tahun_ajaran_sekarang",
+   "fieldtype": "Link",
+   "label": "Tahun Ajaran Sekarang",
+   "options": "Tahun Ajaran"
+  },
+  {
+   "fieldname": "column_break_tziu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "semester_sekarang",
+   "fieldtype": "Data",
+   "label": "Semester Sekarang"
+  },
+  {
+   "fieldname": "gambar_kop_sekolah",
+   "fieldtype": "Attach",
+   "label": "Gambar Kop Sekolah"
+  },
+  {
+   "fieldname": "kurikulum",
+   "fieldtype": "Select",
+   "label": "Kurikulum",
+   "options": "K-13\nSMK Merdeka"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-11 17:38:49.044999",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Pengaturan Akademik",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

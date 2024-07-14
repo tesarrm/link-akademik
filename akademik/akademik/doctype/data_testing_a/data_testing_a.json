@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 21:53:33.580266",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "filed_1",
+  "filed_2",
+  "parent1"
+ ],
+ "fields": [
+  {
+   "fieldname": "filed_1",
+   "fieldtype": "Data",
+   "label": "filed 1"
+  },
+  {
+   "fieldname": "filed_2",
+   "fieldtype": "Data",
+   "label": "filed 2"
+  },
+  {
+   "fieldname": "parent1",
+   "fieldtype": "Data",
+   "label": "parent"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-05 21:56:39.951122",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Testing A",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

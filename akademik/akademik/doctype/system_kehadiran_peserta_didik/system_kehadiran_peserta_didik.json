@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-27 10:09:06.294790",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qlal",
+  "pilih_berdasrkan",
+  "pilih_grup_berdasarkan",
+  "column_break_pccd",
+  "peserta_didik",
+  "tahun_ajaran",
+  "jadwal_pembelajaran",
+  "tanggal",
+  "section_break_ridm",
+  "siswa_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ridm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "siswa_html",
+   "fieldtype": "HTML",
+   "label": "Siswa HTML"
+  },
+  {
+   "fieldname": "section_break_qlal",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pilih_grup_berdasarkan",
+   "fieldtype": "Select",
+   "label": "Pilih Grup Berdasarkan",
+   "options": "Kelompok\nPelajaran"
+  },
+  {
+   "fieldname": "column_break_pccd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "peserta_didik",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Peserta Didik",
+   "options": "Peserta Didik",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tahun_ajaran",
+   "fieldtype": "Link",
+   "label": "Tahun Ajaran",
+   "options": "Tahun Ajaran"
+  },
+  {
+   "fieldname": "jadwal_pembelajaran",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Jadwal Pembelajaran",
+   "options": "Jadwal 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "label": "Tanggal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pilih_berdasrkan",
+   "fieldtype": "Select",
+   "label": "Pilih Berdasarkan",
+   "options": "Peserta Didik\nJadwal Pembelajaraan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-09 17:36:14.376524",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "System Kehadiran Peserta Didik",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

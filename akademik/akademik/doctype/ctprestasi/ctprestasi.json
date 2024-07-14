@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-27 10:27:10.003444",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_prestasi",
+  "tingkat_prestasi",
+  "nama_prestasi",
+  "column_break_woex",
+  "tahun_prestasi",
+  "penyelenggara",
+  "peringkat"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_prestasi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis Prestasi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tingkat_prestasi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tingkat prestasi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_prestasi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama prestasi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_woex",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tahun_prestasi",
+   "fieldtype": "Int",
+   "label": "Tahun prestasi",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "penyelenggara",
+   "fieldtype": "Data",
+   "label": "Penyelenggara"
+  },
+  {
+   "fieldname": "peringkat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Peringkat",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-07 12:38:21.021854",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctPrestasi",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../apps/akademik/akademik/public/js/testing.bundle.js"],
+  "sourcesContent": ["\nconsole.log(\"halo\")\n\nfunction halo(){\n    console.log(\"halo bang\")\n}\n\nhalo()\nfunction map(frm){\n    console.log(\"halo\")\n    let mapdata = JSON.parse(frm.doc.map).features[0];\n    if(mapdata){\n        frm.set_value(\"lintang\", mapdata.geometry.coordinates[0]);\n        frm.set_value(\"bujur\", mapdata.geometry.coordinates[1]);\n    }\n}\n\nfunction breadcrumbs(frm, field){\n    frappe.breadcrumbs.clear();\n    \n    frappe.breadcrumbs.set_custom_breadcrumbs({\n        label: \"Akademik\", \n        route: '/app/akademik',\n    });\n    frappe.breadcrumbs.set_custom_breadcrumbs({\n        label: frm.doctype,\n        route: frm.route,\n    });               \n    if(field){\n        frappe.breadcrumbs.set_custom_breadcrumbs({\n            label: field,\n        });               \n    } else {\n        frappe.breadcrumbs.set_custom_breadcrumbs({\n            label: `Buat ${frm.doctype}`,\n        });               \n    }\n}"],
+  "mappings": ";;AACA,UAAQ,IAAI,MAAM;AAElB,WAAS,OAAM;AACX,YAAQ,IAAI,WAAW;AAAA,EAC3B;AAEA,OAAK;",
+  "names": []
+}

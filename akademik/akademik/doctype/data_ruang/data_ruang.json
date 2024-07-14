@@ -6,59 +6,53 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "detail_section",
+  "tipe",
   "jenis_prasarana",
   "bangunan",
   "kode_ruang",
   "nama_ruang",
   "registrasi_ruang",
+  "column_break_jfcl",
   "lantai_ke",
   "panjang_m",
   "lebar_m",
   "luas_ruang_m2",
   "kapasitas",
   "bangunan_nama",
-  "column_break_bdhr",
-  "luas_plester_m2",
-  "luas_plafon_m2",
-  "luas_dinding_m2",
-  "luas_daun_jendela_m2",
-  "luas_daun_pintu_m2",
-  "panjang_kusen_m",
-  "luas_tutup_lantai_m2",
-  "luas_instalasi_listrik_m2",
-  "jumlah_instalasi_listrik",
-  "panjang_drainase_m",
-  "luas_finish_struktur_m2",
-  "luas_finish_plafon_m2",
-  "luas_finish_dinding_m2",
-  "luas_finish_kpj_m2",
+  "kondisi_section",
+  "kerusakan",
+  "column_break_rwig",
+  "nilai_kerusakan",
   "section_break_rutn",
   "sub_ruang",
-  "kondisi_tab",
-  "kerusakan",
-  "nilai_kerusakan"
+  "alat_section",
+  "alat",
+  "tambah_alat"
  ],
  "fields": [
   {
    "fieldname": "jenis_prasarana",
    "fieldtype": "Select",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Jenis prasarana",
-   "options": "Ruang Teori/Kelas\nRuang Kepsek/Guru\nRuang Laboratorium\nRuang Perpustakaan\nKamar Mandi/WC\nRuang Penunjang",
    "reqd": 1
   },
   {
    "fieldname": "bangunan",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Bangunan",
-   "options": "Bangunan",
+   "options": "Data Bangunan",
    "reqd": 1
   },
   {
    "fieldname": "kode_ruang",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Kode Ruang",
    "reqd": 1
   },
@@ -66,6 +60,7 @@
    "fieldname": "nama_ruang",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Nama Ruang",
    "reqd": 1
   },
@@ -78,106 +73,32 @@
    "fieldname": "lantai_ke",
    "fieldtype": "Int",
    "label": "Lantai Ke",
+   "non_negative": 1,
    "reqd": 1
   },
   {
    "fieldname": "panjang_m",
-   "fieldtype": "Float",
-   "label": "Panjang (m)"
+   "fieldtype": "Int",
+   "label": "Panjang (m)",
+   "non_negative": 1
   },
   {
    "fieldname": "lebar_m",
    "fieldtype": "Int",
-   "label": "Lebar (m)"
+   "label": "Lebar (m)",
+   "non_negative": 1
   },
   {
    "fieldname": "luas_ruang_m2",
-   "fieldtype": "Float",
-   "label": "Luas Ruang (m2)"
+   "fieldtype": "Int",
+   "label": "Luas Ruang (m2)",
+   "non_negative": 1
   },
   {
    "fieldname": "kapasitas",
    "fieldtype": "Int",
-   "label": "Kapasitas"
-  },
-  {
-   "fieldname": "column_break_bdhr",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "luas_plester_m2",
-   "fieldtype": "Float",
-   "label": "Luas plester (m2)"
-  },
-  {
-   "fieldname": "luas_plafon_m2",
-   "fieldtype": "Float",
-   "label": "Luas plafon (m2)"
-  },
-  {
-   "fieldname": "luas_dinding_m2",
-   "fieldtype": "Float",
-   "label": "Luas dinding (m2)"
-  },
-  {
-   "fieldname": "luas_daun_jendela_m2",
-   "fieldtype": "Float",
-   "label": "Luas daun jendela (m2)"
-  },
-  {
-   "fieldname": "luas_daun_pintu_m2",
-   "fieldtype": "Float",
-   "label": "Luas daun pintu (m2)"
-  },
-  {
-   "fieldname": "panjang_kusen_m",
-   "fieldtype": "Float",
-   "label": "Panjang kusen (m)"
-  },
-  {
-   "fieldname": "luas_tutup_lantai_m2",
-   "fieldtype": "Float",
-   "label": "Luas tutup lantai (m2)"
-  },
-  {
-   "fieldname": "luas_instalasi_listrik_m2",
-   "fieldtype": "Float",
-   "label": "Luas instalasi listrik (m2)"
-  },
-  {
-   "fieldname": "jumlah_instalasi_listrik",
-   "fieldtype": "Int",
-   "label": "Jumlah instalasi listrik"
-  },
-  {
-   "fieldname": "panjang_drainase_m",
-   "fieldtype": "Float",
-   "label": "Panjang drainase (m)"
-  },
-  {
-   "fieldname": "luas_finish_struktur_m2",
-   "fieldtype": "Float",
-   "label": "Luas finish struktur (m2)"
-  },
-  {
-   "fieldname": "luas_finish_plafon_m2",
-   "fieldtype": "Float",
-   "label": "Luas finish plafon (m2)"
-  },
-  {
-   "fieldname": "luas_finish_dinding_m2",
-   "fieldtype": "Float",
-   "label": "Luas finish dinding (m2)"
-  },
-  {
-   "fieldname": "luas_finish_kpj_m2",
-   "fieldtype": "Float",
-   "label": "Luas finish KPJ (m2)"
-  },
-  {
-   "fieldname": "kondisi_tab",
-   "fieldtype": "Tab Break",
-   "label": "Kondisi"
+   "label": "Kapasitas",
+   "non_negative": 1
   },
   {
    "fieldname": "kerusakan",
@@ -187,7 +108,7 @@
   },
   {
    "fieldname": "nilai_kerusakan",
-   "fieldtype": "Float",
+   "fieldtype": "Int",
    "label": "Nilai kerusakan"
   },
   {
@@ -198,20 +119,64 @@
    "label": "Bangunan Nama"
   },
   {
+   "collapsible": 1,
+   "depends_on": "eval: [\"Kamar Mandi/WC\", \"Ruang Laboratorium\", \"Ruang Perpustakaan\", \"Ruang Praktik Siswa (RPS)\"].includes(doc.tipe)\n",
    "fieldname": "section_break_rutn",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Sub Ruang/Bilik"
   },
   {
-   "depends_on": "eval:doc.jenis_prasarana === \"Kamar Mandi/WC\"",
    "fieldname": "sub_ruang",
    "fieldtype": "Table",
    "label": "Sub Ruang/Bilik",
    "options": "Sub Ruang - Bilik"
+  },
+  {
+   "fieldname": "column_break_rwig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alat",
+   "fieldtype": "Table",
+   "options": "ctAlat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jfcl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "detail_section",
+   "fieldtype": "Section Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "kondisi_section",
+   "fieldtype": "Section Break",
+   "label": "Kondisi"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "alat_section",
+   "fieldtype": "Section Break",
+   "label": "Alat"
+  },
+  {
+   "fieldname": "tipe",
+   "fieldtype": "Select",
+   "label": "Tipe",
+   "options": "Ruang Teori/Kelas\nRuang Kepsek/Guru\nRuang Laboratorium\nRuang Perpustakaan\nRuang Praktik Siswa (RPS)\nKamar Mandi/WC\nRuang Penunjang",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tambah_alat",
+   "fieldtype": "Button",
+   "label": "Tambah Alat"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-02 20:46:09.380690",
+ "modified": "2024-07-09 22:18:56.978773",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Data Ruang",

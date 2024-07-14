@@ -18,6 +18,7 @@
    "label": "Ruang Kepsek/Guru",
    "link_filters": "[[\"Ruangan\",\"jenis_prasarana\",\"=\",\"Ruang Kepsek/Guru\"]]",
    "options": "Data Ruang",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -36,7 +37,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-02 17:39:23.952096",
+ "modified": "2024-07-04 08:55:34.113071",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "ctRuang Kepsek Guru",

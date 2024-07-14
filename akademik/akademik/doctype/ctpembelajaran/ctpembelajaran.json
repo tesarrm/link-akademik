@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-08 01:18:12.110083",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_matpel",
+  "kelompok_matpel",
+  "mapel",
+  "nama_matpel",
+  "kode_matpel",
+  "column_break_wagm",
+  "ptk",
+  "sk_mengajar",
+  "tgl_sk",
+  "jam",
+  "max",
+  "nama_guru"
+ ],
+ "fields": [
+  {
+   "fieldname": "ptk",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PTK",
+   "options": "GTK"
+  },
+  {
+   "fieldname": "column_break_wagm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sk_mengajar",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SK Mengajar"
+  },
+  {
+   "fieldname": "tgl_sk",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tgl SK"
+  },
+  {
+   "fieldname": "jam",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Jam"
+  },
+  {
+   "fieldname": "max",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kode_matpel",
+   "fieldtype": "Data",
+   "label": "Kode Matpel",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "ptk.nama",
+   "fieldname": "nama_guru",
+   "fieldtype": "Data",
+   "label": "Nama Guru"
+  },
+  {
+   "fieldname": "jenis_matpel",
+   "fieldtype": "Select",
+   "label": "Jenis Mapel",
+   "options": "Kelompok Umum\nPraktik Kerja Lapangan"
+  },
+  {
+   "fieldname": "kelompok_matpel",
+   "fieldtype": "Select",
+   "label": "Kelompok Matpel",
+   "options": "Matpel Bidang Studi Wajib (tambahan max 2jam)\nMatpel Muatan Nasional\nMatpel Muatan Kewilayahan\nKompetensi Keahlian (C3)\nMatpel Lainnya"
+  },
+  {
+   "fieldname": "mapel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Matpel",
+   "options": "Bidang Studi",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nama_matpel",
+   "fieldtype": "Data",
+   "label": "Nama Matpel",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-11 17:33:44.052429",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctPembelajaran",
+ "owner": "Administrator",
+ "permissions": [],
+ "route": "ctPelajaran",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

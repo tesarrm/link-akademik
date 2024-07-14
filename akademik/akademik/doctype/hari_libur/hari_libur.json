@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-10 21:48:40.625454",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tanggal",
+  "column_break_vpbg",
+  "libur"
+ ],
+ "fields": [
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tanggal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vpbg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "libur",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Libur",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-11 15:47:11.052161",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Hari Libur",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "libur",
+ "translated_doctype": 1
+}

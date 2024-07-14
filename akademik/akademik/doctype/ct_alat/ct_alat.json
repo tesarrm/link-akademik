@@ -14,14 +14,14 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Alat",
-   "options": "ctAlat",
+   "options": "tesAlat",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-02 21:49:22.085000",
+ "modified": "2024-07-05 04:57:20.943507",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "CT Alat",

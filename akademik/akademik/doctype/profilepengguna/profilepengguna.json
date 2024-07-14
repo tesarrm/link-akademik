@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-04 16:51:53.516477",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "profilepengguna_section",
+  "username",
+  "nama",
+  "no_hp",
+  "email",
+  "tab_2_tab",
+  "gambar_profile",
+  "gambar_sekolah"
+ ],
+ "fields": [
+  {
+   "fieldname": "profilepengguna_section",
+   "fieldtype": "Section Break",
+   "label": "ProfilePengguna"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Username",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Nama ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_hp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No HP",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "user telegram",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "profilegambar"
+  },
+  {
+   "fieldname": "gambar_profile",
+   "fieldtype": "Attach Image",
+   "label": "Gambar Profile"
+  },
+  {
+   "fieldname": "gambar_sekolah",
+   "fieldtype": "Attach Image",
+   "label": "Gambar Sekolah"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-04 22:49:41.698280",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ProfilePengguna",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

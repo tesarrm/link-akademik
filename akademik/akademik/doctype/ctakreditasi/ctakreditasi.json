@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 20:10:22.031537",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sk_akreditasi",
+  "tmt_akreditasi",
+  "tst_akreditasi",
+  "column_break_acux",
+  "akreditasi",
+  "lembaga_akreditasi"
+ ],
+ "fields": [
+  {
+   "fieldname": "sk_akreditasi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SK Akreditasi"
+  },
+  {
+   "fieldname": "tmt_akreditasi",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TMT Akreditasi"
+  },
+  {
+   "fieldname": "tst_akreditasi",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TST Akreditasi"
+  },
+  {
+   "fieldname": "column_break_acux",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "akreditasi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Akreditasi"
+  },
+  {
+   "fieldname": "lembaga_akreditasi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lembaga Akreditasi"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-05 20:13:56.355738",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctAkreditasi",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

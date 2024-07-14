@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 21:52:46.953399",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "testing_a",
+  "chil_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "testing_a",
+   "fieldtype": "Table",
+   "label": "Testing A",
+   "options": "ctTesting A"
+  },
+  {
+   "fieldname": "chil_table",
+   "fieldtype": "Link",
+   "label": "Chil Table",
+   "options": "ctTesting A"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-06 05:05:23.865493",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Testing A",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

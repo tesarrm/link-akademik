@@ -1,32 +1,96 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-06-26 00:55:27.861687",
+ "creation": "2024-07-06 21:54:16.810624",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "angkutan"
+  "link",
+  "jenis_sarana",
+  "nama",
+  "spesifikasi",
+  "merk",
+  "column_break_yeei",
+  "no_polisi",
+  "no_bpkp",
+  "alamat",
+  "kepemilikan"
  ],
  "fields": [
   {
-   "fieldname": "angkutan",
+   "fieldname": "jenis_sarana",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis sarana",
+   "options": "Bis sekolah\nMobil bak terbuka\nMobil dinas\nMobil truk\nMotor\nPerahu\nSepeda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "spesifikasi",
+   "fieldtype": "Data",
+   "label": "Spesifikasi"
+  },
+  {
+   "fieldname": "merk",
+   "fieldtype": "Data",
+   "label": "Merk"
+  },
+  {
+   "fieldname": "column_break_yeei",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_polisi",
+   "fieldtype": "Data",
+   "label": "No polisi"
+  },
+  {
+   "fieldname": "no_bpkp",
+   "fieldtype": "Data",
+   "label": "No BPKP"
+  },
+  {
+   "fieldname": "alamat",
+   "fieldtype": "Data",
+   "label": "Alamat"
+  },
+  {
+   "fieldname": "kepemilikan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Kepemilikan",
+   "options": "Milik\nSewa\nPinjam\nBukan Milik",
+   "reqd": 1
+  },
+  {
+   "fieldname": "link",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Angkutan",
+   "label": "Link ke Angkutan",
    "options": "Data Angkutan"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-02 22:54:44.080600",
+ "modified": "2024-07-06 22:00:45.911530",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "ctAngkutan",
  "owner": "Administrator",
  "permissions": [],
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "nama",
+ "translated_doctype": 1
 }

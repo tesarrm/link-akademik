@@ -5,21 +5,14 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "vid",
   "nama_ekskul",
   "column_break_uial",
   "pembina",
   "prasarana",
   "section_break_jygk",
-  "table_nyef"
+  "anggota"
  ],
  "fields": [
-  {
-   "default": "0",
-   "fieldname": "vid",
-   "fieldtype": "Check",
-   "label": "VId"
-  },
   {
    "fieldname": "nama_ekskul",
    "fieldtype": "Data",
@@ -33,12 +26,14 @@
   {
    "fieldname": "pembina",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Pembina",
    "options": "GTK"
   },
   {
    "fieldname": "prasarana",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Prasarana",
    "options": "Data Ruang"
   },
@@ -47,14 +42,14 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "table_nyef",
+   "fieldname": "anggota",
    "fieldtype": "Table",
-   "options": "CT Siswa"
+   "options": "ctPeserta Didik"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-03 04:39:14.998607",
+ "modified": "2024-07-09 00:02:44.287944",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Ekskul",

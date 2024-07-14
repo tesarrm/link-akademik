@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "creation": "2024-07-09 11:29:40.318936",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_oxjl",
+  "pilih_berdasarkan",
+  "pilih_grup_beradasarkan",
+  "column_break_opip",
+  "grup_peserta_didik",
+  "tahun_ajaran",
+  "rombel",
+  "tanggal",
+  "peserta_didik",
+  "section_break_pwxg",
+  "peserta_didik_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_oxjl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pilih_berdasarkan",
+   "fieldtype": "Select",
+   "label": "Pilih Berdasarkan ",
+   "options": "\nPeserta Didik\nRombel"
+  },
+  {
+   "default": "Kelompok",
+   "depends_on": "eval:doc.pilih_berdasarkan == \"Peserta Didik\"",
+   "fieldname": "pilih_grup_beradasarkan",
+   "fieldtype": "Select",
+   "label": "Pilih Grup Beradasarkan ",
+   "options": "\nKelompok\nRombel\nAktivity"
+  },
+  {
+   "depends_on": "eval:doc.pilih_berdasarkan ==\"Peserta Didik\"",
+   "fieldname": "column_break_opip",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.pilih_berdasarkan ==\"Peserta Didik\"",
+   "fetch_from": "grup_peserta_didik.tahun_ajaran",
+   "fieldname": "tahun_ajaran",
+   "fieldtype": "Link",
+   "label": "Tahun Ajaran",
+   "options": "Tahun Ajaran",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.pilih_berdasarkan ==\"Peserta Didik\"",
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "label": "Tanggal"
+  },
+  {
+   "depends_on": "eval: (doc.rombel \r\n|| (doc.grup_peserta_didik && doc.tanggal))",
+   "fieldname": "section_break_pwxg",
+   "fieldtype": "Section Break",
+   "label": "Kehadiran"
+  },
+  {
+   "fieldname": "peserta_didik_html",
+   "fieldtype": "HTML",
+   "label": "Peserta Didik HTML"
+  },
+  {
+   "depends_on": "eval:doc.pilih_berdasarkan ==\"Rombel\"",
+   "fieldname": "rombel",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Rombel",
+   "options": "Rombel",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.pilih_berdasarkan ==\"Peserta Didik\"",
+   "fieldname": "grup_peserta_didik",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Grub Peserta Didik",
+   "options": "Grup Peserta Didik",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.pilih_berdasarkan ==\"Peserta Didik\"",
+   "fieldname": "peserta_didik",
+   "fieldtype": "Link",
+   "label": "Peserta Didik",
+   "options": "Grup Peserta Didik",
+   "reqd": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-10 00:16:54.260691",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Tool Kehadiran Peserta Didik",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

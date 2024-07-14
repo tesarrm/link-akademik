@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-07-05 07:40:19.277845",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "informasi_section",
+  "bangunan",
+  "ruang",
+  "jenis_sarana",
+  "nama",
+  "column_break_jsvd",
+  "spesifikasi",
+  "kepemilikan",
+  "jumlah_total",
+  "jumlah_layak"
+ ],
+ "fields": [
+  {
+   "fieldname": "informasi_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "ruang.bangunan_nama",
+   "fieldname": "bangunan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bangunan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ruang",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Ruang",
+   "options": "Data Ruang"
+  },
+  {
+   "fieldname": "jenis_sarana",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Jenis sarana",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jsvd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "spesifikasi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Spesifikasi"
+  },
+  {
+   "fieldname": "kepemilikan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Kepemilikan",
+   "options": "Milik",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jumlah_total",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Jumlah total"
+  },
+  {
+   "fieldname": "jumlah_layak",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Jumlah layak"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-05 07:40:19.277845",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Alat 2",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama",
+ "translated_doctype": 1
+}

@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 17:14:18.177440",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "melayani_keb_khusus",
+  "sk_program",
+  "column_break_rpik",
+  "tgl_sk_program_inklusi",
+  "tmt_program_inklusi",
+  "section_break_xdbf",
+  "keterangan"
+ ],
+ "fields": [
+  {
+   "fieldname": "melayani_keb_khusus",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Melayani keb. khusus",
+   "options": "netra (A)\nrungu (B)\ngrahita ringan (C)\ngrahita sedang (C1)\ndaksa ringan (D)\ndaksa sedang (D1)\nlaras (E)\nwicara (F)\nhyperaktif (H)\ncerdas istimewa (I)\nbakat istimewa (J)\nkesulitan belajar (K)\nnarkoba (N)\nindigo (O)\ndown syndrome (P)\nautis (Q)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sk_program",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SK program",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rpik",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tgl_sk_program_inklusi",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tgl sk program inklusi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tmt_program_inklusi",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TMT program inklusi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_xdbf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-05 17:23:06.690008",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctProgram Inklusi",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

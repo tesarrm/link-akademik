@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-10 14:12:15.835782",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rombel",
+  "pembelajaran",
+  "column_break_bosz",
+  "peserta_didik_id",
+  "peserta_didik",
+  "tanggal",
+  "kehadiran"
+ ],
+ "fields": [
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Link",
+   "label": "Rombel",
+   "options": "Rombel"
+  },
+  {
+   "fieldname": "pembelajaran",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pembelajaran",
+   "options": "Data Pembelajaran"
+  },
+  {
+   "fieldname": "column_break_bosz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "peserta_didik_id",
+   "fieldtype": "Link",
+   "label": "Peserta Didik ID",
+   "options": "Peserta Didik"
+  },
+  {
+   "fieldname": "peserta_didik",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Peserta Didik"
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tanggal"
+  },
+  {
+   "fieldname": "kehadiran",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Kehadiran",
+   "options": "Ya\nTidak"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-10 14:43:42.956086",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Kehadiran 2",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

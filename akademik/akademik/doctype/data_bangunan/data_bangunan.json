@@ -1,0 +1,225 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "BGN-.###",
+ "creation": "2024-06-23 12:37:13.912381",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_prasarana",
+  "tanah",
+  "nama",
+  "panjang_m",
+  "lebar_m",
+  "luas_bangunan_m2",
+  "column_break_brib",
+  "kepemilikan",
+  "nilai_perolehan_aset",
+  "jumlah_lantai",
+  "tahun_dibangun",
+  "tgl_sk_pemakai",
+  "section_break_asdd",
+  "tipe",
+  "ruang_kelas",
+  "ruang_kepsekguru",
+  "ruang_laboratorium",
+  "ruang_perpustakaan",
+  "ruang_praktik_siswa",
+  "kamar_mandiwc",
+  "ruang_penunjang",
+  "tambah_ruang"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_prasarana",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Jenis prasarana",
+   "options": "\nAsrama Siswa\nBangunan\nBangunan Tempat Ibadah\nKebun\nLapangan\nParkir\nRumah Dinas Guru\nRumah Dinas Kepala Sekolah\nTaman\nTempat Bermain\nUnit Produksi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "panjang_m",
+   "fieldtype": "Int",
+   "label": "Panjang (m)",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "lebar_m",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Lebar (m)",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "luas_bangunan_m2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Luas bangunan (m2)",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_brib",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kepemilikan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Kepemilikan",
+   "options": "Milik\nSewa\nPinjam\nBukan Milik",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nilai_perolehan_aset",
+   "fieldtype": "Currency",
+   "label": "Nilai perolehan aset (Rp)",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "jumlah_lantai",
+   "fieldtype": "Int",
+   "label": "Jumlah lantai",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "tahun_dibangun",
+   "fieldtype": "Int",
+   "label": "Tahun dibangun"
+  },
+  {
+   "description": "Format: dd-mm-yyyy",
+   "fieldname": "tgl_sk_pemakai",
+   "fieldtype": "Date",
+   "label": "Tgl SK pemakai",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tanah",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tanah",
+   "options": "Data Tanah",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_asdd",
+   "fieldtype": "Section Break",
+   "label": "Ruang"
+  },
+  {
+   "columns": 10,
+   "fieldname": "tipe",
+   "fieldtype": "Select",
+   "label": "Tipe",
+   "options": "Kelas\nKepsek/Guru\nLaboratorium\nPerpustakaan\nPraktik Siswa\nKamar Mandi/WC\nPenunjang"
+  },
+  {
+   "depends_on": "eval:doc.tipe==\"Kelas\"",
+   "fieldname": "ruang_kelas",
+   "fieldtype": "Table",
+   "label": "Ruang Kelas",
+   "options": "ctRuang",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.tipe==\"Kepsek/Guru\"",
+   "fieldname": "ruang_kepsekguru",
+   "fieldtype": "Table",
+   "label": "Ruang Kepsek/Guru",
+   "options": "ctRuang",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.tipe==\"Laboratorium\"",
+   "fieldname": "ruang_laboratorium",
+   "fieldtype": "Table",
+   "label": "Ruang Laboratorium",
+   "options": "ctRuang",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.tipe==\"Perpustakaan\"",
+   "fieldname": "ruang_perpustakaan",
+   "fieldtype": "Table",
+   "label": "Ruang Perpustakaan",
+   "options": "ctRuang",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.tipe==\"Kamar Mandi/WC\"",
+   "fieldname": "kamar_mandiwc",
+   "fieldtype": "Table",
+   "label": "Kamar Mandi/WC",
+   "options": "ctRuang",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.tipe==\"Penunjang\"",
+   "fieldname": "ruang_penunjang",
+   "fieldtype": "Table",
+   "label": "Ruang Penunjang",
+   "options": "ctRuang",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.tipe==\"Praktik Siswa\"",
+   "fieldname": "ruang_praktik_siswa",
+   "fieldtype": "Table",
+   "label": "Ruang Praktik Siswa",
+   "options": "ctRuang",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tambah_ruang",
+   "fieldtype": "Button",
+   "label": "Tambah Ruang"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-08 01:12:22.053417",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Bangunan",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama",
+ "translated_doctype": 1
+}

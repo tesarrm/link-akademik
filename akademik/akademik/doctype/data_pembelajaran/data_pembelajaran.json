@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 19:56:55.976575",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rombel",
+  "tipe",
+  "kelompok_bidang_studi",
+  "bidang_studi",
+  "nama_bidang_studi",
+  "kode_matpel",
+  "column_break_wagm",
+  "ptk",
+  "nama_guru",
+  "sk_mengajar",
+  "tgl_sk",
+  "jam",
+  "max"
+ ],
+ "fields": [
+  {
+   "fieldname": "bidang_studi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bidang Studi",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nama_bidang_studi",
+   "fieldtype": "Data",
+   "label": "Nama Bidang Studi",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kode_matpel",
+   "fieldtype": "Data",
+   "label": "Kode Matpel",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wagm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ptk",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PTK",
+   "options": "GTK"
+  },
+  {
+   "fieldname": "sk_mengajar",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SK Mengajar"
+  },
+  {
+   "fieldname": "tgl_sk",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tgl SK"
+  },
+  {
+   "fieldname": "jam",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Jam"
+  },
+  {
+   "fieldname": "max",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rombel",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Rombel",
+   "options": "Rombel"
+  },
+  {
+   "fieldname": "nama_guru",
+   "fieldtype": "Data",
+   "label": "Nama Guru"
+  },
+  {
+   "fieldname": "tipe",
+   "fieldtype": "Select",
+   "label": "Tipe",
+   "options": "Kelompok Umum\nPraktik Kerja Lapangan"
+  },
+  {
+   "fieldname": "kelompok_bidang_studi",
+   "fieldtype": "Data",
+   "label": "Kelompok Bidang Studi"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-11 15:02:10.707611",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Pembelajaran",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "ctPelajaran",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "bidang_studi",
+ "translated_doctype": 1
+}

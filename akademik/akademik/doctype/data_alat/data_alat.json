@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-07-05 04:58:04.212478",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "informasi_section",
+  "bangunan",
+  "ruang",
+  "jenis_sarana",
+  "nama",
+  "column_break_jsvd",
+  "spek",
+  "spesifikasi",
+  "kepemilikan",
+  "nama_ruang"
+ ],
+ "fields": [
+  {
+   "fieldname": "informasi_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jenis_sarana",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Jenis sarana",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jsvd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "spesifikasi",
+   "fieldtype": "Select",
+   "label": "Alat rusak / Tidak",
+   "options": "Tidak Rusak\nRusak"
+  },
+  {
+   "fieldname": "kepemilikan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Kepemilikan",
+   "options": "Milik",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ruang",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Ruang",
+   "options": "Data Ruang",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "ruang.bangunan_nama",
+   "fieldname": "bangunan",
+   "fieldtype": "Data",
+   "label": "Bangunan",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "ruang.nama_ruang",
+   "fieldname": "nama_ruang",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Nama Ruang"
+  },
+  {
+   "fieldname": "spek",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Spesifikasi",
+   "non_negative": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-10 00:19:33.613602",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Data Alat",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "nama_ruang",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama",
+ "translated_doctype": 1
+}

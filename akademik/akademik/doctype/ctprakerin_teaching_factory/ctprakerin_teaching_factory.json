@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 19:55:33.239071",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "judul",
+  "column_break_prsr",
+  "jenis_aktifitas_pd"
+ ],
+ "fields": [
+  {
+   "fieldname": "judul",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Judul",
+   "options": "Data Prakerin Teaching Factory"
+  },
+  {
+   "fieldname": "column_break_prsr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "judul.jenis_aktifitas_pd",
+   "fieldname": "jenis_aktifitas_pd",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis Aktifitas PD"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-05 19:57:13.382252",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctPrakerin Teaching Factory",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

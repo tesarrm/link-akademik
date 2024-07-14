@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 19:42:49.204492",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ptk_pembimbing",
+  "column_break_uvzx",
+  "urutan_pembimbing"
+ ],
+ "fields": [
+  {
+   "fieldname": "ptk_pembimbing",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PTK Pembimbing",
+   "options": "GTK"
+  },
+  {
+   "fieldname": "column_break_uvzx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "urutan_pembimbing",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Urutan Pembimbing"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-05 19:43:53.748681",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctPembimbing Aktivitas PD",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

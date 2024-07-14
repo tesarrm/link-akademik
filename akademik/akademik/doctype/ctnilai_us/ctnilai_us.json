@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 02:17:39.338927",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama_peserta_didik",
+  "nis",
+  "deskripsi",
+  "column_break_uyii",
+  "np",
+  "nk"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama_peserta_didik",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Peserta Didik",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nis",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NIS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deskripsi",
+   "fieldtype": "Small Text",
+   "label": "Deskripsi"
+  },
+  {
+   "fieldname": "column_break_uyii",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "np",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Pengetahuan"
+  },
+  {
+   "fieldname": "nk",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Keterampilan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-09 02:18:16.870864",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctNilai US",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

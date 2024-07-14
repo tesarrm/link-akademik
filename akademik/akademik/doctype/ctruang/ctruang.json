@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-06 10:19:46.482495",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "detail_section",
+  "link",
+  "tipe",
+  "jenis_prasarana",
+  "bangunan_nama",
+  "nama_ruang",
+  "kode_ruang",
+  "registrasi_ruang",
+  "column_break_jfcl",
+  "lantai_ke",
+  "panjang_m",
+  "lebar_m",
+  "luas_ruang_m2",
+  "kapasitas",
+  "bangunan",
+  "kondisi_section",
+  "kerusakan",
+  "column_break_rwig",
+  "nilai_kerusakan"
+ ],
+ "fields": [
+  {
+   "fieldname": "detail_section",
+   "fieldtype": "Section Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "jenis_prasarana",
+   "fieldtype": "Data",
+   "label": "Jenis prasarana"
+  },
+  {
+   "fieldname": "bangunan",
+   "fieldtype": "Data",
+   "label": "Bangunan Link",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kode_ruang",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kode Ruang"
+  },
+  {
+   "fieldname": "nama_ruang",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Ruang",
+   "read_only": 1
+  },
+  {
+   "fieldname": "registrasi_ruang",
+   "fieldtype": "Data",
+   "label": "Registrasi Ruang"
+  },
+  {
+   "fieldname": "column_break_jfcl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lantai_ke",
+   "fieldtype": "Int",
+   "label": "Lantai Ke"
+  },
+  {
+   "fieldname": "panjang_m",
+   "fieldtype": "Float",
+   "label": "Panjang (m)"
+  },
+  {
+   "fieldname": "lebar_m",
+   "fieldtype": "Int",
+   "label": "Lebar (m)"
+  },
+  {
+   "fieldname": "luas_ruang_m2",
+   "fieldtype": "Float",
+   "label": "Luas Ruang (m2)"
+  },
+  {
+   "fieldname": "kapasitas",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Kapasitas"
+  },
+  {
+   "fetch_from": "bangunan.nama",
+   "fieldname": "bangunan_nama",
+   "fieldtype": "Data",
+   "label": "Bangunan"
+  },
+  {
+   "fieldname": "kondisi_section",
+   "fieldtype": "Section Break",
+   "label": "Kondisi"
+  },
+  {
+   "fieldname": "kerusakan",
+   "fieldtype": "Select",
+   "label": "Kerusakan",
+   "options": "Tidak Ada Kerusakan\nRusak Ringan: 1% - 30%\nRusak Sedang: 31% - 45%\nRusak Berat: 46% - 100%"
+  },
+  {
+   "fieldname": "column_break_rwig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nilai_kerusakan",
+   "fieldtype": "Int",
+   "label": "Nilai kerusakan"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Link ke Ruang",
+   "options": "Data Ruang",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tipe",
+   "fieldtype": "Select",
+   "label": "Tipe",
+   "options": "Ruang Teori/Kelas\nRuang Kepsek/Guru\nRuang Laboratorium\nRuang Perpustakaan\nRuang Praktik Siswa (RPS)\nKamar Mandi/WC\nRuang Penunjang"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-06 17:12:58.274610",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctRuang",
+ "owner": "Administrator",
+ "permissions": [],
+ "search_fields": "bangunan_nama",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nama_ruang",
+ "translated_doctype": 1
+}

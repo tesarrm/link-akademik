@@ -1,0 +1,270 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"2EyT3J3aq2\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Laporan &amp; Mater</b></span>\",\"col\":12}},{\"id\":\"aNJa49BZBH\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"tes\",\"col\":4}},{\"id\":\"SBWOBWCKk9\",\"type\":\"card\",\"data\":{\"card_name\":\"Sarpras\",\"col\":4}},{\"id\":\"o3gB-kq004\",\"type\":\"card\",\"data\":{\"card_name\":\"GTK & Peserta Didik\",\"col\":4}},{\"id\":\"TDYiGAgnQx\",\"type\":\"card\",\"data\":{\"card_name\":\"Rombongan Belajar\",\"col\":4}},{\"id\":\"m_TCA7QOqP\",\"type\":\"card\",\"data\":{\"card_name\":\"Nilai\",\"col\":4}},{\"id\":\"3SYPbRm34g\",\"type\":\"card\",\"data\":{\"card_name\":\"Pengaturan\",\"col\":4}}]",
+ "creation": "2024-07-11 14:43:56.854168",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Card Data Sekolah",
+   "label": "tes"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "list",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Me",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "GTK & Peserta Didik",
+   "link_count": 2,
+   "link_type": "URL",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "GTK",
+   "link_count": 0,
+   "link_to": "GTK",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Peserta Didik",
+   "link_count": 0,
+   "link_to": "Peserta Didik",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sarpras",
+   "link_count": 6,
+   "link_type": "URL",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tanah Bangunan",
+   "link_count": 0,
+   "link_to": "Tanah Bangunan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Ruang",
+   "link_count": 0,
+   "link_to": "Ruang",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Alat Angkutan Buku",
+   "link_count": 0,
+   "link_to": "Alat Angkutan Buku",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Data Tanah",
+   "link_count": 0,
+   "link_to": "Data Tanah",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Data Ruang",
+   "link_count": 0,
+   "link_to": "Data Ruang",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Data Alat",
+   "link_count": 0,
+   "link_to": "Data Alat",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rombongan Belajar",
+   "link_count": 3,
+   "link_type": "URL",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rombel",
+   "link_count": 0,
+   "link_to": "Rombel",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bidang Studi",
+   "link_count": 0,
+   "link_to": "Pembelajaran",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pembelajaran",
+   "link_count": 0,
+   "link_to": "Data Pembelajaran",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Nilai",
+   "link_count": 3,
+   "link_type": "URL",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rapor",
+   "link_count": 0,
+   "link_to": "Rapor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Ujian Semester",
+   "link_count": 0,
+   "link_to": "US",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Ujian Kenaikan Kelas",
+   "link_count": 0,
+   "link_to": "US",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pengaturan",
+   "link_count": 5,
+   "link_type": "URL",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pengaturan Akademik",
+   "link_count": 0,
+   "link_to": "Pengaturan Akademik",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Manajemen Pengguna",
+   "link_count": 0,
+   "link_to": "Manajemen Pengguna",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tahun Ajaran",
+   "link_count": 0,
+   "link_to": "Tahun Ajaran",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Semester",
+   "link_count": 0,
+   "link_to": "Semester",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Kurikulum",
+   "link_count": 0,
+   "link_to": "Kurikulum",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-07-14 21:47:45.386072",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Me",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 24.0,
+ "shortcuts": [],
+ "title": "Me"
+}

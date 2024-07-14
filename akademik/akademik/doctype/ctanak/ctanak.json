@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 03:55:46.587810",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "namaanak",
+  "status",
+  "jenjang",
+  "nik",
+  "nisn",
+  "column_break_gpjs",
+  "jeniskl",
+  "tempattgl",
+  "tanggal_lahir",
+  "thnmasuk"
+ ],
+ "fields": [
+  {
+   "fieldname": "namaanak",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama anak"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "jenjang",
+   "fieldtype": "Select",
+   "label": "Jenjang"
+  },
+  {
+   "fieldname": "nik",
+   "fieldtype": "Data",
+   "label": "NIK"
+  },
+  {
+   "fieldname": "nisn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NISN"
+  },
+  {
+   "fieldname": "column_break_gpjs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jeniskl",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis kelamin",
+   "options": "Laki-laki\nPerempuan"
+  },
+  {
+   "fieldname": "tempattgl",
+   "fieldtype": "Data",
+   "label": "Tempat lahir"
+  },
+  {
+   "fieldname": "tanggal_lahir",
+   "fieldtype": "Date",
+   "label": "Tanggal lahir"
+  },
+  {
+   "fieldname": "thnmasuk",
+   "fieldtype": "Select",
+   "label": "Tahun masuk"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 22:44:32.496827",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctAnak",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 09:43:47.764576",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jabatan_ptk",
+  "sk_struktual___fungsional",
+  "column_break_dssf",
+  "tmt_jabatan"
+ ],
+ "fields": [
+  {
+   "fieldname": "jabatan_ptk",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jabatan PTK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sk_struktual___fungsional",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sk Struktual/Fungsional",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dssf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tmt_jabatan",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TMT Jabatan",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 22:44:31.199797",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctPendidikan - Jabatan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

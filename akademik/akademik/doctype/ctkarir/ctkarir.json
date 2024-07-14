@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 05:18:42.634837",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "riwayat_section",
+  "jenjang_pendidikan",
+  "jenis_lembaga",
+  "status_kepegawian",
+  "jenis_ptk",
+  "lembaga_pengangkat",
+  "no_sk_kerja",
+  "column_break_dmyx",
+  "tanggal_sk_kerja",
+  "tmt_kerja",
+  "tst_kerja",
+  "tempat_kerja",
+  "ttd_sk_kerja",
+  "mapel_diajarkan"
+ ],
+ "fields": [
+  {
+   "fieldname": "riwayat_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jenjang_pendidikan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenjang Pendidikan",
+   "options": "SMP\nSD\nSMK"
+  },
+  {
+   "fieldname": "jenis_lembaga",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis Lembaga"
+  },
+  {
+   "fieldname": "status_kepegawian",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status Kepegawian"
+  },
+  {
+   "fieldname": "jenis_ptk",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis PTK"
+  },
+  {
+   "fieldname": "lembaga_pengangkat",
+   "fieldtype": "Data",
+   "label": "Lembaga Pengangkat"
+  },
+  {
+   "fieldname": "no_sk_kerja",
+   "fieldtype": "Data",
+   "label": "NO SK Kerja"
+  },
+  {
+   "fieldname": "column_break_dmyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tanggal_sk_kerja",
+   "fieldtype": "Date",
+   "label": "Tanggal SK kerja"
+  },
+  {
+   "fieldname": "tmt_kerja",
+   "fieldtype": "Date",
+   "label": "TMT Kerja"
+  },
+  {
+   "fieldname": "tst_kerja",
+   "fieldtype": "Date",
+   "label": "TST Kerja "
+  },
+  {
+   "fieldname": "tempat_kerja",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tempat Kerja"
+  },
+  {
+   "fieldname": "ttd_sk_kerja",
+   "fieldtype": "Data",
+   "label": "TTD SK Kerja"
+  },
+  {
+   "fieldname": "mapel_diajarkan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mapel Diajarkan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 22:44:31.813009",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctKarir",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

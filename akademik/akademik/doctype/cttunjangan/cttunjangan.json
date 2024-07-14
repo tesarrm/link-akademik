@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 23:07:40.052121",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis__tunjangan",
+  "nama_tunjangan",
+  "instansi",
+  "sk_tunjangan",
+  "tgl_sk_tunjangan",
+  "semester",
+  "column_break_ouyn",
+  "sumber_dana",
+  "dari_tahun",
+  "sampai_tahun",
+  "nominalrp",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis__tunjangan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis  Tunjangan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_tunjangan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Tunjangan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "instansi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Instansi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sk_tunjangan",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "SK Tunjangan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tgl_sk_tunjangan",
+   "fieldtype": "Date",
+   "label": "Tgl SK Tunjangan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Int",
+   "label": "Semester"
+  },
+  {
+   "fieldname": "column_break_ouyn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sumber_dana",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sumber Dana",
+   "options": "Badan PSDMPK dan PMP\nBalitbang\nBantuan Asing\nBantuan Swasta\nBiro PKLN\nCSR suatu perusahaan/instuti\nDikti\nDinas Kabupaten\nDinas Provinsi\nDirektorat Khusus dan Pelatihan\nDirektorat P2TK Dikdas\nDirektorat PKLK Dikmen\nDirektorat PAUD\nDirektorat Pendidikan\nKeaksaraan dan Kesastraan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dari_tahun",
+   "fieldtype": "Int",
+   "label": "Dari Tahun",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sampai_tahun",
+   "fieldtype": "Int",
+   "label": "Sampai Tahun",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nominalrp",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Nominal (Rp)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Masih Menerima\nTidak Menerima",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 22:44:29.382121",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctTunjangan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 14:08:32.237357",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_test",
+  "nama",
+  "penyelenggara",
+  "column_break_xqjz",
+  "tahun",
+  "skor_final",
+  "nomor_peserta"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_test",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis tes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "penyelenggara",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Penyelenggara",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xqjz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tahun",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Tahun",
+   "reqd": 1
+  },
+  {
+   "fieldname": "skor_final",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Skor Final",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nomor_peserta",
+   "fieldtype": "Data",
+   "label": "Nomor Peserta",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 22:44:30.758674",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctNilai Tes",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

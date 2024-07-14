@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 13:35:21.251459",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gajiguru",
+  "pangkat_golongan",
+  "nomor_sk",
+  "tanggal_sk",
+  "tmt_kgb",
+  "column_break_giqb",
+  "masa_kerja_thn",
+  "masa_kerja_bln",
+  "gaji_pokok"
+ ],
+ "fields": [
+  {
+   "fieldname": "gajiguru",
+   "fieldtype": "Section Break",
+   "label": "Riwayat Gaji Guru "
+  },
+  {
+   "fieldname": "pangkat_golongan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pangkat Golongan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nomor_sk",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nomor SK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tanggal_sk",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tanggal SK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tmt_kgb",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "TMT KGB",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_giqb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "masa_kerja_thn",
+   "fieldtype": "Int",
+   "label": "Masa Kerja Thn",
+   "reqd": 1
+  },
+  {
+   "fieldname": "masa_kerja_bln",
+   "fieldtype": "Int",
+   "label": "Masa Kerja Bln",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gaji_pokok",
+   "fieldtype": "Currency",
+   "label": "Gaji pokok",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 22:44:30.976035",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctGaji Berkala",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

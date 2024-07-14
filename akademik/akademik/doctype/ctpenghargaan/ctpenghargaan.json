@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 14:33:38.581288",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tingkat_penghargaan",
+  "jenis_penghargaan",
+  "nama_pelanggaran",
+  "column_break_qqjn",
+  "tahun",
+  "instansi"
+ ],
+ "fields": [
+  {
+   "fieldname": "tingkat_penghargaan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tingkat Penghargaan"
+  },
+  {
+   "fieldname": "jenis_penghargaan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis Penghargaan"
+  },
+  {
+   "fieldname": "nama_pelanggaran",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Pelanggaran"
+  },
+  {
+   "fieldname": "column_break_qqjn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tahun",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Tahun"
+  },
+  {
+   "fieldname": "instansi",
+   "fieldtype": "Data",
+   "label": "Instansi"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 22:44:30.542293",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctPenghargaan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

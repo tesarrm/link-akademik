@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 04:21:40.001797",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "beasiswa_section",
+  "beajenis",
+  "beaket",
+  "column_break_iele",
+  "beatahunmulai",
+  "beatahun",
+  "beamasih"
+ ],
+ "fields": [
+  {
+   "fieldname": "beasiswa_section",
+   "fieldtype": "Section Break",
+   "label": "beasiswa"
+  },
+  {
+   "fieldname": "beajenis",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis beasiswa",
+   "options": "Beasiswa",
+   "reqd": 1
+  },
+  {
+   "fieldname": "beaket",
+   "fieldtype": "Data",
+   "label": "Keterangan "
+  },
+  {
+   "fieldname": "column_break_iele",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "beatahunmulai",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tahun mulai",
+   "reqd": 1
+  },
+  {
+   "fieldname": "beatahun",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tahun akhir",
+   "reqd": 1
+  },
+  {
+   "fieldname": "beamasih",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Masih menerima",
+   "options": "Tidak\nYa",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 22:44:32.293064",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctBeasiswa",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

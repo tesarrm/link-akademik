@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 15:46:45.359870",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bukutulis",
+  "judul_buku",
+  "tahun",
+  "column_break_prkd",
+  "penerbit",
+  "isbn"
+ ],
+ "fields": [
+  {
+   "fieldname": "bukutulis",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "judul_buku",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Judul Buku",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tahun",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Tahun",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_prkd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "penerbit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Penerbit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISBN",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 22:44:30.312506",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctMenulis Buku",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

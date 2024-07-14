@@ -1,0 +1,123 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<div class=\"widget links-widget-box\" style=\"margin: 0; padding: 0\" data-widget-name=\"qmoateo6hv\">\n\t<div class=\"widget-head\">\n\t\t<div class=\"widget-label\">\n\t\t\t<div class=\"widget-title\">\n\t\t\t\t<span class=\"ellipsis\" title=\"Pengaturan\">Sekolah</span>\n\t\t\t</div>\n\t\t\t<div class=\"widget-subtitle\"></div>\n\t\t</div>\n\t\t<div class=\"widget-control\"></div>\n\t</div>\n\t<div class=\"widget-body\">\n\t\t<a\n\t\t\thref=\"/app/data-sekolah\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Detail Sekolah</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#data_periodik_tab\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Data Periodik Sekolah</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#instansi\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Sanitasi Sekolah</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#data_dinamis_tab\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Data Dinamis Sekolah</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#kepanitiaan_sekolah_tab\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Kepanitiaan Sekolah</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#blockgrant_tab\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Bantuan Sekolah</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#layanan_khusus_tab\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Layanan Khusus</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#program_inklusi_tab\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Program Inklusi</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#ekstrakulikuler_tab\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Esktrakurikuler</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#relasi_dunia_industri_tab\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Relasi Dunia Industri</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#unit_produksi_tab\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Unit Produksi</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#perjanjian_kerja_sama_pks_tab\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Perjanjian Kerja Sama</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t\t<a\n\t\t\thref=\"/app/data-sekolah/Data%20Sekolah#kompetensi_keahlian_dilayani_tab\"\n\t\t\tclass=\"link-item ellipsis\"\n\t\t>\n\t\t\t<span class=\"link-content ellipsis\">\n\t\t\t\t<span class=\"link-text\">Kompetensi Keahlian</span>\n\t\t\t\t<svg class=\"es-icon es-line ml-2 icon-xs\" style=\"\" aria-hidden=\"true\">\n\t\t\t\t\t<use class=\"\" href=\"#es-line-arrow-up-right\"></use>\n\t\t\t\t</svg>\n\t\t\t</span> </a\n\t\t>\n\t</div>\n\t<div class=\"widget-footer\"></div>\n</div>\n\n<div id=\"all-symbols\" style=\"display: none\">\n\t<svg xmlns=\"http://www.w3.org/2000/svg\" style=\"display: none\">\n\t\t<defs>\n\t\t\t<symbol id=\"es-line-arrow-up-right\" fill=\"none\" viewBox=\"0 0 16 16\">\n\t\t\t\t<g class=\"es-line-arrow-up-right\">\n\t\t\t\t\t<path\n\t\t\t\t\t\tfill=\"var(--icon-stroke)\"\n\t\t\t\t\t\tfill-rule=\"evenodd\"\n\t\t\t\t\t\td=\"M12 3.5H4.929a.5.5 0 0 0 0 1h5.864l-7.147 7.146a.5.5 0 0 0 .708.708L11.5 5.207v5.864a.5.5 0 1 0 1 0V4.015A.499.499 0 0 0 12 3.5Z\"\n\t\t\t\t\t\tclass=\"Union\"\n\t\t\t\t\t\tclip-rule=\"evenodd\"\n\t\t\t\t\t></path>\n\t\t\t\t</g>\n\t\t\t</symbol>\n\t\t</defs>\n\t</svg>\n</div>",
+  "modified": "2024-07-11 20:13:50.187372",
+  "name": "Card Data Sekolah",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n\r\n</head>\r\n<body>\r\n  <div class=\"profil-container\">\r\n    <div class=\"left-column\">\r\n      <form>\r\n        <div class=\"form-group\">\r\n          <label for=\"username\">Username:</label>\r\n          <input type=\"text\" id=\"username\" name=\"username\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n          <label for=\"nama\">Nama:</label>\r\n          <input type=\"text\" id=\"nama\" name=\"nama\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n          <label for=\"no_hp\">No HP:</label>\r\n          <input type=\"text\" id=\"no_hp\" name=\"no_hp\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n          <label for=\"user_telegram\">User Telegram:</label>\r\n          <input type=\"text\" id=\"user_telegram\" name=\"user_telegram\">\r\n        </div>\r\n        <input type=\"button\" value=\"Simpan\" onclick=\"saveProfile()\">\r\n      </form>\r\n    </div>\r\n    <div class=\"right-column\">\r\n      <div class=\"profile-pic\">\r\n        <img id=\"profile_image\" src=\"\" alt=\"Gambar Profil\">\r\n        <input type=\"file\" id=\"profile_image_input\" style=\"display: none;\" onchange=\"displayImage('profile_image', this)\">\r\n        <input type=\"button\" value=\"Ubah Gambar Profil\" onclick=\"document.getElementById('profile_image_input').click()\">\r\n      </div>\r\n      <div class=\"school-pic\">\r\n        <img id=\"school_image\" src=\"\" alt=\"Gambar Sekolah\">\r\n        <input type=\"file\" id=\"school_image_input\" style=\"display: none;\" onchange=\"displayImage('school_image', this)\">\r\n        <input type=\"button\" value=\"Ubah Gambar Sekolah\" onclick=\"document.getElementById('school_image_input').click()\">\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n \r\n</body>\r\n</html>\r\n",
+  "modified": "2024-07-04 15:30:34.999320",
+  "name": "ProfilPengguna",
+  "private": 0,
+  "roles": [],
+  "script": "\r\n    function saveProfile() {\r\n      var username = document.getElementById(\"username\").value;\r\n      var nama = document.getElementById(\"nama\").value;\r\n      var no_hp = document.getElementById(\"no_hp\").value;\r\n      var user_telegram = document.getElementById(\"user_telegram\").value;\r\n\r\n      // Lakukan aksi penyimpanan data di sini\r\n      console.log(\"Data disimpan:\", { username, nama, no_hp, user_telegram });\r\n    }\r\n\r\n    function displayImage(imageId, input) {\r\n      var file = input.files[0];\r\n      var reader = new FileReader();\r\n      reader.onload = function(e) {\r\n        document.getElementById(imageId).src = e.target.result;\r\n        // Lakukan aksi upload gambar di sini\r\n        console.log(\"Gambar diunggah:\", file);\r\n      };\r\n      reader.readAsDataURL(file);\r\n    }\r\n",
+  "style": "    body {\r\n      font-family: Arial, sans-serif;\r\n      background-color: #f0f0f0;\r\n      margin: 0;\r\n      padding: 0;\r\n    }\r\n\r\n    .profil-container {\r\n      display: flex;\r\n      justify-content: space-between;\r\n      max-width: 800px;\r\n      margin: 20px auto;\r\n      background-color: #fff;\r\n      border-radius: 8px;\r\n      box-shadow: 0 0 10px rgba(0,0,0,0.1);\r\n      padding: 20px;\r\n    }\r\n\r\n    .left-column, .right-column {\r\n      width: 48%;\r\n      padding: 0 10px;\r\n    }\r\n\r\n    .form-group {\r\n      margin-bottom: 20px;\r\n    }\r\n\r\n    .form-group label {\r\n      display: block;\r\n      margin-bottom: 8px;\r\n      font-weight: bold;\r\n    }\r\n\r\n    .form-group input[type=\"text\"] {\r\n      width: calc(100% - 16px);\r\n      padding: 10px;\r\n      border: 1px solid #ccc;\r\n      border-radius: 4px;\r\n      font-size: 16px;\r\n    }\r\n\r\n    input[type=\"button\"] {\r\n      background-color: #4CAF50;\r\n      color: white;\r\n      border: none;\r\n      padding: 12px 20px;\r\n      text-align: center;\r\n      text-decoration: none;\r\n      display: inline-block;\r\n      font-size: 16px;\r\n      border-radius: 4px;\r\n      cursor: pointer;\r\n    }\r\n\r\n    input[type=\"button\"]:hover {\r\n      background-color: #45a049;\r\n    }\r\n\r\n    .profile-pic img, .school-pic img {\r\n      width: 100%;\r\n      max-width: 150px;\r\n      height: auto;\r\n      border-radius: 50%;\r\n      border: 3px solid #fff;\r\n      box-shadow: 0 0 10px rgba(0,0,0,0.1);\r\n    }\r\n\r\n    .profile-pic input, .school-pic input {\r\n      margin-top: 10px;\r\n    }"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<p style=\"font-size: 16px; font-weight: 600;\">Jadwal</p>",
+  "modified": "2024-07-10 11:03:26.529305",
+  "name": "Jadwal Heading",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<p style=\"font-size: 16px; font-weight: 600;\">Setup</p>",
+  "modified": "2024-07-10 10:17:34.786511",
+  "name": "Setup Heading",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<p style=\"font-size: 16px; font-weight: 600;\">Kehadiran</p>",
+  "modified": "2024-07-09 22:33:16.650730",
+  "name": "Kehadiran",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<p style=\"font-size: 16px; font-weight: 600;\">Nilai</p>",
+  "modified": "2024-07-09 22:30:38.106956",
+  "name": "Nilai Heading",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<p style=\"font-size: 16px; font-weight: 600;\">Pengaturan</p>",
+  "modified": "2024-07-03 08:53:47.325132",
+  "name": "Pengaturan Heading",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<p style=\"font-size: 16px; font-weight: 600;\">GTK</p>",
+  "modified": "2024-07-03 01:09:58.679202",
+  "name": "GTK heading",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<p style=\"font-size: 16px; font-weight: 600;\">Peserta Didik</p>",
+  "modified": "2024-07-03 01:10:06.231560",
+  "name": "Peserta didik heading",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<p style=\"font-size: 16px; font-weight: 600;\">Rombel</p>",
+  "modified": "2024-07-03 01:09:43.775550",
+  "name": "Rombel heading",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<p style=\"font-size: 16px; font-weight: 600;\">Sarpras</p>",
+  "modified": "2024-07-03 04:36:28.295223",
+  "name": "Sarpras heading",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ }
+]

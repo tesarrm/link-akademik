@@ -4,6 +4,9 @@ app_publisher = "Tim SiakadPlus"
 app_description = "Akademik"
 app_email = "siakadplus@gmail.com"
 app_license = "mit"
+
+fixtures = ["Custom HTML Block"]
+
 # required_apps = []
 
 # Includes in <head>

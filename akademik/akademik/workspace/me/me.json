@@ -23,7 +23,7 @@
    "is_query_report": 0,
    "label": "GTK & Peserta Didik",
    "link_count": 2,
-   "link_type": "URL",
+   "link_type": "",
    "onboard": 0,
    "type": "Card Break"
   },
@@ -52,7 +52,7 @@
    "is_query_report": 0,
    "label": "Sarpras",
    "link_count": 6,
-   "link_type": "URL",
+   "link_type": "",
    "onboard": 0,
    "type": "Card Break"
   },
@@ -121,7 +121,7 @@
    "is_query_report": 0,
    "label": "Rombongan Belajar",
    "link_count": 3,
-   "link_type": "URL",
+   "link_type": "",
    "onboard": 0,
    "type": "Card Break"
   },
@@ -160,7 +160,7 @@
    "is_query_report": 0,
    "label": "Nilai",
    "link_count": 3,
-   "link_type": "URL",
+   "link_type": "",
    "onboard": 0,
    "type": "Card Break"
   },
@@ -199,7 +199,7 @@
    "is_query_report": 0,
    "label": "Pengaturan",
    "link_count": 5,
-   "link_type": "URL",
+   "link_type": "",
    "onboard": 0,
    "type": "Card Break"
   },
@@ -254,7 +254,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-07-14 21:47:45.386072",
+ "modified": "2024-07-14 22:02:37.752715",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Me",
@@ -264,7 +264,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 24.0,
+ "sequence_id": 1.0,
  "shortcuts": [],
  "title": "Me"
 }

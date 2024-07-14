@@ -9,6 +9,7 @@
   "identitas_tab",
   "identitas_section",
   "nama",
+  "nip",
   "tipe_gtk",
   "jenis_kelamin",
   "foto_profil",
@@ -836,8 +837,7 @@
   {
    "fieldname": "kabupaten",
    "fieldtype": "Select",
-   "label": "Kabupaten/kota",
-   "reqd": 1
+   "label": "Kabupaten/kota"
   },
   {
    "fieldname": "nama_ibu_kandung",
@@ -884,8 +884,7 @@
   {
    "fieldname": "provinsi",
    "fieldtype": "Select",
-   "label": "Provinsi",
-   "reqd": 1
+   "label": "Provinsi"
   },
   {
    "fieldname": "column_break_yqci",
@@ -894,12 +893,18 @@
   {
    "fieldname": "column_break_yehi",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nip",
+   "fieldtype": "Data",
+   "label": "NIP",
+   "reqd": 1
   }
  ],
  "image_field": "foto_profil",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-12 20:52:43.128750",
+ "modified": "2024-07-14 19:55:07.598184",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "GTK",

@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-01 10:41:41.753067",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jenis_diklat",
+  "nama_prajabatan",
+  "no_sertifikat_diklat",
+  "penyelenggara",
+  "column_break_pway",
+  "tahun",
+  "peran",
+  "tingkat",
+  "berapa_jam"
+ ],
+ "fields": [
+  {
+   "fieldname": "jenis_diklat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Jenis Diklat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_prajabatan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_sertifikat_diklat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No sertifikat Diklat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "penyelenggara",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Penyelenggara",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pway",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tahun",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Tahun",
+   "reqd": 1
+  },
+  {
+   "fieldname": "peran",
+   "fieldtype": "Select",
+   "label": "Peran"
+  },
+  {
+   "fieldname": "tingkat",
+   "fieldtype": "Select",
+   "label": "Tingkat",
+   "options": "Dinas Pusat\nDinas nasional\nDinas Provinsi\nDinas Kabupaten\ndinas kecamatan\ndinas desa"
+  },
+  {
+   "fieldname": "berapa_jam",
+   "fieldtype": "Int",
+   "label": "Berapa Jam ",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-14 22:42:14.986762",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "ctDiklat",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

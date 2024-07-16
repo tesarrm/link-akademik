@@ -206,17 +206,19 @@
   {
    "fieldname": "provinsi",
    "fieldtype": "Select",
-   "label": "Provinsi "
+   "label": "Provinsi ",
+   "options": "Jawa Timur"
   },
   {
    "fieldname": "kabupatenkota",
    "fieldtype": "Select",
-   "label": "Kabupaten/Kota"
+   "label": "Kabupaten/Kota",
+   "options": "Kota Malang"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-14 09:52:20.382592",
+ "modified": "2024-07-16 09:26:02.129845",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Data Tanah",

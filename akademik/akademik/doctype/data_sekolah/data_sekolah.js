@@ -1,6 +1,50 @@
 // Copyright (c) 2024, Tim SiakadPlus and contributors
 // For license information, please see license.txt
 
+// var data_options = [
+// 	[
+// 		"RPS Agribisnis Ikan Hias",
+//         "RPS Agribisnis Organik Ekologi",
+//         "RPS Agribisnis Pengolahan Hasil Perikanan",
+//         "RPS Agribisnis Pengolahan Hasil Pertanian",
+//         "RPS Agribisnis Perikanan Air Payau dan Laut",
+//         "RPS Agribisnis Perikanan Air Tawar",
+//         "RPS Agribisnis Rumput Laut",
+//         "RPS Agribisnis Tanaman Pangan dan Hortikultura",
+//         "RPS Agribisnis Tanaman Perkebunan",
+//         "RPS Agribisnis Ternak Ruminansia",
+//         "RPS Agribisnis Ternak Unggas",
+//         "RPS Agribisnis Agroindustri",
+//         "RPS Airframe Power Plant",
+//         "RPS Akuntansi dan Keuangan Lembaga",
+//         "RPS Alat Mesin Pertanian",
+//         "RPS Analisis Pengujian Laboratorium",
+//         "RPS Animasi",
+//         "RPS Asisten Keperawatan",
+//         "RPS Bisnis Daring dan Pemasaran",
+//         "RPS Bisnis Konstruksi dan Properti",
+//         "RPS Caregiver",
+//         "RPS Dental Asisten",
+//         "RPS Desain dan Rancang Bangun Kapal",
+//         "RPS Desain Fesyen",
+//         "RPS Desain Grafika",
+//         "RPS Desain Interior dan Teknik Furnitur",
+//         "RPS Desain Komunikasi Visual",
+//         "RPS Desain Pemodelan dan Informasi Bangunan",
+//         "RPS Electrical Avionics",
+//         "RPS Elektronika Pesawat Udara",
+//         "RPS Keperawatan Hewan",
+//         "RPS Kesehatan dan Reproduksi Hewan",
+//         "RPS Kimia Analisis",
+//         "RPS Kimia Industri",
+//         "RPS Kimia Tekstil",
+//         "RPS Konstruksi Badan Pesawat Udara",
+//         "RPS Konstruksi Gedung, Sanitasi, dan Perawatan",
+//         "RPS Konstruksi Jalan, Irigasi, dan Jembatan","
+// 	],
+// ]
+
+
 frappe.ui.form.on("Data Sekolah", {
   refresh(frm) {
     // permission Operator Sekolah
@@ -19,7 +63,7 @@ frappe.ui.form.on("Data Sekolah", {
   detailcuci_kamarmandi: function(frm) {
       open_custom_dialog1(frm);
   },
-    
+
   map(frm) {
     console.log(JSON.parse(frm.doc.map));
     let mapdata = JSON.parse(frm.doc.map).features[0];

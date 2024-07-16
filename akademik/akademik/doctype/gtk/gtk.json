@@ -898,13 +898,14 @@
    "fieldname": "nip",
    "fieldtype": "Data",
    "label": "NIP",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "image_field": "foto_profil",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-14 19:55:07.598184",
+ "modified": "2024-07-15 08:07:09.029282",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "GTK",

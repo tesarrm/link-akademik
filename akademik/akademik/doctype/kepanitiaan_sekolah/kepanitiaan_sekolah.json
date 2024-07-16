@@ -24,7 +24,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Satuan Tugas",
-   "options": "Kegiatan Keaagamaan\nLiterasi Sekolah\nPenanggulangan Tindak Kekerasan di Sekolah\nPenerimaan Peserta Didik Baru\nPengenalan Lingkungan Sekolah\nPenyelenggara Komite Sekolah\nPenyelenggara Ujian Nasional\nTim Bos Sekolah\nTim Pendataan Sekolah",
+   "options": "Kegiatan Keaagamaan\nListerasi Sekolah\nPenanggulangan Tindak Kekerasan di Sekolah\nPenerimaan Peserta Didik Baru\nPengenalan Lingkungan Sekolah\nPenyelenggara Komite Sekolah\nPenyelenggara Ujian Nasional\nTim Bos Sekolah\nTim Pendataan Sekolah",
    "reqd": 1
   },
   {
@@ -96,7 +96,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-08 01:50:03.675016",
+ "modified": "2024-07-16 09:24:35.585724",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Kepanitiaan Sekolah",

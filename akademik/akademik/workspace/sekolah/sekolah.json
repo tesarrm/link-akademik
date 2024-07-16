@@ -1,0 +1,274 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"KyhoNNeOGu\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Aksi Cepat</b></span>\",\"col\":12}},{\"id\":\"u7ICEqBmYL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Profil Sekolah\",\"col\":3}},{\"id\":\"ro7oXqK-pn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"GTK\",\"col\":3}},{\"id\":\"sorVw6erJO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Peserta Didik\",\"col\":3}},{\"id\":\"M279cDNVOB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Jadwal\",\"col\":3}},{\"id\":\"XRXc2cvmWD\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rRiJ-_zNxH\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Laporan &amp; Master</b></span>\",\"col\":12}},{\"id\":\"xNHi6R7t2J\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tanah & Bangunan\",\"col\":3}},{\"id\":\"fI7zkF9l-3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Guru\",\"col\":3}},{\"id\":\"ac-pAS28rF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Peserta Didik\",\"col\":3}},{\"id\":\"xlvIbXJP7r\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rombel\",\"col\":3}},{\"id\":\"KkhokD4oFv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ruang\",\"col\":3}},{\"id\":\"gMUE_lVkrt\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tendik\",\"col\":3}},{\"id\":\"1c82fp8SL2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PD Keluar\",\"col\":3}},{\"id\":\"k6C37ZMosa\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Praktik\",\"col\":3}},{\"id\":\"cglbOLEUw6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"GTK Tidak Aktif\",\"col\":6}},{\"id\":\"d4EbzPlBeE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ekskul\",\"col\":3}},{\"id\":\"lBCIyCQ4E8\",\"type\":\"spacer\",\"data\":{\"col\":9}},{\"id\":\"rofec4RHGi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Mapel Pilihan\",\"col\":3}},{\"id\":\"nhDjXXzDQD\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"xCXJ4iJe8u\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rapor\",\"col\":3}},{\"id\":\"Sn_MQN0nnx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Jadwal\",\"col\":3}},{\"id\":\"ipRdr6x2RG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kehadiran\",\"col\":6}},{\"id\":\"W9u8qP5-XN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ujian Sekolah\",\"col\":6}},{\"id\":\"uyo2hRHOaN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Data Kehadiran\",\"col\":3}},{\"id\":\"PqTGdOCI24\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ujian Kenaikan Kelas\",\"col\":6}},{\"id\":\"DZhecK0hlG\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"V6Ox-PnHP_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Data Sekolah\",\"col\":12}},{\"id\":\"ZyjkzhAhrR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Manajemen Pengguna\",\"col\":12}},{\"id\":\"Sa3A9nQ0lj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Semester\",\"col\":12}},{\"id\":\"hHM8rI2YfB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tahun Ajaran\",\"col\":12}},{\"id\":\"EPKEYCOxlW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hari Libur\",\"col\":3}},{\"id\":\"ji-G76CgOd\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"DR1FQ8-LY_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kompetensi Keahlian\",\"col\":3}},{\"id\":\"ieFEPTi95U\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"2Swnb9aLRd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tanah\",\"col\":12}},{\"id\":\"lzbCZVjIbv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Bangunan\",\"col\":12}},{\"id\":\"fhT_NWENIN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ruang\",\"col\":11}},{\"id\":\"QK9_cjGtDi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Alat\",\"col\":12}},{\"id\":\"sEgD-vUp6z\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Peserta Didik\",\"col\":12}},{\"id\":\"_Os8GO45CF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Guru\",\"col\":12}},{\"id\":\"FmzKauApEN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tendik\",\"col\":12}},{\"id\":\"2ccttGquHo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rombel Regular\",\"col\":12}},{\"id\":\"aluQGEvTMW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rombel Praktik\",\"col\":12}},{\"id\":\"vzxLQGqiRX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rombel Ekskul\",\"col\":12}},{\"id\":\"LnHuM8ZUDI\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rombel Matpel Pilihan\",\"col\":12}}]",
+ "creation": "2024-06-24 08:26:40.312866",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "organization",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Sekolah",
+ "links": [],
+ "modified": "2024-07-15 08:04:27.652168",
+ "modified_by": "Administrator",
+ "module": "Akademik",
+ "name": "Sekolah",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 8.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Ujian Sekolah",
+   "link_to": "US",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Ujian Kenaikan Kelas",
+   "link_to": "US",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Profil Sekolah",
+   "link_to": "Data Sekolah",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Kompetensi Keahlian",
+   "type": "URL",
+   "url": "/app/data-sekolah#kompetensi_keahlian_dilayani_tab"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rapor",
+   "link_to": "Rapor",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Tanah & Bangunan",
+   "link_to": "Tanah Bangunan",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Hari Libur",
+   "link_to": "Hari Libur",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Tanah",
+   "link_to": "Data Tanah",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Alat",
+   "link_to": "Data Alat",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Peserta Didik",
+   "link_to": "Peserta Didik",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Guru",
+   "link_to": "GTK",
+   "stats_filter": "[[\"GTK\",\"tipe_gtk\",\"=\",\"Guru\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rombel Regular",
+   "link_to": "Rombel",
+   "stats_filter": "[[\"Rombel\",\"tipe\",\"=\",\"Regular\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Jadwal",
+   "link_to": "Jadwal",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Data Sekolah",
+   "link_to": "Data Sekolah",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Tahun Ajaran",
+   "link_to": "Tahun Ajaran",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "GTK Tidak Aktif",
+   "type": "URL",
+   "url": "/app/gtk?keluar=1"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "PD Keluar",
+   "type": "URL",
+   "url": "/app/peserta-didik?keluar=1"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Praktik",
+   "type": "URL",
+   "url": "htps://halo.com"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Kehadiran",
+   "link_to": "Kehadiran",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Manajemen Pengguna",
+   "link_to": "Manajemen Pengguna",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Bangunan",
+   "link_to": "Data Bangunan",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "GTK",
+   "link_to": "GTK",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Tendik",
+   "link_to": "GTK",
+   "stats_filter": "[[\"GTK\",\"tipe_gtk\",\"=\",\"Tendik\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rombel Praktik",
+   "link_to": "Rombel",
+   "stats_filter": "[[\"Rombel\",\"tipe\",\"=\",\"Praktik\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Semester",
+   "link_to": "Semester",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Ekskul",
+   "link_to": "Ekskul",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Data Kehadiran",
+   "link_to": "Data Kehadiran 2",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Ruang",
+   "link_to": "Data Ruang",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rombel",
+   "link_to": "Rombel",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rombel Ekskul",
+   "link_to": "Ekskul",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Mapel Pilihan",
+   "type": "URL",
+   "url": "https://halo.com"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rombel Matpel Pilihan",
+   "link_to": "Rombel",
+   "stats_filter": "[[\"Rombel\",\"tipe\",\"=\",\"Mat Pilihan\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Sekolah"
+}

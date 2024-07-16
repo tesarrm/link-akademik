@@ -30,6 +30,7 @@ frappe.listview_settings["GTK"] = {
 		};
 		//ini punya tesar
 
+        // custom button for generate account in gtk
 		listview.page.add_inner_button("Generate Account", function () {
             const selected_items = listview.get_checked_items();
 
@@ -38,6 +39,7 @@ frappe.listview_settings["GTK"] = {
                 return;
             }
 
+            // melakukan get data untuk mendapatkan data yang diselect secara lengkap
             frappe.call({
                 method: 'akademik.akademik.doctype.gtk.gtk.getGTK',
                 callback: function(response) {
@@ -61,21 +63,11 @@ frappe.listview_settings["GTK"] = {
                                         alamat: selected.alamat_jalan
                                     });
                                 } else {
+                                    frappe.msgprint(
+                                        __("Email tidak boleh  kosong untuk pengguna: {0}", [selected.nama])
+                                    );
                                     console.error('Data item tidak lengkap:', selected);
                                 }
-                            }
-                        });
-
-                        selected_users.forEach(function(user) {
-                            if (!user.email) {
-                                frappe.msgprint(
-                                    __("Email tidak boleh kosong untuk pengguna: {0}", [user.username])
-                                );
-                            }
-                            if (!user.username) {
-                                frappe.msgprint(
-                                    __("Username tidak boleh kosong untuk pengguna dengan email: {0}", [user.email])
-                                );
                             }
                         });
 
@@ -87,17 +79,14 @@ frappe.listview_settings["GTK"] = {
                                 selected_users: selected_users,
                             },
                             callback: function (response) {
-                                if (response.message) {
+                                if (response.status == "success") {
                                     console.log(response);
+                                    frappe.show_alert({ message: "Akun berhasil dibuat!", indicator: "green" });
+                                }else {
+                                    frappe.show_alert({ message: "Akun gagal dibuat!", indicator: "red" });
                                 }
                             },
                         })
-                        .then(() => {
-                            frappe.show_alert({ message: "Akun berhasil dibuat!", indicator: "green" });
-                        })
-                        .catch((error) => {
-                            frappe.show_alert({ message: "Akun gagal dibuat!", indicator: "red" });
-                        });
                     }
                 }
             });

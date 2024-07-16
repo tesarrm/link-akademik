@@ -57,6 +57,23 @@ frappe.listview_settings['Peserta Didik'] = {
                 frappe.msgprint(__('Pilih setidaknya satu pengguna untuk membuat akun.'));
                 return;
             }
+
+			// penampung username dengan email kosong
+			let usersWithEmptyEmail = [];
+
+			// check apakah email kosong
+			selected_users.forEach(user => {
+				if (!user.email) {
+					usersWithEmptyEmail.push(user.username);
+				}
+			});
+
+			if (usersWithEmptyEmail.length > 0) {
+				frappe.msgprint(__('Email tidak boleh kosong pada pengguna: ' + usersWithEmptyEmail.join(', ')));
+			} else {
+				// Lanjutkan proses jika tidak ada email yang kosong
+			}
+
 			console.log(selected_users);
             frappe.call({
                 method: 'akademik.akademik.doctype.peserta_didik.peserta_didik.generateAccount',

@@ -84,6 +84,8 @@ def generateAccount(selected_users):
                     ]
                 })
                 manajemen_pengguna_doc.insert(ignore_permissions=True)
+            else:
+                 logging.info(f"User gagal  dibuat dengan email: {email} dan password: {random_password}")
 
         return {"status": "success", "message": "Berhasil membuat akun"}
 
@@ -94,5 +96,10 @@ def generateAccount(selected_users):
 # ketika 'username', 'kata sandi', 'konfirmasi kata sandi' tidak kosong
 # otomatis save data akun ke 'GTK'
 
-
-
+@frappe.whitelist()
+def check_email(email):
+    user_exists = frappe.db.exists("User", {"email": email})
+    if user_exists:
+        return {"message": "user tersedia"}
+    else:
+        return {"message": "user tidak tersedia"}

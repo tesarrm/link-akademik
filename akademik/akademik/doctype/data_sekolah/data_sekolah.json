@@ -190,12 +190,14 @@
    "fieldname": "desakelurahan",
    "fieldtype": "Data",
    "label": "Desa/Kelurahan",
+   "options": "Cemorokandang",
    "reqd": 1
   },
   {
    "fieldname": "kecamatan",
    "fieldtype": "Select",
    "label": "Kecamatan",
+   "options": "Kedungkandang",
    "reqd": 1
   },
   {
@@ -711,12 +713,14 @@
    "fieldname": "kabupaten_kota",
    "fieldtype": "Select",
    "label": "Kabupaten/Kota",
+   "options": "Kota Malang",
    "reqd": 1
   },
   {
    "fieldname": "provinsi",
    "fieldtype": "Select",
    "label": "Provinsi",
+   "options": "\nAceh\nSumtra Utara\nSumatra Selatan\nSumatra Barat\nBengkulu\nRiau\nKepulauan Riau\nJambi\nLampung\nBangka Belitung\nKalimantan Barat\nKalimantan TImur\nKalimantan Tengah\nKalimantan Utara\nBanten\nDKI Jakarta\nJawa Barat\nJawa Tengah\nJawa Timur\nDaerah Istimewa Yogyakarta\nBali\nNusa Tenggara Timur\nNusa Tenggara Barat\nGorontalo\nSulawesi Barat\nSulawesi Tengah\nSulawesi Utara\nSulawesi Tenggara\nSulawesi Selatan\nMaluku Utara\nMaluku\nPapua Barat\nPapua\nPapua Pegunungan\nPapua Tengah\nPapua Selatan\nPapua Barat Daya",
    "reqd": 1
   },
   {
@@ -985,10 +989,11 @@
    "reqd": 1
   }
  ],
+ "image_field": "logo",
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-07-14 19:02:05.215133",
+ "modified": "2024-07-16 11:20:32.456299",
  "modified_by": "Administrator",
  "module": "Akademik",
  "name": "Data Sekolah",

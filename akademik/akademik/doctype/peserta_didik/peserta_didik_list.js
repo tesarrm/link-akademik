@@ -41,7 +41,7 @@ frappe.listview_settings['Peserta Didik'] = {
             }
         };
         //ini punya tesar
-
+		
 
 		// custom create akun pd
 		// CUSTOM kode for button generate account
@@ -69,9 +69,8 @@ frappe.listview_settings['Peserta Didik'] = {
 			});
 
 			if (usersWithEmptyEmail.length > 0) {
-				frappe.msgprint(__('Email tidak boleh kosong pada pengguna: ' + usersWithEmptyEmail.join(', ')));
-			} else {
-				// Lanjutkan proses jika tidak ada email yang kosong
+				return frappe.msgprint(__('Email tidak boleh kosong pada pengguna dengan NIS: ' + usersWithEmptyEmail.join(', ')));
+
 			}
 
 			console.log(selected_users);

@@ -30,67 +30,75 @@ frappe.listview_settings["GTK"] = {
 		};
 		//ini punya tesar
 
-        // custom button for generate account in gtk
+		// custom button for generate account in gtk
 		listview.page.add_inner_button("Generate Account", function () {
-            const selected_items = listview.get_checked_items();
+			const selected_items = listview.get_checked_items();
 
-            if (selected_items.length === 0) {
-                frappe.msgprint(__('Pilih setidaknya satu pengguna untuk membuat akun.'));
-                return;
-            }
+			if (selected_items.length === 0) {
+				frappe.msgprint(__("Pilih setidaknya satu pengguna untuk membuat akun."));
+				return;
+			}
 
-            // melakukan get data untuk mendapatkan data yang diselect secara lengkap
-            frappe.call({
-                method: 'akademik.akademik.doctype.gtk.gtk.getGTK',
-                callback: function(response) {
-                    if (response.message) {
-                        let gtk_data = response.message;
-                        let selected_users = [];
+			// melakukan get data untuk mendapatkan data yang diselect secara lengkap
+			frappe.call({
+				method: "akademik.akademik.doctype.gtk.gtk.getGTK",
+				callback: function (response) {
+					if (response.message) {
+						let gtk_data = response.message;
+						let selected_users = [];
 
-                        selected_items.forEach(function(selected) {
-                            let user_data = gtk_data.find(item => item.name === selected.name);
+						selected_items.forEach(function (selected) {
+							let user_data = gtk_data.find((item) => item.name === selected.name);
 
-                            if (user_data) {
-                                let email = user_data.email_telah_terverifikasi;
-                                let nomor_hp = user_data.nomor_hp;
+							if (user_data) {
+								let email = user_data.email_telah_terverifikasi;
+								let nomor_hp = user_data.nomor_hp;
 
-                                if (selected.nama && email && selected.jenis_kelamin) {
-                                    selected_users.push({
-                                        username: selected.nama,
-                                        email: email,
-                                        jenis_kelamin: selected.jenis_kelamin,
-                                        nomor_hp: nomor_hp,
-                                        alamat: selected.alamat_jalan
-                                    });
-                                } else {
-                                    frappe.msgprint(
-                                        __("Email tidak boleh  kosong untuk pengguna: {0}", [selected.nama])
-                                    );
-                                    console.error('Data item tidak lengkap:', selected);
-                                }
-                            }
-                        });
+								if (selected.nama && email && selected.jenis_kelamin) {
+									selected_users.push({
+										username: selected.nama,
+										email: email,
+										jenis_kelamin: selected.jenis_kelamin,
+										nomor_hp: nomor_hp,
+										alamat: selected.alamat_jalan,
+									});
+								} else {
+									frappe.msgprint(
+										__("Email tidak boleh kosong pada pengguna: {0}", [
+											selected.nama,
+										])
+									);
+									console.error("Data item tidak lengkap:", selected);
+								}
+							}
+						});
 
-                        console.log(selected_users);
+						console.log(selected_users);
 
-                        frappe.call({
-                            method: "akademik.akademik.doctype.gtk.gtk.generateAccount",
-                            args: {
-                                selected_users: selected_users,
-                            },
-                            callback: function (response) {
-                                if (response.status == "success") {
-                                    console.log(response);
-                                    frappe.show_alert({ message: "Akun berhasil dibuat!", indicator: "green" });
-                                }else {
-                                    frappe.show_alert({ message: "Akun gagal dibuat!", indicator: "red" });
-                                }
-                            },
-                        })
-                    }
-                }
-            });
-        });
+						frappe.call({
+							method: "akademik.akademik.doctype.gtk.gtk.generateAccount",
+							args: {
+								selected_users: selected_users,
+							},
+							callback: function (response) {
+								if (response.status == "success") {
+									console.log(response);
+									frappe.show_alert({
+										message: "Akun berhasil dibuat!",
+										indicator: "green",
+									});
+								} else {
+									frappe.show_alert({
+										message: "Akun gagal dibuat!",
+										indicator: "red",
+									});
+								}
+							},
+						});
+					}
+				},
+			});
+		});
 	},
 
 	add_fields: ["Penugasan"],
